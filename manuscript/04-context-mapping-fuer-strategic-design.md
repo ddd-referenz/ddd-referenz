@@ -24,7 +24,7 @@ erfolgreich sein.
 
 Mutually Dependent (dt.: wechselseitig abhängig) beschreibt eine Situation,
 in der zwei Softwareentwicklungsprojekte in getrennten Kontexten
-durchgeführt werden müssen, damit beide als erfolgreich angesehen
+beide liefern müssen, damit beide als erfolgreich angesehen
 werden können. 
 
 Wenn zwei Systeme jeweils auf Informationen oder Funktionen des
