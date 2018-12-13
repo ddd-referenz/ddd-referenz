@@ -81,13 +81,13 @@ auch die impliziten
 Modelle von nicht-objekt-orientierten Subsystemen.  Benennen Sie jeden
 [Bounded Context](#bounded-context) und machen Sie die Namen zu einem
 Teil der 
-[Ubiquituous Language](#ubiquituous-language)
+[Ubiquituous Language](#ubiquituous-language).**
 
-Beschreiben Sie die Berührungspunkte zwischen den Modellen, skizzieren
-Sie die explizite Übersetzung für jede Kommunikation, heben Sie alle
-Austausch-, Isolations- und Einflussmechanismen hervor.
+**Beschreibe  die Berührungspunkte zwischen den Modellen, skizziere
+die explizite Übersetzung für jede Kommunikation, hebe alle
+Austausch-, Isolations- und Einflussmechanismen hervor.**
 
-Kartografieren Sie das vorhandene Gelände. Nimm Transformationen später
+**Kartografiere das vorhandene Gelände. Nimm Transformationen später
 vor.**
 
 Diese Karte kann die Grundlage für eine realistische Design-Strategie sein.
@@ -121,9 +121,9 @@ Daher:
 zu einem Misserfolg für beide führen würde, solltest du ein
 [Partnership](#partnership) zwischen den für die beiden Kontexte zuständigen Teams
 etablieren.  Führe einen Prozess zur koordinierten Planung der
-Entwicklung und zum gemeinsamen Managements der Integration ein.
+Entwicklung und zum gemeinsamen Managements der Integration ein.**
 
-Die Teams müssen bei der Entwicklung ihrer Schnittstellen
+**Die Teams müssen bei der Entwicklung ihrer Schnittstellen
 zusammenarbeiten, um die Bedürfnisse bei der Entwicklung beider
 Systeme zu befriedigen. Voneinander abhängige Features sollten so
 eingeplant werden, dass sie für das gleiche Release abgeschlossen
@@ -173,9 +173,9 @@ Daher:
 
 **Markiere eine explizite Grenze für eine Teilmenge des
 Domänenmodells, das die Teams gemeinsam nutzen wollen. Halte diesen
-Kern klein.
+Kern klein.**
 
-Füge innerhalb dieser Grenze neben dieser Teilmenge des Modells die
+**Füge innerhalb dieser Grenze neben dieser Teilmenge des Modells die
 Teilmenge des Codes oder des Datenbankdesigns hinzu, die mit diesem
 Teil des Modells verbunden ist.  Dieses explizit geteilte Artefakte
 haben einen besonderen Status und sollte nicht ohne Rücksprache mit
@@ -406,7 +406,7 @@ Deshalb:
 als einen [Big Ball of Mud](#big-ball-of-mud).  Versuche nicht, in
 diesem Context eine
 ausgeklügelte Modellierung anzuwenden.  Sei auf der Hut vor der
-Tendenz, dass sich solche Systeme in andere Contexts ausbreiten.
+Tendenz, dass sich solche Systeme in andere Contexts ausbreiten.**
 
 (siehe
   [Big Ball of Mud von Brian Foote und Joseph Yoder](http://www.laputan.org/mud/mud.html))

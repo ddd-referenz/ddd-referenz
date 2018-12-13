@@ -119,12 +119,12 @@ Daher:
 diese Sprache unermüdlich in der gesamten Kommunikation innerhalb des
 Teams und im Code anzuwenden. Verwende in einem *Bounded Context* die
 gleiche Sprache in Diagrammen, beim Schreiben und insbesondere beim
-Sprechen.
+Sprechen.**
 
-Erkenne, dass eine Änderung der Sprache eine Änderung des *Models*
-ist.
+**Erkenne, dass eine Änderung der Sprache eine Änderung des *Models*
+ist.**
 
-Löse Schwierigkeiten, indem du mit alternativen Ausdrücken
+**Löse Schwierigkeiten, indem du mit alternativen Ausdrücken
 experimentierst, die alternative *Models* widerspiegeln. Dann
 überarbeite den Code und benenne Klassen, Methoden und Module um, um
 dem neuen *Model* zu entsprechen.  Löse Verwirrung über Begriffe im
@@ -223,7 +223,7 @@ Diskussion über das Modell beteiligt sein und Kontakt zu
 Domain-Experten haben.  Diejenigen, die auf unterschiedliche Weise
 beitragen, müssen diejenigen, die am Code arbeiten, bewusst in einen
 dynamischen Austausch von Ideen zum Modell durch die [Ubiquituous
-Language](#ubiquituous-language) einbeziehen. **
+Language](#ubiquituous-language) einbeziehen.**
 
 ## Refactoring Towards Deeper Insight {#refactoring-towards-deeper-insight}
 

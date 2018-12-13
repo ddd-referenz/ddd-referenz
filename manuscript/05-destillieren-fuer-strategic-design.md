@@ -37,14 +37,14 @@ Daher:
 Kerndomäne und biete eine Möglichkeit, sie leicht von der großen
 Anzahl unterstützender Modelle und Codes zu unterscheiden. Bringe die
 wertvollsten und spezialisiertesten Konzepte auf den Punkt. Mache den
-Kern klein.
+Kern klein.**
 
-Nutze die besten Talente für die [Core Domain](#core-domain) und
+**Nutze die besten Talente für die [Core Domain](#core-domain) und
 rekrutiere entsprechend.  Investiere genügend Aufwände, um ein
 tiefgreifendes Modell zu finden und ein flexibles Design zu
-entwickeln, das ausreicht, um die Vision des Systems zu erfüllen.
+entwickeln, das ausreicht, um die Vision des Systems zu erfüllen.**
 
-Rechtfertige die Investition in andere Teile, indem du betrachtest,
+**Rechtfertige die Investition in andere Teile, indem du betrachtest,
 wie er den destillierten Kern unterstützt.**
 
 ## Generic Subdomains {#generic-subdomain}
@@ -66,14 +66,14 @@ Daher:
 **Identifiziere zusammenhängende Subdomains, die nicht die Motivation
 für Ihr Projekt sind.  Berücksichtigen Sie generische Modelle dieser
 Subdomains und stellen Sie sie in separate Module.  Hinterlasse keine
-Spuren deiner Spezialitäten in ihnen.
+Spuren deiner Spezialitäten in ihnen.**
 
-Sobald sie getrennt wurden, geben Sie ihrer weiteren Entwicklung eine
+**Sobald sie getrennt wurden, geben Sie ihrer weiteren Entwicklung eine
 niedrigere Priorität als der [Core Domain](#core-domain) und vermeiden
 es, Kernentwickler den Aufgaben zuzuordnen (da sie von ihnen wenig
 Domänenwissen erhalten).  Erwägen Sie auch Standardlösungen oder
 öffentlich verfügbare Modelle für diese [Generic
-Subdomains](#generic-subdomains).
+Subdomains](#generic-subdomains).**
 
 ## Domain Vision Statement {#domain-vision-statement}
 
@@ -180,9 +180,9 @@ Stellen Sie die Fähigkeiten des Frameworks mit einem
 [Intention-Revealing Interface](#intention-revealing-interface) zur
 Verfügung.  Nun können sich die anderen Elemente der Domäne darauf
 konzentrieren, das Problem auszudrücken ("was") und die Feinheiten der
-Lösung ("wie") an das Framework delegieren.
+Lösung ("wie") an das Framework delegieren.**
 
-[Generic Subdomains](#generic-subdomain) auszuklammern, reduziert die
+**[Generic Subdomains](#generic-subdomain) auszuklammern reduziert die
 Unübersichtlichkeit, und kohärente Mechanismen dienen dazu, komplexe
 Vorgänge zu kapseln.  Dies hinterlässt ein fokussierteres Modell mit
 weniger störenden Ablenkungen, die den Benutzer bei ihren Aktivitäten
