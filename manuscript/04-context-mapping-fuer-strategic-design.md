@@ -2,12 +2,13 @@
 
 ### Bounded Context
 
-Der *Bounded Context* (dt.: begrenzter Kontext) ist eine Beschreibung
+Der [*Bounded Context*](#bounded-context) (dt.: begrenzter Kontext)
+ist eine Beschreibung
 einer Grenze (typischerweise ein Subsystem oder die Arbeit eines
 bestimmten Teams), innerhalb derer ein bestimmtes Modell definiert und
 anwendbar ist.
 
-### Upstream-Downstream
+### Upstream-Downstream {#upstream-downstream}
 
 Eine Beziehung zwischen zwei Gruppen, in der die Handlungen der
 "Upstream"-Gruppe den Projekterfolg der "Downstream"-Gruppe
@@ -186,7 +187,7 @@ aufeinander ab.  Integriere ein funktionales System häufig, wenn auch
 etwas seltener als das Tempo der [Continuous Integration](#continuous-integration) innerhalb
 der Teams.
 
-## Customer/Supplier Development {#customer-supplier-development}
+## Customer/Supplier Development {#customer-supplier}
 
 *dt.: Kunde / Zulieferer*
 

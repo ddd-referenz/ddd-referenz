@@ -47,7 +47,7 @@ entwickeln, das ausreicht, um die Vision des Systems zu erfüllen.
 Rechtfertige die Investition in andere Teile, indem du betrachtest,
 wie er den destillierten Kern unterstützt.**
 
-## Generic Subdomains {#generic-subdomains}
+## Generic Subdomains {#generic-subdomain}
 
 *Dt.: Generische Subdomänen*
 
@@ -91,7 +91,7 @@ gemeinsamen Fokus zeigen.
 Daker:
 
 **Schreiben Sie eine kurze Beschreibung (etwa eine Seite) der [Core
-Domain](#core-domain)und den Wert, den sie bringen wird, das
+Domain](#core-domain) und den Wert, den sie bringen wird, das
 "Leistungsversprechen".  Ignoriere Aspekte, die dieses Domänenmodell
 nicht von anderen unterscheiden.  Zeige, wie das Domänenmodell
 verschiedenen Interessen dient und sie ausgleicht.  Halten das
