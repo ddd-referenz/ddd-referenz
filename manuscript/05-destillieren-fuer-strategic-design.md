@@ -163,9 +163,79 @@ Möglichkeiten ansehen, das Modell und das Design selbst strukturell zu
 
 # Cohesive Mechanisms {#cohesive-mechanism}
 
-Berechnungen erreichen manchmal eine Komplexität, die das Design
-aufzublähen beginnt.  Das konzeptuelle "Was" wird vom mechanistischen
-"Wie" überflutet.  Eine große Anzahl von Methoden, die Algorithmen zur
+*Dt.: Zusammenhängender Mechanismus*
+
+Logik erreicht manchmal eine Komplexität, die das Design
+aufzublähen beginnt.  Das konzeptuelle "Was" wird vom mechanischem
+"Wie" überlagert.  Eine große Anzahl von Methoden, die Algorithmen zur
 Lösung des Problems bereitstellen, verdecken die Methoden, die das
 Problem ausdrücken.
 
+Daher:
+
+**Unterteile einen konzeptionell zusammenhängenden Mechanismus in ein
+separates, leichtgewichtiges Framework.  Achte insbesondere auf
+Formalismen oder gut dokumentierte Kategorien von Algorithmen.
+Stellen Sie die Fähigkeiten des Frameworks mit einem
+[Intention-Revealing Interface](#intention-revealing-interface) zur
+Verfügung.  Nun können sich die anderen Elemente der Domäne darauf
+konzentrieren, das Problem auszudrücken ("was") und die Feinheiten der
+Lösung ("wie") an das Framework delegieren.
+
+[Generic Subdomains](#generic-subdomain) auszuklammern, reduziert die
+Unübersichtlichkeit, und kohärente Mechanismen dienen dazu, komplexe
+Vorgänge zu kapseln.  Dies hinterlässt ein fokussierteres Modell mit
+weniger störenden Ablenkungen, die den Benutzer bei ihren Aktivitäten
+keinen besonderen Wert bieten.  Aber es ist unwahrscheinlich, dass du
+jemals einen guten Platz für alles im Domänenmodell findest, was nicht
+zum Kern gehört.  Der [Segregated Core](#segregated-core) verfolgt
+einen direkten Ansatz zur strukturellen Abgrenzung der [Core
+Domain](#core-domain).**
+
+# Segregated Core {#segregated-core}
+
+*Dt.: Abgeteilter Kern*
+
+Elemente im Modell können teilweise der [Core Domain](#core-domain)
+dienen und teilweise eine unterstützende Rolle spielen.  Kernelemente
+können eng mit generischen gekoppelt sein.  Die konzeptionelle
+Zusammenhang des Kerns ist möglicherweise nicht stark genug oder nicht
+sichtbar.  Diese gesamte Unübersichtlichkeit und verworrenen
+Abhängigkeiten ersticken den Kern. Designer können die wichtigsten
+Beziehungen nicht klar erkennen, was zu einem schlechten Design führt.
+
+Daher:
+
+**Refaktorisiere das Modells, um die Kernkonzepte von unterstützenden
+Teilen (einschließlich schlecht definierter) zu trennen und den
+Zusammenhang des Kerns zu stärken und gleichzeitig seine Kopplung an
+restlichen Code zu reduzieren. Verschiebe alle generischen oder
+unterstützenden Elemente in andere Objekte und platziere sie in
+anderen Paketen, auch wenn dies bedeutet, das Modell so zu
+überarbeiten, dass stark gekoppelte Elemente getrennt werden.**
+
+
+# Abstract Core {#abstract-core}
+
+*Dt.: Abstrakter Kern*
+
+Selbst das Modell der [Core Domain](#core-domain) weist in der Regel
+so viele Details auf, dass es schwierig sein kann, das Gesamtbild zu
+vermitteln.
+
+Wenn es zu viele Interaktionen zwischen Subdomänen in separaten
+Modulen gibt, müssen entweder viele Referenzen zwischen den Modulen
+erstellt werden, was einen Großteil des Wertes der Aufteilung zunichte
+macht, oder die Interaktion muss indirekt gemacht werden, was das
+Modell unklarer macht.
+
+Daher:
+
+**Identifiziere die grundlegendsten differenzierenden Konzepte im
+Modell und überführe sie in unterschiedliche Klassen, abstrakte
+Klassen oder Schnittstellen.  Entwerfe dieses abstrakte Modell so,
+dass es den größten Teil der Interaktion zwischen wichtigen
+Komponenten ausdrückt.  Platzieren Sie dieses abstrakte Gesamtmodell
+in einem eigenen Modul, während die spezialisierten, detaillierten
+Implementierungsklassen in ihren eigenen Modulen verbleiben, die durch
+die jeweilige Subdomain definiert sind.**
