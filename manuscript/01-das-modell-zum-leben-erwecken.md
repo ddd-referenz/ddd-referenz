@@ -150,7 +150,7 @@ Daher:
   automatisierte Tests, um Fragmentierung schnell zu finden.  Nutze
   unermüdlich die Ubiquituous Language, um eine gemeinsame Sicht auf
   das Modell zu entwickeln, während sich die Konzepte in den Köpfen
-  der verschiedenen beteiligten Personen entwickeln.*
+  der verschiedenen beteiligten Personen entwickeln.**
 
 ## Model-driven Design {#model-driven-design}
 
