@@ -1,13 +1,13 @@
 # Context Mapping für Strategic Design
 
-*Bounded Context*
+### Bounded Context
 
 Der *Bounded Context* (dt.: begrenzter Kontext) ist eine Beschreibung
 einer Grenze (typischerweise ein Subsystem oder die Arbeit eines
 bestimmten Teams), innerhalb derer ein bestimmtes Modell definiert und
 anwendbar ist.
 
-*Upstream-Downstream*
+### Upstream-Downstream
 
 Eine Beziehung zwischen zwei Gruppen, in der die Handlungen der
 "Upstream"-Gruppe den Projekterfolg der "Downstream"-Gruppe
@@ -20,7 +20,7 @@ gelegene Stadt (dt.: flussabwärts) aus).
 Das Upstream-Team kann unabhängig vom Schicksal des Downstream-Teams
 erfolgreich sein.
 
-*Mutually Dependent*
+### Mutually Dependent
 
 Mutually Dependent (dt.: wechselseitig abhängig) beschreibt eine Situation,
 in der zwei Softwareentwicklungsprojekte in getrennten Kontexten
@@ -38,14 +38,14 @@ vielleicht weil dies der einzige Ort ist, an dem es verwendet wird -
 dann führt es zu einem Misserfolg beider Projekte, wenn das abhängige
 System nicht ausgeliefert wird.
 
-*Free*
+### Free
 
 Ein Softwareentwicklungskontext ist free (dt.: frei), wenn die
 Ausrichtung, der Erfolg oder das Scheitern der Entwicklungsarbeit in
 anderen Kontexten wenig Einfluss auf die Auslieferung dieses Konext
 hat.
 
-## Context Map 
+## Context Map {#context-map}
 
 *dt.: Kontext-Karte*
 
@@ -53,11 +53,13 @@ hat.
 angelegte Sicht auf die Modellentwicklung, die sich über unser
 gesamtes Projekt und andere, in die wir integrieren, erstreckt.*
 
-Ein einzelner _Bounded Context_ hinterlässt einige Probleme, wenn
+Ein einzelner [Bounded Context](#bounded-context) hinterlässt einige
+Probleme, wenn
 keine globale Sichtweise vorhanden ist.  Der Kontext anderer Modelle
 kann noch vage und im Wandel sein.
 
-Leute in anderen Teams sind sich der Grenzen der _Bounded Contexts_
+Leute in anderen Teams sind sich der Grenzen der [Bounded
+Contexts](#bounded-context) 
 nicht sehr bewusst und nehmen unwissentlich Änderungen vor, die die
 Übergänge verwischen oder die Zusammenhänge komplizieren.  Wenn
 Verbindungen zwischen verschiedenen Kontexten hergestellt werden
@@ -73,10 +75,12 @@ Verbindung zu bringen sind.
 Daher:
 
 **Identifiziere jedes Modell, das beim Projekt im Spiel ist und
-definiere seinen _Bounded Context_.  Dazu gehören auch die impliziten
+definiere seinen [Bounded Context](#bounded-context).  Dazu gehören
+auch die impliziten 
 Modelle von nicht-objekt-orientierten Subsystemen.  Benennen Sie jeden
-_Bounded Context_ und machen Sie die Namen zu einem Teil der
-allgegenwärtigen Sprache.
+[Bounded Context](#bounded-context) und machen Sie die Namen zu einem
+Teil der 
+[Ubiquituous Language](#ubiquituous-language)
 
 Beschreiben Sie die Berührungspunkte zwischen den Modellen, skizzieren
 Sie die explizite Übersetzung für jede Kommunikation, heben Sie alle
@@ -89,9 +93,9 @@ Diese Karte kann die Grundlage für eine realistische Design-Strategie sein.
 
 Die Charakterisierung von Beziehungen wird auf den folgenden Seiten
 konkretisiert, mit einer Reihe von üblichen Pattern für Beziehungen
-zwischen _Bounded Contexts_.
+zwischen [Bounded Contexts](#bounded-context).
 
-## Partnership 
+## Partnership {#partnership}
 
 *dt.: Partnerschaft*
 
@@ -114,7 +118,7 @@ Daher:
 
 **Wenn ein Fehlschlag bei der Entwicklung in einem der beiden Kontexte
 zu einem Misserfolg für beide führen würde, solltest du ein
-_Partnership_ zwischen den für die beiden Kontexte zuständigen Teams
+[Partnership](#partnership) zwischen den für die beiden Kontexte zuständigen Teams
 etablieren.  Führe einen Prozess zur koordinierten Planung der
 Entwicklung und zum gemeinsamen Managements der Integration ein.
 
@@ -134,13 +138,13 @@ die beide Kontexte nicht übermäßig beeinträchtigt.
 Außerdem ist ein klarer Prozess zur Steuerung der Integration
 erforderlich.  So kann beispielsweise eine spezielle Testsuite
 definiert werden, die zeigt, dass die Schnittstelle den Erwartungen
-des Client-Systems entspricht, das im Rahmen der _Contiuous
-Integration_ auf dem Serversystem ausgeführt werden kann.
+des Client-Systems entspricht, das im Rahmen der [Contiuous
+Integration](#continuous-integration) auf dem Serversystem ausgeführt werden kann.
 
 *Partnership ist ein neuer Begriff, der nach dem Buch aus dem Jahre
 2004 entstanden ist.*
 
-## Shared Kernel 
+## Shared Kernel {#shared-kernel}
 
 *dt.: Gemeinsamer Kern*
 
@@ -149,12 +153,12 @@ Codes erzeugen eine sehr enge Wechselbeziehung, die die Designarbeit nutzen
 oder behindern kann.*
 
 Wenn die funktionale Integration begrenzt ist, kann der Aufwand für
-die _Continuous Integration_ eines großen Kontextes als zu hoch
+die [Continuous Integration](#continuous-integration) eines großen Kontextes als zu hoch
 erscheinen.  Dies kann insbesondere dann der Fall sein, wenn das Team
 nicht über die Fähigkeit oder die politische Organisation verfügt,
-eine _Continuous Integration_ aufrechtzuerhalten, oder wenn ein
+eine [Continuous Integration](#continuous-integration) aufrechtzuerhalten, oder wenn ein
 einzelnes Team einfach zu groß und unhandlich ist.  So können
-getrennte _Bounded Contexts_ definiert und mehrere Teams gebildet
+getrennte [Bounded Contexts](#bounded-context) definiert und mehrere Teams gebildet
 werden.
 
 Einmal getrennt, können unkoordinierte Teams, die an eng verwandten
@@ -162,7 +166,7 @@ Anwendungen arbeiten, eine Weile vorankommen, aber was sie
 produzieren, passt vielleicht nicht zusammen.  Selbst
 partnerschaftliche Teams können am Ende viel für Übersetzungsschichten
 und Änderungen ausgeben, während sie den Aufwand verdoppeln und die
-Vorteile einer gemeinsamen _Ubiquituous Language_ verlieren.
+Vorteile einer gemeinsamen [Ubiquituous Language](#ubiquituous-language) verlieren.
 
 Daher:
 
@@ -176,17 +180,18 @@ Teil des Modells verbunden ist.  Dieses explizit geteilte Artefakte
 haben einen besonderen Status und sollte nicht ohne Rücksprache mit
 dem anderen Team geändert werden.**
 
-Definiere einen _Continuous-Integration-Prozess,_ der das Kernmodell
-kompakt hält und stimme die _Ubiquituous Language_ der Teams
+Definiere einen [Continuous-Integration-Prozess](#continuous-integration), der das Kernmodell
+kompakt hält und stimme die [Ubiquituous Language](#ubiquituous-language) der Teams
 aufeinander ab.  Integriere ein funktionales System häufig, wenn auch
-etwas seltener als das Tempo der _Continuous Integration_ innerhalb
+etwas seltener als das Tempo der [Continuous Integration](#continuous-integration) innerhalb
 der Teams.
 
-## Customer/Supplier Development 
+## Customer/Supplier Development {#customer-supplier-development}
 
 *dt.: Kunde / Zulieferer*
 
-*Wenn sich zwei Teams in einer _Upstream-Downstream-Beziehung_
+*Wenn sich zwei Teams in einer
+[Upstream-Downstream-Beziehung](#upstream-downstream)
 befinden, in der das Upstream-Team unabhängig vom Schicksal des
 Downstream-Teams erfolgreich sein kann, werden die Bedürfnisse des
 Downstream-Teams auf verschiedene Arten mit einer Vielzahl von
@@ -203,7 +208,8 @@ Vetorecht auf Änderungen hat.
 
 Daher:
 
-**Etabliere eine klare _Customer-Supplier-Beziehung_ zwischen den
+**Etabliere eine klare
+[Customer-Supplier-Beziehung](#customer-supplier) zwischen den 
 beiden Teams, d.h. Downstream-Prioritäten fließen in die
 Upstream-Planung ein. Verhandel und budgetiere Aufgaben für
 Downstream-Anforderungen, so dass jeder die Versprechen und den
@@ -213,11 +219,12 @@ Agile Teams können dem Downstream-Team bei der Planung die Rolle des
 Kunden gegenüber dem Upstream-Team spielen lassen.  Gemeinsam
 entwickelte automatisierte Akzeptanztests können die erwartete
 Schnittstelle vom Upstream validieren.  Das Hinzufügen dieser Tests
-zur Testsuite des Upstream-Teams, die im Rahmen der _Continuous
-Integration_ durchgeführt wird, befreit das Upstream-Team bei
+zur Testsuite des Upstream-Teams, die im Rahmen der [Continuous
+Integration](#continuous-integration) durchgeführt wird, befreit das
+Upstream-Team bei
 Änderungen von der Angst vor Nebenwirkungen im Downstream zu haben.
 
-## Conformist 
+## Conformist {#conformist}
 
 *dt.: Konformist*
 
@@ -235,32 +242,37 @@ Schnittstelle ist nicht in Sicht.
 
 Daher:
 
-**Eliminiere die Komplexität der Übersetzung zwischen _Bounded
-Contexts_, indem du dich sklavisch an das Modell des Upstream-Teams
+**Eliminiere die Komplexität der Übersetzung zwischen [Bounded
+Contexts](#bounded-context), indem du dich sklavisch an das Modell des
+Upstream-Teams
 hälst.  Obwohl dies den Stil der Downstream-Designer einengt und
 wahrscheinlich nicht das ideale Modell für die Anwendung ergibt,
-vereinfacht _Conformist_ die Integration enorm.  Außerdem wirst du
-eine _Ubiquituous Language_ mit dem Upstream-Team teilen.  Upstream
-befindet hat das Sagen, daher ist es gut, die Kommunikation für sie
+vereinfacht [Conformist](#conformist) die Integration enorm.  Außerdem
+wirst du
+eine [Ubiquituous Language](#ubiquituous-language) mit dem
+Upstream-Team teilen.  Upstream
+hat das Sagen, daher ist es gut, die Kommunikation für sie
 möglichst einfach zu gestalten.  Altruismus kann ausreichen, um sie
 dazu zu bringen, Informationen mit dir zu teilen.**
 
-## Anticorruption-Layer 
+## Anticorruption-Layer {#anticorruption-layer}
 
 *dt.: Antikorruptionsschicht*
 
 Übersetzungsschichten können einfach, ja sogar elegant sein, wenn es
-darum geht, gut gestaltete _Bounded Context_ kooperativer Teams zu
+darum geht, gut gestaltete [Bounded Context](#bounded-context) kooperativer Teams zu
 verbinden.  Aber wenn die Kontrolle oder Kommunikation nicht
-ausreicht, um einen _Shared Kernel_, eine _Partnership_ oder _Customer
-/ Supplier_ zu erreichen, wird die Übersetzung komplexer.  Die
+ausreicht, um einen [Shared Kernel](#shared-kernel), eine [Partnership](#partnership) oder [Customer
+/ Supplier](#customer-supplier) zu erreichen, wird die Übersetzung
+komplexer.  Die
 Übersetzungsschicht nimmt eher einen defensiven Charakter an.
 
 Eine große Schnittstelle mit einem Upstream-System kann schließlich
 für die Absicht des Downstream-Modells insgesamt überfordernd sein, so
 dass das Modell ad hoc an das Modell des anderen Systems angeglichen
 wird.  Die Modelle von Altsystemen sind in der Regel schwach (wenn
-nicht sogar _Big Balls of Mud_), und selbst wenn das Modell
+nicht sogar [Big Balls of Mud](#big-ball-of-mud)), und selbst wenn das
+Modell
 ausnahmsweise gut gestaltet ist, mag es nicht den Anforderungen des
 aktuellen Projekts entsprechen, so dass es praktisch unmöglich ist,
 sich an das Upstream-Modell anzupassen.  Dennoch kann die Integration
@@ -276,11 +288,11 @@ wenig oder gar keine Änderungen am anderen System.  Intern verschiebt
 sich die Schicht je nach Bedarf in eine oder beide Richtungen zwischen
 den beiden Modellen.**
 
-## Open-host Service
+## Open-host Service {#open-host-service}
 
 *dt.: Offener Host*
 
-*Typischerweise definierst du für jeden _Bounded Context_ eine
+*Typischerweise definierst du für jeden [Bounded Context](#bounded-context) eine
 Übersetzungsschicht für jede Komponente, in die du integrieren musst
 und die außerhalb des Kontextes liegt.  Wenn jede Integration anders
 ist, vermeidet dieser Ansatz, eine Übersetzungsschicht für jedes
@@ -296,7 +308,7 @@ immer mehr zu beachten, wenn Änderungen vorgenommen werden.
 Daher:
 
 **Definiere ein Protokoll, das den Zugriff auf dein Subsystem als eine
-Reihe von _Services_ ermöglicht.  Öffne das Protokoll, so dass
+Reihe von [Services](#service) ermöglicht.  Öffne das Protokoll, so dass
 alle, die sich mit dir integrieren müssen, das Protokoll nutzen
 können.  Verbessere
 und erweitere das Protokoll, um neue Integrationsanforderungen zu
@@ -307,15 +319,17 @@ gemeinsame Protokoll einfach und kohärent bleibt.**
 
 Damit befindet sich der Anbieter des Service in der Upstream-Position.
 Jeder Kunde ist Downstream, und typischerweise sind einige von ihnen
-_Conformist_ und andere bilden _Anticorruption Layer_.  Ein Kontext
+[Conformist](#conformist) und andere bilden [Anticorruption
+Layer](#anticorruption-layer).  Ein Kontext
 mit einem Open Host Service kann jede Art von Beziehung zu anderen
 Kontexten haben, die nicht seine Clients sind.
 
-## Published Language
+## Published Language {#published-language}
 
 *dt.: veröffentlichte Sprache*
 
-Die Übersetzung zwischen den Modellen zweier _Bounded Contexts>
+Die Übersetzung zwischen den Modellen zweier [Bounded
+Contexts](#bounded-context)
 erfordert eine gemeinsame Sprache.
 
 Die direkte Übersetzung in und aus den bestehenden Domänenmodellen
@@ -331,13 +345,15 @@ Deshalb:
 Domäneninformationen als gemeinsames Kommunikationsmedium ausdrückt
 und bei Bedarf in diese Sprache übersetzen kann.**
 
-Viele Branchen definieren _Published Languages_ in Form von
+Viele Branchen definieren [Published Languages](#published-language)
+in Form von 
 Datenaustauschstandards.  Projektteams entwickeln aber auch ihre
 eigenen für den Einsatz in ihrem Unternehmen.
 
-_Published Language_ wird oft mit dem _Open Host Service_ kombiniert.
+[Published Language](#published-language) wird oft mit dem [Open Host
+Service](#open-host-service) kombiniert.
 
-## Separate Way 
+## Separate Ways {#separate-ways}
 
 *dt.: Getrennte Wege*
 
@@ -350,11 +366,11 @@ Integration ist immer teuer, und manchmal ist ihr Nutzen gering.
 
 Daher:
 
-**Definiere, dass ein _Bounded Context_ gar keine Verbindung zu den
+**Definiere, dass ein [Bounded Context](#bounded-context) gar keine Verbindung zu den
 anderen hat, so dass Entwickler einfache, spezialisierte Lösungen in
 diesem kleinen Bereich finden können.**
 
-## Big Ball of Mud
+## Big Ball of Mud {#big-ball-of-mud}
 
 *dt.: Großer Schlammball*
 
@@ -378,7 +394,7 @@ werden.  Abhängigkeiten durchziehen die Software.  Ursache und Wirkung
 werden immer schwieriger nachvollziehbar.  Schließlich erstarrt die
 Software zu einem großen Schlammball.
 
-_Big Ball of Mud_ ist für einige Situationen eigentlich recht
+[Big Ball of Mud](#big-ball-of-mud) ist für einige Situationen eigentlich recht
 praktisch (wie im Originalartikel von Foote und Yoder beschrieben),
 aber er verhindert fast vollständig die Subtilität und Präzision, die
 für nützliche Modelle erforderlich ist.
@@ -386,7 +402,8 @@ für nützliche Modelle erforderlich ist.
 Deshalb:
 
 **Zeichne eine Grenze um das gesamte Durcheinander und bezeichne es
-als einen _Big Ball of Mud_.  Versuche nicht, in diesem Context eine
+als einen [Big Ball of Mud](#big-ball-of-mud).  Versuche nicht, in
+diesem Context eine
 ausgeklügelte Modellierung anzuwenden.  Sei auf der Hut vor der
 Tendenz, dass sich solche Systeme in andere Contexts ausbreiten.
 

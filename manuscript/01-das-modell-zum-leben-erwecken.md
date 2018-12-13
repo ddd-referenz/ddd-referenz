@@ -25,7 +25,7 @@ Taktik und Strategie müssen kombiniert werden, um erfolgreich zu sein.
 DDD befasst sich sowohl mit taktischem als auch mit strategischem
 Design.
 
-## Bounded Context
+## Bounded Context {#bounded-context}
 
 *dt.: Begrenzter Kontext*
 
@@ -59,7 +59,7 @@ Problemen außerhalb ablenken oder verwirren.  Standardisiere
 einen einzigen Entwicklungsprozess innerhalb des Kontextes, der nicht
 anderswo verwendet werden muss.**
 
-## Ubiquituos Language 
+## Ubiquituos Language {#ubiquituous-language}
 
 *dt.: allgegenwärtige Sprache*
 
@@ -131,7 +131,7 @@ dem neuen *Model* zu entsprechen.  Löse Verwirrung über Begriffe im
 Gespräch auf, und zwar in der Art und Weise, wie wir uns über die
 Bedeutung gewöhnlicher Wörter einigen.**
 
-## Continuous Integration
+## Continuous Integration {#continuous-integration}
 
 *Sobald ein Bounded Context definiert ist, müssen wir ihn intakt
  halten.*
@@ -152,7 +152,7 @@ Daher:
   das Modell zu entwickeln, während sich die Konzepte in den Köpfen
   der verschiedenen beteiligten Personen entwickeln.*
 
-## Model-driven Design
+## Model-driven Design {#model-driven-design}
 
 *dt.: modellgetriebenes Design*
 
@@ -188,9 +188,10 @@ Zuordnung offensichtlich ist.  Greife das Modell wieder auf und
 modifiziere es, um es natürlicher in Software zu implementieren, auch
 wenn du versuchst, einen tieferen Einblick in die Domäne zu bekommen.
 Verlange ein einziges Modell, das beiden Zwecken gerecht wird und
-zudem eine flüssige _Ubiquituous Language_ unterstützt.**
+zudem eine flüssige [Ubiquituous Language](#ubiquituous-language)
+unterstützt.**
 
-## Hands-on Modelers
+## Hands-on Modelers {#hands-on-modelers}
 
 *dt.: Praktizierende Modellierer*
 
@@ -221,8 +222,8 @@ auszudrücken.  Jeder Entwickler muss auf irgendeiner Ebene an der
 Diskussion über das Modell beteiligt sein und Kontakt zu
 Domain-Experten haben.  Diejenigen, die auf unterschiedliche Weise
 beitragen, müssen diejenigen, die am Code arbeiten, bewusst in einen
-dynamischen Austausch von Ideen zum Modell durch die _Ubiquituous
-Language_ einbeziehen. **
+dynamischen Austausch von Ideen zum Modell durch die [Ubiquituous
+Language](#ubiquituous-language) einbeziehen. **
 
 ## Refactoring Towards Deeper Insight {#refactoring-towards-deeper-insight}
 
