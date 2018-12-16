@@ -161,7 +161,7 @@ Möglichkeiten ansehen, das Modell und das Design selbst strukturell zu
 ändern, um die [Core Domain](#core-domain) sichtbarer und
 überschaubarer zu machen...*
 
-# Cohesive Mechanisms {#cohesive-mechanism}
+## Cohesive Mechanisms {#cohesive-mechanism}
 
 *Dt.: Zusammenhängender Mechanismus*
 
@@ -192,7 +192,7 @@ zum Kern gehört.  Der [Segregated Core](#segregated-core) verfolgt
 einen direkten Ansatz zur strukturellen Abgrenzung der [Core
 Domain](#core-domain).**
 
-# Segregated Core {#segregated-core}
+## Segregated Core {#segregated-core}
 
 *Dt.: Abgeteilter Kern*
 
@@ -215,7 +215,7 @@ anderen Paketen, auch wenn dies bedeutet, das Modell so zu
 überarbeiten, dass stark gekoppelte Elemente getrennt werden.**
 
 
-# Abstract Core {#abstract-core}
+## Abstract Core {#abstract-core}
 
 *Dt.: Abstrakter Kern*
 
