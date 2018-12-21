@@ -1,4 +1,4 @@
-# Destillieren für Strategic Design
+# V Destillieren für Strategic Design
 
 Wie kann man sich auf das zentrale Problem konzentrieren und
 verhindern, dass man in einem Meer von Nebensächlichkeiten ertrinkt?

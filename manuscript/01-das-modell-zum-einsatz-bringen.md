@@ -1,4 +1,4 @@
-# Das Modell zum Einsatz bringen
+# I Das Modell zum Einsatz bringen
 
 Domain-driven Design ist ein Ansatz für die Entwicklung komplexer
 Software, bei dem wir:
