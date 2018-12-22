@@ -133,7 +133,7 @@ Entitäten notwendig sind.**
 
 Etwas ist passiert, was für Domänen-Experten wichtig ist.
 
-Eine {Entity](#entity) ist dafür verantwortlich, ihren Zustand und die
+Eine [Entity](#entity) ist dafür verantwortlich, ihren Zustand und die
 Regeln für ihren Lebenszyklus zu erfassen.  Aber wenn man die
 tatsächlichen Ursachen für die Änderung des Zustands kennen muss, ist
 das in der Regel nicht explizit in der Entity abgelegt, und es kann
