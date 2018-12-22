@@ -1,4 +1,4 @@
-# Bestandteil eines modellgetriebenen Designs
+# II Bestandteil eines modellgetriebenen Designs
 
 Diese Pattern stellen weit verbreitete Best Practices für
 objekt-orientiertes Designs im Hinblick auf domain-driven Design dar.
@@ -9,7 +9,7 @@ Details der einzelnen Modellelemente gibt den Entwicklern eine solide
 Plattform, um Modelle zu erforschen und in enger Abstimmung mit der
 Implementierung zu halten.
 
-# Layered Architecture {#layered-architectur}
+## Layered Architecture {#layered-architectur}
 
 *Dt.: Geschichte Architektur*
 
@@ -56,7 +56,7 @@ z.B. "Hexagonal Architecture", können ebenso gut oder besser dazu
 beitragen, dass unsere Umsetzungen des Domänenmodells Abhängigkeiten
 von und Referenzen zu anderen Systembelangen vermeiden.
 
-# Entities {#entity}
+## Entities {#entity}
 
 *Dt.: Entität, auch bekannt als Reference Objects*
 
@@ -93,7 +93,7 @@ Identität im Modell passen.**
 **Das Modell muss definieren, was es bedeutet, dasselbe Ding zu
 sein.**
 
-# Value Object {#value-object}
+## Value Object {#value-object}
 
 *Dt.: Wertobjekt*
 
@@ -196,7 +196,7 @@ werden.
 *[Domain Event](#domain-event) ist ein neuer Begriff, der nach dem
 blauen Buch aus dem Jahre 2004 entstanden ist.*
 
-## Services
+## Services {#service}
 
 *Dt.: Dienste*
 
@@ -303,7 +303,7 @@ hin?  Solche Änderungen verbessern oft die Aussagekraft und
 Flexibilität des Modells sowie die Lösung der Transaktions- und
 Verteilungsfragen.
 
-# Repositories {#repository}
+## Repositories {#repository}
 
 *Dt.: Repsitory*
 
