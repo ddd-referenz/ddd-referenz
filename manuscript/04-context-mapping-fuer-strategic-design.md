@@ -2,7 +2,7 @@
 
 ### Bounded Context
 
-Der [*Bounded Context*](#bounded-context) (dt.: begrenzter Kontext)
+Der [Bounded Context](#bounded-context) (dt.: begrenzter Kontext)
 ist eine Beschreibung
 einer Grenze (typischerweise ein Subsystem oder die Arbeit eines
 bestimmten Teams), innerhalb derer ein bestimmtes Modell definiert und
@@ -143,7 +143,7 @@ die beide Kontexte nicht übermäßig negativ beeinträchtigt.
 Außerdem ist ein klarer Prozess zur Steuerung der Integration
 erforderlich.  So kann beispielsweise eine spezielle Testsuite
 definiert werden, die zeigt, dass die Schnittstelle den Erwartungen
-des Client-Systems entspricht und die im Rahmen der [Contiuous
+des Client-Systems entspricht und die im Rahmen der [Continuous
 Integration](#continuous-integration) auf dem Serversystem ausgeführt
 werden kann.
 

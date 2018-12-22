@@ -179,7 +179,7 @@ bestimmten Knoten derzeit bekannt sind, was ein kohärentes Modell
 ermöglicht, wenn keine vollständigen Informationen über das System als
 Ganzes vorliegen.
 
-[Doamin Events](#domain-event) sind normalerweise unveränderlich, da
+[Doman Events](#domain-event) sind normalerweise unveränderlich, da
 sie eine Aufzeichnung von etwas in der Vergangenheit sind.  Zusätzlich
 zu einer Beschreibung des Ereignisses enthält ein Domänenereignis
 typischerweise einen Zeitstempel für den Zeitpunkt des Auftretens des
@@ -276,7 +276,7 @@ mehrere Server, oder beim Entwurf asynchroner Transaktionen.
 
 Deshalb:
 
-**Gruppiere die [Entities](#entity) und [Value Objects)[#value-object)
+**Gruppiere die [Entities](#entity) und [Value Objects)(#value-object)
 zu [Aggregates](#aggregate) und definiere Grenzen um diese herum.
 Wähle eine [Entity](#entity) als Wurzel jedes Aggregats und erlaube
 externen Objekten, nur Referenzen auf die Wurzel zu halten. Referenzen
@@ -331,7 +331,7 @@ Inneren eines [Aggregats](#aggregate) instanziieren, die
 Aggregatwurzel umgehen und es diesen Objekten unmöglich machen, die
 Regeln des Domänenmodells durchzusetzen. Die Domänenlogik verlagert
 sich in Abfragen und Code der Anwendungsschicht, und die
-[Entities](#entity] und [Value Objects](#value-object) werden zu
+[Entities](#entity) und [Value Objects](#value-object) werden zu
 reinen Datencontainern.
 
 Daher:
@@ -360,7 +360,7 @@ Objekte und den Zugriff auf die Objekte zu den
 *Dt.: Fabriken*
 
 Wenn die Erstellung eines gesamten, intern konsistenten
-[Aggregats](#aggregate) oder eines großen [Value
+[Aggregates](#aggregate) oder eines großen [Value
 Objects](#value-object) kompliziert wird oder zu viel von der internen
 Struktur enthüllt, bieten [Factories](#factory) eine Kapselung.
 
@@ -370,13 +370,13 @@ nicht in die Verantwortung der erstellten Objekte.  Die Kombination
 dieser Verantwortlichkeiten kann zu schwer verständlichen Designs
 führen.  Indem man den Client dazu bringt, das Objekt direkt zu
 erzeugen, durchbricht man die Einkapselung des erzeugten Objekts oder
-[Aggregats](#aggregate) und koppelt den Client zu stark  mit der
+[Aggregates](#aggregate) und koppelt den Client zu stark  mit der
 Implementierung des erstellten Objekts.
 
 Daher:
 
 **Verlagere die Verantwortung für das Erstellen von Instanzen
-komplexer Objekte und [Aggregats](#aggregate) auf ein separates
+komplexer Objekte und [Aggregates](#aggregate) auf ein separates
 Objekt, das selbst keine Verantwortung im Domänenmodell hat, aber
 dennoch Teil des Domänendesigns ist.  Stelle eine Schnittstelle zur
 Verfügung, die alle komplexen Erzeugungsmöglichkeiten kapselt und die

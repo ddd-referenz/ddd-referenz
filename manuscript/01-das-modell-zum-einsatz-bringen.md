@@ -3,7 +3,7 @@
 Domain-driven Design ist ein Ansatz für die Entwicklung komplexer
 Software, bei dem wir:
 
-1. Uns auf die die [Core Domain]{#core-domain} konzentrieren.
+1. Uns auf die die [Core Domain](#core-domain) konzentrieren.
 
 2. [Models](#model) in einer kreativen Zusammenarbeit von
    Domänen-Praktikern

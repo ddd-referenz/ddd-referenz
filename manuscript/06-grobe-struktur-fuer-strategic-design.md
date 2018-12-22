@@ -111,7 +111,7 @@ Verantwortlichkeiten.  Diese Verantwortlichkeiten sollten eine
 Geschichte über den Zweck und das Design deines Systems auf grober
 Ebene erzählen.  Refactoriere das Modell so, dass die
 Verantwortlichkeiten der einzelnen Domänenobjekte,
-[Aggregate](#aggregate) und Module genau in die Verantwortung einer
+[Aggregates](#aggregate) und Module genau in die Verantwortung einer
 Schicht passen.**
 
 ## Knowledge Level {#knowledge-level}
@@ -156,7 +156,7 @@ Wenn eine Vielzahl von Anwendungen zusammenarbeiten müssen, die alle
 auf den gleichen Abstraktionen basieren, aber unabhängig voneinander
 konzipiert sind, schränken Übersetzungen zwischen mehreren [Bounded
 Contexts](#bounded-context) die Integration ein.  Ein [Shared
-Kernel](#shared-kerbnel) ist nicht realisierbar für Teams, die nicht
+Kernel](#shared-kernel) ist nicht realisierbar für Teams, die nicht
 eng zusammenarbeiten.  Doppelte Arbeit und Fragmentierung erhöhen die
 Kosten für Entwicklung und Installation, und die Interoperabilität
 wird sehr schwierig.
