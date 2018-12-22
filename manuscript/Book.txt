@@ -4,4 +4,4 @@
 01-das-modell-zum-einsatz-bringen.md
 04-context-mapping-fuer-strategic-design.md
 05-destillieren-fuer-strategic-design.md
-
+06-grobe-struktur-fuer-strategic-design.md
