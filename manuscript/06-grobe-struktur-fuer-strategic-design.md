@@ -137,7 +137,7 @@ Daher:
 das Verhalten des Basismodells beschreiben und einschränken können.
 Halte diese Belange als zwei "Ebenen" getrennt: eine sehr
 konkrete, die andere spiegelt Regeln und Wissen wider, die ein
-Benutzer oder Superuser anpassen kann.
+Benutzer oder Superuser anpassen kann.**
 
 (siehe Fowler, M. 1997.  Analysis Patterns: Reusable Object Models,
 Addison-Wesley.)

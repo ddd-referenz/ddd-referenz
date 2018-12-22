@@ -133,7 +133,7 @@ Entitäten notwendig sind.**
 
 Etwas ist passiert, was für Domänen-Experten wichtig ist.
 
-Eine {Entity}(#entity) ist dafür verantwortlich, ihren Zustand und die
+Eine {Entity](#entity) ist dafür verantwortlich, ihren Zustand und die
 Regeln für ihren Lebenszyklus zu erfassen.  Aber wenn man die
 tatsächlichen Ursachen für die Änderung des Zustands kennen muss, ist
 das in der Regel nicht explizit in der Entity abgelegt, und es kann
@@ -276,7 +276,7 @@ mehrere Server, oder beim Entwurf asynchroner Transaktionen.
 
 Deshalb:
 
-**Gruppiere die [Entities](#entity) und [Value Objects)(#value-object)
+**Gruppiere die [Entities](#entity) und [Value Objects](#value-object)
 zu [Aggregates](#aggregate) und definiere Grenzen um diese herum.
 Wähle eine [Entity](#entity) als Wurzel jedes Aggregats und erlaube
 externen Objekten, nur Referenzen auf die Wurzel zu halten. Referenzen
@@ -349,7 +349,7 @@ Attributwerte den Kriterien entsprechen, wodurch die eigentliche
 Speicher- und Abfragetechnologie gekapselt wird, oder gibt Proxies
 zurück, die die Illusion von vollständig instanziierten Aggregaten
 vermitteln, aber die Daten lazy nachladen.  Stelle
-[Repositories}(#repository) nur für die Wurzeln der Aggregates bereit,
+[Repositories](#repository) nur für die Wurzeln der Aggregates bereit,
 die tatsächlich direkten Zugriff benötigen.  Halte die Anwendungslogik
 auf das Modell fokussier tund delegiere die gesamte Speicherung der
 Objekte und den Zugriff auf die Objekte zu den
