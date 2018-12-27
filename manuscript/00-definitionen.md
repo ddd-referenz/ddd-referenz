@@ -2,7 +2,7 @@
 
 ### Domain {#domain}
 
-Ein Bereich von Wissens, Einfluss oder Aktivität.  Das Fachgebiet, auf
+Ein Bereich von Wissen, Einfluss oder Aktivität. Das Fachgebiet, auf
 das der Benutzer ein Programm anwendet, ist die *Domain* (dt.: Domäne)
 der Software.
 
