@@ -1,33 +1,29 @@
-# I Das Modell zum Einsatz bringen
+# I. Das Modell zum Einsatz bringen
 
 Domain-driven Design ist ein Ansatz für die Entwicklung komplexer
 Software, bei dem wir:
 
-1. Uns auf die die [Core Domain](#core-domain) konzentrieren.
+1. Uns auf die [Core Domain](#core-domain) konzentrieren.
 
-2. [Models](#model) in einer kreativen Zusammenarbeit von
-   Domänen-Praktikern
-und Software-Praktikern erkunden.
+2. [Modelle](#model) in einer kreativen Zusammenarbeit von
+   Domänen-Praktikern und Software-Praktikern erkunden.
 
 3. Eine [Ubiquituous Language](#ubiquituous-language) in einem
-   [Bounded Context](#bounded-context) sprechen.
+   expliziten [Bounded Context](#bounded-context) sprechen.
 
-Diese Zusammenfassung von DDD in drei Punkten hängt von der Definition
-der
-Begriffe ab, die in dieser Broschüre definiert sind.
+Diese Zusammenfassung von DDD in drei Punkten stützt sich auf die 
+Definition der Begriffe ab, die in dieser Broschüre definiert sind.
 
-Viele Projekte arbeiten mit Modellen, ohne am Ende einen echten Nutzen
-zu erzielen.  Die DDD-Patterns stellen erfolgreiche Praktiken aus
-Projekten dar, bei denen die Modellierung erhebliche Vorteile gebracht
-hat.  Zusammen angewendet stellen sie einen ganz anderen Ansatz für
-die
-Modellierung und Softwareentwicklung vor, der von feinen Details bis
-hin
-zu High-Level-Visionen reicht. Strenge
-Konventionen für die Modellierung müssen gegen das freie Erforschen von
+Viele Projekte betreiben Modellierung, ohne am Ende einen echten Nutzen
+zu erzielen. Die Muster von DDD stellen erfolgreiche Praktiken aus
+Projekten dar, bei denen die Modellierung drastische Vorteile gebracht
+hat. Zusammen angewendet stellen sie einen ganz anderen Ansatz für
+die Modellierung und Softwareentwicklung vor, der von kleinen Details 
+bis hin zur übergreifenden Vision reicht. Strenge Konventionen für die 
+Modellierung müssen gegen das freie Erforschen von
 Modellen zusammen mit nicht-technischen Personen abgewogen werden.
-Taktik und Strategie müssen kombiniert werden, um erfolgreich zu sein und
-DDD befasst sich sowohl mit taktischem als auch mit strategischem
+Taktik und Strategie müssen kombiniert werden, um erfolgreich zu sein 
+und DDD befasst sich sowohl mit taktischem als auch mit strategischem
 Design.
 
 ## Bounded Context {#bounded-context}
@@ -35,36 +31,35 @@ Design.
 *dt.: Begrenzter Kontext*
 
 *Bei jedem großen Projekt sind mehrere Modelle im Spiel.* Sie
-entstehen aus vielen Gründen.  Zwei Subsysteme bedienen in der Regel
+entstehen aus vielen Gründen. Zwei Subsysteme bedienen in der Regel
 sehr unterschiedliche Benutzergruppen mit unterschiedlichen Aufgaben,
-wobei unterschiedliche Modelle sinnvoll sein können.  Selbständig
+wobei unterschiedliche Modelle sinnvoll sein können. Selbständig
 arbeitende Teams können das gleiche Problem durch mangelnde
-Kommunikation auf unterschiedliche Weise lösen.  Auch können die
-benutzten Werkzeuge
-unterschiedlich sein, so dass Programmcode nicht gemeinsam
-genutzt werden kann.
+Kommunikation auf unterschiedliche Weise lösen. Auch können die
+benutzten Werkzeuge unterschiedlich sein, so dass Programmcode nicht 
+gemeinsam genutzt werden kann.
 
 Mehrere Modelle sind unvermeidlich, aber wenn Code, der auf
 verschiedenen Modellen basiert, kombiniert wird, wird Software
-fehlerhaft, unzuverlässig und schwer verständlich.  Die Kommunikation
-zwischen den Teammitgliedern wird konfus.  Oft ist unklar, in
+fehlerhaft, unzuverlässig und schweirig verständlich. Die Kommunikation
+zwischen den Teammitgliedern wird konfus. Oft ist unklar, in
 welchem Zusammenhang ein Modell nicht angewendet werden soll.
 
-Ausdrücke aus dem Modells haben, wie jede andere Formulierung auch,
-nur im [Context](#context) eine Bedeutung.
+Ausdrücke aus dem Modell haben, wie jede andere Formulierung auch,
+nur im [Kontext](#context) eine Bedeutung.
 
 Daher:
 
-**Definiere explizit den Kontext, in dem ein Modell angewendet wird.
-Lege explizit die Grenzen bezüglich  Teamorganisation, 
-Verwendung innerhalb bestimmter Teile der Anwendung und
-physischen Umsetzungen wie Codebasen und Datenbankschemata fest.  Wende
+**Definiere explizit den Kontext, in dem ein Modell Anwendung findet.
+Lege explizit die Grenzen bezüglich Teamorganisation, Verwendung 
+innerhalb bestimmter Teile der Anwendung und
+physischen Umsetzungen wie Codebasen und Datenbankschemata fest. Wende
 [Continuous Integration](#continuous-integration) an, um
-Modellkonzepte und -begriffe innerhalb
-dieser Grenzen strickt konsistent zu halten, lass dich aber nicht von
-Problemen außerhalb ablenken oder verwirren.  Standardisiere
-einen Entwicklungsprozess innerhalb des Kontextes, der nicht
-anderswo verwendet werden muss.**
+Modellkonzepte und -begriffe innerhalb dieser Grenzen strikt konsistent 
+zu halten, lass dich aber nicht von
+Problemen außerhalb ablenken oder verwirren. Standardisiere
+einen einzigen Entwicklungsprozess innerhalb des Kontextes, der
+anderswo nicht verwendet werden muss.**
 
 ## Ubiquituos Language {#ubiquituous-language}
 
