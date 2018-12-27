@@ -3,8 +3,6 @@
 {id="fig-ueberblick"}
 ![Überblick über die Pattern-Sprache](images/ddd-referenz-ueberblick.png)
 
-- Model-driven Design -> Model-Driven Design
-- Customer/Supplier Teams fehlt
 - drückt Modell aus -> drück Modell aus
 - isoliere eine Domäne mit -> isoliere Domäne mit
 - leite Änderungen weiter mit
