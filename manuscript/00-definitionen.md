@@ -1,4 +1,4 @@
-# Definitionen
+## Definitionen
 
 ### Domain {#domain}
 
