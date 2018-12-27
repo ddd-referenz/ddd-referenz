@@ -1,4 +1,4 @@
-# Überblick über die Pattern-Sprache
+# Überblick über die Muster-Sprache
 
 {id="fig-ueberblick"}
-![Überblick über die Pattern-Sprache](images/ddd-referenz-ueberblick.png)
+![Überblick über die Muster-Sprache](images/ddd-referenz-ueberblick.png)
