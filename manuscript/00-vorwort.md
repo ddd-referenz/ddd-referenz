@@ -1,4 +1,4 @@
-# Danksagungen
+## Danksagungen
 
 Es ist nun über zehn Jahre her, dass mein Buch "Domain-Driven Design,
 Tackling Complexity in the Heart of Software" (oder "The Big Blue Book"
