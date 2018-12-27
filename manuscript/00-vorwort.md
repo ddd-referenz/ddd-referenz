@@ -10,7 +10,7 @@ weil intelligente und innovative Leute die Dinge immer wieder
 drastisch geändert haben. Ich möchte diesen Leuten danken.
 
 Beginnen möchte ich mich mit einem Dank für CQRS und Event Sourcing an
-Greg Young, Udi Dahan und den Menschen, die sich von ihnen haben
+Greg Young, Udi Dahan und den Leuten, die sich von ihnen haben
 inspirieren lassen. Das sind heute recht weit verbreitete Ansätze für
 die Architektur eines DDD-Systems. Dies war die erste gelungene große
 Abkehr vom engen Blick auf die Architektur aus der Jahrhundertwende.
@@ -25,7 +25,7 @@ Verbreitung finden.
 Ich möchte auch den Leuten und der Community danken, die unser
 technisches Ökosystem in den letzten Jahren so revolutioniert haben,
 dass DDD viel mehr Spaß macht und viel praktischer ist. Die meisten
-dieser Menschen haben ein geringes Interesse an DDD, aber ihre Arbeit
+dieser Leute haben ein geringes Interesse an DDD, aber ihre Arbeit
 hat uns enorm geholfen. Ich denke insbesondere an die Freiheit, die
 NoSQL uns bringt, die kompaktere Ausdrucksweise neuer
 Programmiersprachen (einige davon funktional) und der unerbittlichen
@@ -42,7 +42,7 @@ haben. Das erste Buch über DDD nach meinem hat Jimmy Nilsson
 geschrieben. Mit einem Buch hast du ein Buch. Mit zweien hast du ein
 Thema. Als nächstes veröffentlichte InfoQ "DDD Quickly", das aufgrund
 seiner Kürze, seiner Verfügbarkeit als kostenloser Download und der
-Reichweite von InfoQ vielen Menschen einen ersten Eindruck von dem
+Reichweite von InfoQ vielen Leuten einen ersten Eindruck von dem
 Thema gab. Die Jahre vergingen, und es gab viele wertvolle
 Blogartikel und andere kurze Artikel. Es gab auch Fachbücher wie "DDD
 with Naked Objects". Und ich möchte mich besonders beim
@@ -53,9 +53,9 @@ Jahr veröffentlichte Vaughn Vernon das ehrgeizigste Buch seit meinem
 eigenen, "Implementing Domain-Driven Design" (das einige scheinbar "The
 Big Red Book" nennen, das große rote Buch).
 
-Ich bedauere sehr, dass ich viele Menschen, die wichtige Beiträge
+Ich bedauere sehr, dass ich viele Leute, die wichtige Beiträge
 geleistet haben, nicht erwähnen werde, und das tut mir wirklich leid.
-Lassen Sie mich zumindest ein pauschales Dankeschön an die Menschen
+Lassen Sie mich zumindest ein pauschales Dankeschön an die Leute
 richten, die DDD in die Öffentlichkeit gedrängt haben und an
 diejenigen, die DDD in stille Winkel von Unternehmen gedrängt haben.
 Es braucht Tausende von Vorkämpfern, bis eine Softwarephilosophie
