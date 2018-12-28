@@ -87,3 +87,27 @@ Viele deklarative Ansätze können korrumpiert werden, wenn die Entwickler sie a
 Sobald Ihr Entwurf über intention-revealing Interfaces, side-effect-free Functions und Assertions verfügt, begeben Sie sich in deklaratives Gebiet. Viele der Vorteile des Declarative Designs werden erzielt, sobald Sie kombinierbare Elemente haben, die ihre Bedeutung kommunizieren, und die charakteristische oder offensichtliche Effekte oder gar keine beobachtbaren Effekte haben.
 
 Ein flexibles Design kann es dem Kundencode ermöglichen, einen deklarativen Designstil zu verwenden. Zur Veranschaulichung werden im nächsten Abschnitt einige der Muster in diesem Kapitel zusammengefasst, um die Spezifikation flexibler und deklarativer zu gestalten.
+
+## Arbeiten auf Basis etablierter Formalismen
+
+Ein enges konzeptionelles Framework von Grund auf zu schaffen, ist etwas, was man nicht jeden Tag tun kann. Manchmal entdeckt und verfeinert man eines davon im Laufe des Lebens eines Projekts. Aber Ihr könnt oft konzeptionelle Systeme verwenden und anpassen, die in Eurer oder anderen fachlichen Domänen seit langem etabliert sind. Einige von denen wurden eventuell sogar über Jahrhunderte hinweg verfeinert und destilliert. Viele Geschäftsanwendungen betreffen z.B. das Rechnungswesen. Das Rechnungswesen definiert ein gut entwickeltes Set von Einheiten und Regeln, die eine einfache Anpassung an ein tiefgehendes Modell und ein flexibles Design ermöglichen.
+
+Es gibt viele solcher formalisierten konzeptionellen Rahmen, aber mein persönlicher Favorit ist die Mathematik. Es ist überraschend, wie nützlich es sein kann, eine gewisse Wendung in der Grundrechenart herauszuziehen. Viele Domänen beinhalten Mathematik irgendwo. Such danach, Grab es aus. Spezialisierte Mathematik ist sauber, kombinierbar mit klaren Regeln, und die Menschen finden sie leicht zu verstehen.
+
+Ein praktisches Beispiel, "Shares Math", wurde in Kapitel 8 des Buches, Domain-Driven Design, diskutiert.
+
+## Conceptual Contours
+
+*Dt.: Konzeptionelle Konturen*
+
+Manchmal favorisieren Leute einen feingranularen Schnitt der Funktionalität, um eine flexible Kombination zu ermöglichen. Manchmal favorisieren sie einen eher grobgranularen Schnitt, um die Komplexität zu kapseln. Manchmal streben sie nach einer konsistenten Granularität, wodurch alle Klassen und Operationen in ähnlicher Größenordnung durchgeführt werden. Das sind übertriebene Vereinfachungen, die als allgemeine Regeln nicht gut funktionieren. Aber sie sind durch grundlegende Probleme motiviert.
+
+Wenn Elemente eines Modells oder Designs in ein monolithisches Konstrukt eingebettet sind, wird deren Funktionalität dupliziert. Die externe Schnittstelle sagt nicht alles, was einem Kunden wichtig sein könnte. Ihre Bedeutung ist schwer zu verstehen, da verschiedene Konzepte miteinander vermischt werden.
+
+Umgekehrt kann die Zerlegung von Klassen und Methoden den Client sinnlos verkomplizieren, indem sie Clients dazu zwingt, zu verstehen, wie kleine Teile zusammenpassen. Schlimmer noch, ein Konzept kann völlig verloren gehen. Die Hälfte eines Uranatoms ist nicht Uran. Und natürlich zählt nicht nur die Korngröße, sondern auch die Art und Weise, wie das Korn läuft.
+
+Daher:
+
+**Zerlege die Designelemente (Funktionen, Interfaces, Klassen und Aggregates) in zusammenhängende Einheiten, wobei Du Deine Intuition der wichtigen Teilbereiche in der Domäne berücksichtigst. Beobachte die Achsen von Veränderung und Stabilität durch sukzessives Refactoring und suche nach den zugrunde liegenden konzeptionellen Konturen, die diese Schermuster erklären. Richte das Modell auf die konsistenten Aspekte der Domäne aus, die es überhaupt zu einem lebensfähigen Wissensgebiet machen.**
+
+Ein flexibles Design, das auf einem tiefgehenden Modell basiert, ergibt eine einfache Reihe von Schnittstellen, die sich logisch kombinieren, um sinnvolle Aussagen in der Ubiquitous Language zu treffen, ohne die Ablenkung und den Wartungsaufwand irrelevanter Optionen.
