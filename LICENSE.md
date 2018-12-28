@@ -79,9 +79,9 @@ rechtlichen Schutz von Datenbanken in der jeweils gültigen Fassung
 bzw. deren Nachfolgeregelungen, sowie andere im Wesentlichen
 funktionsgleiche Rechte anderswo auf der Welt.
 
-k. Sie bezeichnet die natürliche oder juristische Person, die von
+k. **Sie** bezeichnet die natürliche oder juristische Person, die von
 lizenzierten Rechten unter der vorliegenden Public License Gebrauch
-macht. Ihr bzw. Ihre hat die entsprechende Bedeutung.
+macht. **Ihr bzw. Ihre** hat die entsprechende Bedeutung.
 
 ## Abschnitt 2 - Umfang
 
@@ -92,22 +92,22 @@ a. **Lizenzgewährung**
      unterlizenzierbare, nicht-ausschließliche, unwiderrufliche Lizenz
      zur Ausübung der lizenzierten Rechte am lizenzierten Material,
      um:
-   
-    A. das lizenzierte Material ganz oder in Teilen zu vervielfältigen
-    und weiterzugeben; und
+    
+	 A. das lizenzierte Material ganz oder in Teilen zu vervielfältigen
+     und weiterzugeben; und
+	 
+	 B. abgewandeltes Material zu erstellen, zu vervielfältigen und
+     weiterzugeben.
 	
-	B. abgewandeltes Material zu erstellen, zu vervielfältigen und
-    weiterzugeben.
-	
-  2. ____Ausnahmen und Beschränkungen.____ Es sei klargestellt, dass, wo immer
+  2. _Ausnahmen und Beschränkungen._ Es sei klargestellt, dass, wo immer
      gesetzliche Ausnahmen und Beschränkungen auf Ihre Nutzung
      Anwendung finden, die vorliegende Public License nicht anwendbar
      ist und Sie insoweit ihre Bedingungen nicht einhalten müssen.
 	 
-  3. ____Laufzeit.____ Die Laufzeit der vorliegenden Public License
+  3. _Laufzeit._ Die Laufzeit der vorliegenden Public License
      wird in Abschnitt 6(a) geregelt.
 	 
-  4. ____Medien und Formate;____ Gestattung technischer
+  4. _Medien und Formate;_ Gestattung technischer
      Modifikationen. Der Lizenzgeber erlaubt Ihnen, die lizenzierten
      Rechte in allen bekannten und zukünftig entstehenden Medien und
      Formaten auszuüben und die dafür notwendigen technischen
@@ -121,26 +121,26 @@ a. **Lizenzgewährung**
      Material, soweit lediglich Modifikationen vorgenommen werden, die
      nach diesem Abschnitt 2(a)(4) zulässig sind.
 	 
-  5. ____Nachfolgende Empfänger____
+  5. _Nachfolgende Empfänger_
 
-    A. ____Angebot des Lizenzgebers - Lizenziertes Material.____ Jeder
-    Empfänger des lizenzierten Materials erhält automatisch ein
-    Angebot des Lizenzgebers, die lizenzierten Rechte unter den
-    Bedingungen der vorliegenden Public License auzuüben.
+     A. _Angebot des Lizenzgebers - Lizenziertes Material._
+     Jeder Empfänger des lizenzierten Materials erhält automatisch ein
+     Angebot des Lizenzgebers, die lizenzierten Rechte unter den
+     Bedingungen der vorliegenden Public License auzuüben.
 	
-    B. ____Keine Beschränkungen für nachfolgende Empfänger.____ Sie
-    dürfen keine zusätzlichen oder abweichenden Bedingungen fordern
-    oder das lizenzierte Material mit solchen belegen oder darauf
-    wirksame technische Maßnahmen anwenden, sofern dadurch die
-    Ausübung der lizenzierten Rechte durch Empfänger des lizenzierten
-    Materials eingeschränkt wird.
+     B. _Keine Beschränkungen für nachfolgende Empfänger._ Sie
+     dürfen keine zusätzlichen oder abweichenden Bedingungen fordern
+     oder das lizenzierte Material mit solchen belegen oder darauf
+     wirksame technische Maßnahmen anwenden, sofern dadurch die
+     Ausübung der lizenzierten Rechte durch Empfänger des lizenzierten
+     Materials eingeschränkt wird.
 	
-    6. ____Inhaltliche Indifferenz.____ Die vorliegende Public License
-       begründet nicht die Erlaubnis, zu behaupten oder den Eindruck
-       zu erwecken, dass Sie oder Ihre Nutzung des lizenzierten
-       Materials mit dem Lizenzgeber oder den Zuschreibungsempfängern
-       gemäß Abschnitt 3(a)(1)(A)(i) in Verbindung stehen oder durch
-       ihn gefördert, gutgeheißen oder offiziell anerkannt werden.
+  6. _Inhaltliche Indifferenz._ Die vorliegende Public License
+     begründet nicht die Erlaubnis, zu behaupten oder den Eindruck zu
+     erwecken, dass Sie oder Ihre Nutzung des lizenzierten Materials
+     mit dem Lizenzgeber oder den Zuschreibungsempfängern gemäß
+     Abschnitt 3(a)(1)(A)(i) in Verbindung stehen oder durch ihn
+     gefördert, gutgeheißen oder offiziell anerkannt werden.
 	   
 b. **Sonstige Rechte**
 
@@ -173,29 +173,29 @@ a. **Namensnennung**
   1. Wenn Sie das lizenzierte Material weitergeben (auch in
      veränderter Form), müssen Sie:
 
-    A. die folgenden Angaben beibehalten, soweit sie vom Lizenzgeber
-    dem lizenzierten Material beigefügt wurden:
+     A. die folgenden Angaben beibehalten, soweit sie vom Lizenzgeber
+     dem lizenzierten Material beigefügt wurden:
 	
-      i. die Bezeichnung der/des Ersteller(s) des lizenzierten
-      Materials und anderer, die für eine Namensnennung vorgesehen
-      sind (auch durch Pseudonym, falls angegeben), in jeder durch den
-      Lizenzgeber verlangten Form, die angemessen ist;
+       i. die Bezeichnung der/des Ersteller(s) des lizenzierten
+       Materials und anderer, die für eine Namensnennung vorgesehen
+       sind (auch durch Pseudonym, falls angegeben), in jeder durch den
+       Lizenzgeber verlangten Form, die angemessen ist;
 	  
-	  ii. einen Copyright-Vermerk;
+	   ii. einen Copyright-Vermerk;
 	  
-	  iii. einen Hinweis auf die vorliegende Public License;
+  	   iii. einen Hinweis auf die vorliegende Public License;
 	  
-	  iv. einen Hinweis auf den Haftungsausschluss;
+	   iv. einen Hinweis auf den Haftungsausschluss;
 	  
-	  v. soweit vernünftigerweise praktikabel einen URI oder Hyperlink
-      zum lizenzierten Material;
+	   v. soweit vernünftigerweise praktikabel einen URI oder Hyperlink
+       zum lizenzierten Material;
 	  
-    B. angeben, ob Sie das lizenzierte Material verändert haben, und
-    alle vorherigen Änderungsangaben beibehalten; und
+     B. angeben, ob Sie das lizenzierte Material verändert haben, und
+     alle vorherigen Änderungsangaben beibehalten; und
 	
-	C. angeben, dass das lizenzierte Material unter der vorliegenden
-    Public License steht, und deren Text oder URI oder einen Hyperlink
-    darauf beifügen.
+	 C. angeben, dass das lizenzierte Material unter der vorliegenden
+     Public License steht, und deren Text oder URI oder einen Hyperlink
+     darauf beifügen.
 	
   2. Sie dürfen die Bedingungen des Abschnitts 3(a)(1) in jeder
      angemessenen Form erfüllen, je nach Medium, Mittel und Kontext in
