@@ -1,10 +1,10 @@
-# III Anpassbares Design
+# III Flexibles Design
 
-Ein Projekt, welches im Laufe der Entwicklung Fahrt aufnehmen kann - anstatt durch sein eigenes Erbe belastet zu werden - erfordert ein Design, mit dem man gerne arbeitet und das zum Wandel einlädt. Ein anpassbares Design.
+Ein Projekt, welches im Laufe der Entwicklung Fahrt aufnehmen kann - anstatt durch sein eigenes Erbe belastet zu werden - erfordert ein Design, mit dem man gerne arbeitet und das zum Wandel einlädt. Ein flexibles Design.
 
-Anpassbares Design ist eine Ergänzung zur tiefgehenden Modellierung.
+Flexibles Design ist eine Ergänzung zur tiefgehenden Modellierung.
 
-Entwickler spielen hierbei zwei Rollen, von denen jede durch das Design bedient werden muss. Die gleiche Person könnte durchaus beide Rollen spielen - sogar innerhalb von Minuten hin und her wechseln - aber die Beziehung zum Code ist dennoch unterschiedlich. Eine Rolle ist der Entwickler eines Clients, der die Domänenobjekte in den Anwendungscode oder einen anderen Domänenschichtcode einbindet und dabei die Möglichkeiten des Designs nutzt. Ein anpassbares Design offenbart ein tiefes Grundmodell, das sein Potenzial deutlich macht. Die Client-Entwicklerin kann flexibel einen minimalen Satz lose gekoppelter Konzepte verwenden, um eine Reihe von Szenarien in der Domäne auszudrücken. Designelemente passen auf natürliche Weise zusammen, mit einem Ergebnis, das vorhersehbar, klar charakterisiert und robust ist.
+Entwickler spielen hierbei zwei Rollen, von denen jede durch das Design bedient werden muss. Die gleiche Person könnte durchaus beide Rollen spielen - sogar innerhalb von Minuten hin und her wechseln - aber die Beziehung zum Code ist dennoch unterschiedlich. Eine Rolle ist der Entwickler eines Clients, der die Domänenobjekte in den Anwendungscode oder einen anderen Domänenschichtcode einbindet und dabei die Möglichkeiten des Designs nutzt. Ein flexibles Design offenbart ein tiefes Grundmodell, das sein Potenzial deutlich macht. Die Client-Entwicklerin kann flexibel einen minimalen Satz lose gekoppelter Konzepte verwenden, um eine Reihe von Szenarien in der Domäne auszudrücken. Designelemente passen auf natürliche Weise zusammen, mit einem Ergebnis, das vorhersehbar, klar charakterisiert und robust ist.
 
 Ebenso wichtig ist, dass das Design dem Entwickler dienen muss, der daran arbeitet, es zu ändern. Um offen für Veränderungen zu sein, muss ein Design leicht verständlich sein und das gleiche zugrunde liegende Modell offenbaren, auf das der Client-Entwickler zurückgreift. Es muss den Konturen eines tiefen Modells der Domäne folgen, so dass die meisten Änderungen das Design an flexiblen Punkten biegen. Die Auswirkungen des Codes müssen transparent sein, so dass die Folgen einer Änderung leicht zu antizipieren sind.
 
@@ -71,3 +71,19 @@ Daher:
 Dieses Muster wird am häufigsten auf die Operationen eines Value-Objects angewendet. Da der Lebenszyklus einer Entity eine Bedeutung in der Domäne hat, kann man nicht einfach ein neue erzeugen, um eine Frage zu beantworten. Es gibt Vorgänge, die unter einem Entitätstyp abgeschlossen sind. Sie können ein Mitarbeiterobjekt nach seinem Vorgesetzten fragen und einen anderen Mitarbeiter zurückholen. Aber im Allgemeinen sind Entities nicht die Art von Konzepten, die wahrscheinlich das Ergebnis einer Berechnung sind. Dies ist also in den meisten Fällen eine Gelegenheit, nach Value Objects Ausschau zu halten.
 
 Manchmal kommt man auf halbem Weg zu diesem Muster. Das Argument passt zum Implementierer, aber der Rückgabetyp ist unterschiedlich, oder der Rückgabetyp passt zum Empfänger und das Argument ist unterschiedlich. Diese Funktionen sind nicht geschlossen, aber sie bieten einen Teil des Vorteils der Schließung, indem sie den Geist befreien.
+
+## Declarative Design {#declarative-design}
+
+*Dt.: Deklaratives Design*
+
+Es kann keine wirklichen Garantien in prozeduraler Software geben. Um nur eine Möglichkeit zu nennen, Assertions zu umgehen, könnte Code zusätzliche Seiteneffekte haben, die nicht ausdrücklich ausgeschlossen wurden. Egal wie modellgetrieben unser Design ist, wir schreiben immer noch Prozeduren, um die Wirkung der konzeptionellen Interaktionen zu erzeugen. Und wir verbringen einen Großteil unserer Zeit damit, Boilerplate Code zu schreiben, der keine wirkliche Bedeutung oder Verhalten hat. Intention-revaling Interfaces und die anderen Patterns in diesem Kapitel helfen, aber sie können konventionellen objektorientierten Programmen niemals formale Strenge verleihen.
+
+Dies sind einige der Motivationen für Declarative Design. Dieser Begriff bedeutet verschiedenen Menschen unterschiedliche Dinge, aber normalerweise zeigt er einen Weg an, ein Programm oder einen Teil eines Programms als eine Art ausführbare Spezifikation zu schreiben. Eine sehr genaue Beschreibung der Eigenschaften steuert die Software tatsächlich. In seinen verschiedenen Herangehensweisen könnte dies durch Reflection oder zur Kompilierzeit durch Codegenerierung (automatische Erzeugung von konventionellem Code auf der Grundlage der Deklaration) geschehen. Dieser Ansatz ermöglicht es einem anderen Entwickler, die Deklaration zum Nennwert zu nehmen. Es ist eine absolute Garantie.
+
+Viele deklarative Ansätze können korrumpiert werden, wenn die Entwickler sie absichtlich oder unabsichtlich umgehen. Dies ist wahrscheinlich, wenn das System schwer zu bedienen oder zu restriktiv ist. Jeder muss die Regeln des Rahmens befolgen, um die Vorteile eines deklarativen Programms zu nutzen.
+
+### Ein deklarativer Design-Stil
+
+Sobald Ihr Entwurf über intention-revealing Interfaces, side-effect-free Functions und Assertions verfügt, begeben Sie sich in deklaratives Gebiet. Viele der Vorteile des Declarative Designs werden erzielt, sobald Sie kombinierbare Elemente haben, die ihre Bedeutung kommunizieren, und die charakteristische oder offensichtliche Effekte oder gar keine beobachtbaren Effekte haben.
+
+Ein flexibles Design kann es dem Kundencode ermöglichen, einen deklarativen Designstil zu verwenden. Zur Veranschaulichung werden im nächsten Abschnitt einige der Muster in diesem Kapitel zusammengefasst, um die Spezifikation flexibler und deklarativer zu gestalten.
