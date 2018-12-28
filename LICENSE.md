@@ -174,21 +174,21 @@ a. **Namensnennung**
      veränderter Form), müssen Sie:
 
      A. die folgenden Angaben beibehalten, soweit sie vom Lizenzgeber
-     dem lizenzierten Material beigefügt wurden:
+        dem lizenzierten Material beigefügt wurden:
 	
-       i. die Bezeichnung der/des Ersteller(s) des lizenzierten
-       Materials und anderer, die für eine Namensnennung vorgesehen
-       sind (auch durch Pseudonym, falls angegeben), in jeder durch den
-       Lizenzgeber verlangten Form, die angemessen ist;
+        i. die Bezeichnung der/des Ersteller(s) des lizenzierten
+        Materials und anderer, die für eine Namensnennung vorgesehen
+        sind (auch durch Pseudonym, falls angegeben), in jeder durch den
+        Lizenzgeber verlangten Form, die angemessen ist;
 	  
-	   ii. einen Copyright-Vermerk;
+	    ii. einen Copyright-Vermerk;
 	  
-  	   iii. einen Hinweis auf die vorliegende Public License;
+   	    iii. einen Hinweis auf die vorliegende Public License;
 	  
-	   iv. einen Hinweis auf den Haftungsausschluss;
+	    iv. einen Hinweis auf den Haftungsausschluss;
 	  
-	   v. soweit vernünftigerweise praktikabel einen URI oder Hyperlink
-       zum lizenzierten Material;
+	    v. soweit vernünftigerweise praktikabel einen URI oder Hyperlink
+        zum lizenzierten Material;
 	  
      B. angeben, ob Sie das lizenzierte Material verändert haben, und
      alle vorherigen Änderungsangaben beibehalten; und
