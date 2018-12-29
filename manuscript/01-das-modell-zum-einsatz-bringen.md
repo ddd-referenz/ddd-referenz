@@ -8,7 +8,7 @@ Software, bei dem wir:
 2. [Modelle](#model) in einer kreativen Zusammenarbeit von
    Domänen-Praktikern und Software-Praktikern erkunden.
 
-3. Eine [Ubiquituous Language](#ubiquituous-language) in einem
+3. Eine [Ubiquitous Language](#ubiquitous-language) in einem
    expliziten [Bounded Context](#bounded-context) sprechen.
 
 Diese Zusammenfassung von DDD in drei Punkten stützt sich auf die 
@@ -61,7 +61,7 @@ Problemen außerhalb ablenken oder verwirren. Standardisiere
 einen einzigen Entwicklungsprozess innerhalb des Kontextes, der
 anderswo nicht verwendet werden muss.**
 
-## Ubiquituos Language {#ubiquituous-language}
+## Ubiquitous Language {#ubiquitous-language}
 
 *dt.: allgegenwärtige Sprache*
 
@@ -86,12 +86,12 @@ Modellierung untergräbt.  Wenn das Modell nur dazu dient,
 UML-Diagramme für die Techniker im Team zu erstellen, dann trägt es
 nicht zur kreativen Zusammenarbeit, dem Kern von DDD, bei.
 
-Domain-Experten verwenden ihren Fachjargon, während die Techniker im
+Domänenexperten verwenden ihren Fachjargon, während die Techniker im
 Team ihre eigene Sprache haben, um die Domäne beim Design
-zu diskutieren. Die Terminologie in dnr täglichen Diskussionen ist von
+zu diskutieren. Die Terminologie in den täglichen Diskussionen ist von
 der im Code verwendeten Terminologie abgetrennt (letztendlich dem
 wichtigsten
-Produkt eines Softwareprojekts).  Und selbst die gleiche
+Produkt eines Softwareprojekts). Und selbst die gleiche
 Person verwendet unterschiedliche Sprachen in Wort und Schrift, so
 dass die prägnantesten Ausdrücke der Domäne oft in einer flüchtigen
 Form entstehen, die nie im Code oder gar schriftlich erfasst wird.
@@ -109,11 +109,11 @@ achten, die das Design stören.
 
 Spielt mit dem Modell, während ihr über das System sprecht. Beschreibt
 Szenarien *laut* mit Hilfe der Elemente und Interaktionen aus dem Modell
-und kombiniere dabei Konzepte so, wie es das Modell erlaubt. Findet
+und kombiniert dabei Konzepte so, wie es das Modell erlaubt. Findet
 einfachere Wege, um zu sagen, was ihr sagen wollt, und übertragt diese
 neuen Ideen dann wieder zurück in die Diagramme und den Code.
 
-Mit einer [Ubiquituous Language](#ubiquituous-language) ist das Modell
+Mit einer [Ubiquitous Language](#ubiquitous-language) ist das Modell
 nicht nur ein
 Design-Artefakt. Es wird zu einem integralen Bestandteil von allem,
 was die Entwickler und Fachexperten gemeinsam tun.
@@ -136,7 +136,7 @@ ist.**
 experimentierst, die alternative Modelle widerspiegeln. Dann
 überarbeite den Code und benenne Klassen, Methoden und Module um, so
 dass sie
-dem neuen Modell entsprechen.  Löse Verwirrung über Begriffe in einem
+dem neuen Modell entsprechen. Löse Verwirrung über Begriffe in einem
 Gespräch auf, und zwar in der Art und Weise, wie wir uns über die
 Bedeutung gewöhnlicher Wörter einigen.**
 
@@ -160,7 +160,7 @@ Daher:
 **Etabliere einen Prozesses, bei dem alle Code- und alle andere
   Implementierungsartefakte regelmäßig zusammengefügt werden. Nutze
   automatisierte Tests, um Fragmentierungen schnell zu finden.  Nutze
-  unermüdlich die [Ubiquituous Language](#ubiquituous-language), um
+  unermüdlich die [Ubiquitous Language](#ubiquitous-language), um
   eine gemeinsame Sicht auf
   das Modell zu entwickeln, während sich die Konzepte in den Köpfen
   der verschiedenen beteiligten Personen entwickeln.**
@@ -203,7 +203,7 @@ modifiziere es, um es natürlicher in Software zu implementieren, auch
 wenn du versuchst, einen besseren Einblick in die Domäne zu bekommen.
 Erhebe den Anspruch, ein einziges Modell zu finden, das beiden Zwecken
 gerecht wird und
-zudem eine flüssige [Ubiquituous Language](#ubiquituous-language)
+zudem eine flüssige [Ubiquitous Language](#ubiquitous-language)
 unterstützt.**
 
 ## Hands-on Modelers {#hands-on-modelers}
@@ -237,10 +237,10 @@ Rolle sie im Projekt vor allem spielt.  Jeder, der für das Ändern von
 Codes verantwortlich ist, muss lernen, ein Modell durch den Code
 auszudrücken.  Jeder Entwickler muss auf irgendeiner Ebene an der
 Diskussion über das Modell beteiligt sein und Kontakt zu
-Domänen-Experten haben.  Diejenigen, die auf andere Weisen zum Projekt
+Domänenexperten haben.  Diejenigen, die auf andere Weisen zum Projekt
 beitragen, müssen diejenigen, die am Code arbeiten, bewusst in einen
-dynamischen Austausch von Ideen zum Modell durch die [Ubiquituous
-Language](#ubiquituous-language) einbeziehen.**
+dynamischen Austausch von Ideen zum Modell durch die [Ubiquitous
+Language](#ubiquitous-language) einbeziehen.**
 
 ## Refactoring Towards Deeper Insight {#refactoring-towards-deeper-insight}
 
@@ -253,7 +253,7 @@ ein prägnantes Modell zu finden, das die subtilen Belange der
 Fachexperten aufgreift und ein praktisches Design vorantreiben kann.
 Ein Modell, das das Künstliche abstreift und das Wesentliche erfasst,
 ist ein tiefgreifendes Modell.  Dadurch sollte die Software 
-den Denkweise der Domain-Experten besser entsprechen und besser auf die
+den Denkweise der Domänenexperten besser entsprechen und besser auf die
 Bedürfnisse des Benutzers eingehen.
 
 Traditionell wird Refactoring als Code-Transformation aus technischen
