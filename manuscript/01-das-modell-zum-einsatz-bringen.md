@@ -142,12 +142,12 @@ Bedeutung gewöhnlicher Wörter einigen.**
 
 ## Continuous Integration {#continuous-integration}
 
-*Sobald ein Bounded Context definiert ist, müssen wir ihn korrekt
+*Sobald ein Bounded Context definiert ist, müssen wir ihn intakt
  halten.*
 
 Wenn mehrere Personen am gleichen [Bounded Context](#bounded-context)
 arbeiten, besteht
-eine starke Tendenz dazu, dass das Modell fragmentiert wird.  Je
+eine starke Tendenz dazu, dass das Modell fragmentiert wird. Je
 größer das
 Team, desto größer das Problem, aber schon drei oder vier Personen
 können auf ernsthafte Probleme stoßen. Doch die Zerlegung des Systems
@@ -157,13 +157,13 @@ kein ausreichendes Maß an Integration und Kohärenz mehr haben.
 
 Daher:
 
-**Etabliere einen Prozesses, bei dem alle Code- und alle andere
-  Implementierungsartefakte regelmäßig zusammengefügt werden. Nutze
-  automatisierte Tests, um Fragmentierungen schnell zu finden.  Nutze
-  unermüdlich die [Ubiquitous Language](#ubiquitous-language), um
-  eine gemeinsame Sicht auf
-  das Modell zu entwickeln, während sich die Konzepte in den Köpfen
-  der verschiedenen beteiligten Personen entwickeln.**
+**Etabliere einen Prozess, bei dem alle Code- und alle andere
+  Implementierungsartefakte regelmäßig zusammengeführt werden, und nutze
+  automatisierte Tests, um Fragmentierungen schnell zu finden. Wende 
+  ständig die [Ubiquitous Language](#ubiquitous-language) an, um
+  eine gemeinsame Sicht auf das Modell auszuarbeiten, während sich die
+  Konzepte in den Köpfen der verschiedenen beteiligten Personen 
+  weiterentwickeln.**
 
 ## Model-driven Design {#model-driven-design}
 
