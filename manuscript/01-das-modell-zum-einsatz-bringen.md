@@ -243,27 +243,27 @@ beitragen, müssen diejenigen, die am Code arbeiten, bewusst in einen
 dynamischen Austausch von Ideen zum Modell mithilfe der [Ubiquitous
 Language](#ubiquitous-language) einbeziehen.**
 
-## Refactoring Towards Deeper Insight {#refactoring-towards-deeper-insight}
+## Refactoring Toward Deeper Insight {#refactoring-toward-deeper-insight}
 
 *dt.: Refactoring zum tieferen Verständnis*
 
 Die Verwendung eines bewährten Satzes von Grundbausteinen zusammen mit
 einer konsistenten Sprache bringt ein wenig Vernunft in die
-Entwicklungsarbeit.  Aber es bleibt eine Herausforderung, tatsächlich
+Entwicklungsarbeit. Aber es bleibt eine Herausforderung, tatsächlich
 ein prägnantes Modell zu finden, das die subtilen Belange der
 Fachexperten aufgreift und ein praktisches Design vorantreiben kann.
-Ein Modell, das das Künstliche abstreift und das Wesentliche erfasst,
-ist ein tiefgreifendes Modell.  Dadurch sollte die Software 
-den Denkweise der Domänenexperten besser entsprechen und besser auf die
-Bedürfnisse des Benutzers eingehen.
+Ein Modell, welches das Künstliche abstreift und das Wesentliche 
+erfasst, ist ein tiefgreifendes Modell. Dadurch sollte die Software 
+der Denkweise der Domänenexperten besser entsprechen und besser auf die
+Bedürfnisse der Benutzer eingehen.
 
 Traditionell wird Refactoring als Code-Transformation aus technischen
-Gründen beschrieben.  Refactoring kann aber auch durch einen
+Gründen beschrieben. Refactoring kann aber auch durch einen tieferen
 Einblick in die Domäne und eine entsprechende Verfeinerung des Modells
 oder dessen Ausdruck im Code motiviert werden.
 
 Anspruchsvolle Domänenmodelle erweisen sich selten als nützlich, außer
 wenn sie durch einen iterativen Prozess mit Refactoring entwickelt
-werden, einschließlich der engen Einbindung der Domänenexperten mit
+werden, in der engen Zusammenarbeit von Domänenexperten mit
 Entwicklern, die daran interessiert sind, etwas über die Domäne zu
 erfahren.
