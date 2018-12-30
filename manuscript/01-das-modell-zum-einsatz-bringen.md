@@ -165,9 +165,9 @@ Daher:
   Konzepte in den Köpfen der verschiedenen beteiligten Personen 
   weiterentwickeln.**
 
-## Model-driven Design {#model-driven-design}
+## Model-Driven Design {#model-driven-design}
 
-*dt.: modellgetriebenes Design*
+*dt.: modellgetriebener Entwurf*
 
 *Die enge Verknüpfung des Codes mit einem zugrunde liegenden Modell
 gibt dem Code einen Sinn und macht das Modell relevant.*
@@ -175,31 +175,31 @@ gibt dem Code einen Sinn und macht das Modell relevant.*
 Wenn das Design oder zumindest ein zentraler Teil davon nicht auf das
 Domänenmodell abgebildet werden kann, hat dieses Modell nur einen
 geringen
-Wert, und die Korrektheit der Software ist fraglich.  Gleichzeitig
-sind komplexe Abbildungen zwischen den Modellen und den Funktionen
+Wert, und die Korrektheit der Software ist fraglich. Gleichzeitig
+sind komplexe Abbildungen zwischen Modellen und den Funktionen
 des Designs schwer verständlich und in der Praxis nicht
-warten, wenn sich das Design ändert.  Eine tödliche Kluft
+warten, wenn sich das Design ändert. Eine tödliche Kluft
 öffnet sich zwischen Analyse und Design, so dass die in den beiden
 Aktivitäten gewonnenen Erkenntnisse nicht in die jeweils andere
 einfließen.
 
 Leite aus dem Modell die beim Design verwendete Terminologie und die
-grundlegende Zuordnung von Verantwortlichkeiten ab.  Der Code wird zu
+grundlegende Zuordnung von Verantwortlichkeiten ab. Der Code wird zu
 einem Ausdruck des Modells, so dass eine Änderung des Codes eine
-Änderung des Modells sein kann.  Seine Wirkung muss sich entsprechend
+Änderung des Modells sein kann. Seine Wirkung muss sich entsprechend
 auf den Rest der Projektarbeit auswirken.
 
-Um die Implementierung sklavisch an ein Modell zu binden, sind in der
+Um die Implementierung eng an ein Modell zu binden, sind in der
 Regel Softwareentwicklungswerkzeuge und -sprachen erforderlich, die
-ein Modellierungsparadigma unterstützen, wie beispielsweise die
+ein solches Modellierungsparadigma unterstützen, wie beispielsweise die
 objekt-orientierte Programmierung.
 
 Daher:
 
 **Entwerfe einen Teil des Softwaresystems so, dass es das
 Domänenmodell möglichst genau widerspiegelt, so dass die
-Umsetzung offensichtlich ist. Betrachte das Modell wieder und
-modifiziere es, um es natürlicher in Software zu implementieren, auch
+Umsetzung offensichtlich ist. Betrachte das Modell immer wieder und
+modifiziere es, um es natürlicher in Software zu implementieren, während
 wenn du versuchst, einen besseren Einblick in die Domäne zu bekommen.
 Erhebe den Anspruch, ein einziges Modell zu finden, das beiden Zwecken
 gerecht wird und
