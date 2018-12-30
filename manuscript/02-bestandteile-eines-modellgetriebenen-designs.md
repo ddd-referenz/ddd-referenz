@@ -132,49 +132,49 @@ Entitäten notwendig sind.**
 
 ## Domain Event {#domain-event}
 
-*Dt.: Domänen-Ereignis*
+*Dt.: Domänenereignis*
 
-Etwas ist passiert, was für Domänen-Experten wichtig ist.
+Etwas ist passiert, was für Domänenexperten wichtig ist.
 
 Eine [Entity](#entity) ist dafür verantwortlich, ihren Zustand und die
-Regeln für ihren Lebenszyklus zu erfassen.  Aber wenn man die
+Regeln für ihren Lebenszyklus zu erfassen. Aber wenn man die
 tatsächlichen Ursachen für die Änderung des Zustands kennen muss, ist
-das in der Regel nicht explizit in der Entity abgelegt, und es kann
+das in der Regel nicht explizit gemacht, und es kann
 schwierig sein zu erklären, wie das System in den Zustand gekommen
-ist, in dem es ist.  Audit-Trails können eine Nachverfolgung
+ist, in dem es ist. Änderungsprotokolle können eine Nachverfolgung
 ermöglichen, sind aber in der Regel nicht dazu geeignet, für die Logik
-des Programms selbst verwendet zu werden.  Änderungshistorien von
+des Programms selbst verwendet zu werden. Änderungshistorien von
 [Entities](#entity) können den Zugriff auf frühere Zustände
 ermöglichen, ignorieren aber die Bedeutung dieser Änderungen, so dass
 jede Manipulation der Informationen prozedural ist und oft aus der
 Domänenebene herausgedrängt wird.
 
 In verteilten Systemen entsteht ein anderer, wenn auch verwandter
-Themenkomplex.  Der Zustand eines verteilten Systems kann nicht immer
-vollständig konsistent gehalten werden.  Wir halten die Aggregate
+Themenkomplex. Der Zustand eines verteilten Systems kann nicht immer
+vollständig konsistent gehalten werden. Wir halten die Aggregate
 intern jederzeit konsistent, während wir andere Änderungen asynchron
-vornehmen.  Da sich Änderungen über die Knoten eines Netzwerks
-ausbreiten, kann es schwierig sein, mehrere Updates auszuführen, die
-nicht in der richtigen Reihenfolge oder aus verschiedenen Quellen
+vornehmen. Da sich Änderungen über die Knoten eines Netzwerks
+ausbreiten, kann es schwierig sein, mehrere Änderungen zu verarbeiten,
+die nicht in der richtigen Reihenfolge oder aus verschiedenen Quellen
 kommen.
 
 Daher:
 
 **Modelliere Informationen über die Aktivität in der Domäne als
-eine Reihe von diskreten Ereignissen.  Stelle jedes Ereignis als
-Domänenobjekt dar.  Diese unterscheiden sich von Systemereignissen,
-die die Aktivität innerhalb der Software selbst widerspiegeln, obwohl
+eine Reihe von diskreten Ereignissen. Stelle jedes Ereignis als
+Domänenobjekt dar. Diese unterscheiden sich von Systemereignissen,
+welche die Aktivität innerhalb der Software selbst widerspiegeln, obwohl
 oft ein Systemereignis mit einem Domänenereignis verbunden ist,
 entweder als Teil einer Reaktion auf das Domänenereignis oder als
 Möglichkeit, Informationen über das Domänenereignis in das System zu
 übertragen.**
 
-**Ein [Domain Event](#domain-event) ist ein vollwertiger Teil des
+**Ein Domain Event ist ein vollwertiger Teil des
 Domänenmodells, eine Darstellung von etwas, das in der Domäne passiert
-ist.  Ignoriere irrelevante Domänenaktivitäten, während du die
-Ereignisse explizit festlegst, die Domänen-Experten überwachen oder
+ist. Ignoriere irrelevante Domänenaktivitäten, während du diejenigen
+Ereignisse explizit festlegst, die Domänenexperten überwachen oder
 bei denen sie benachrichtigt werden möchten oder die mit
-Zustandsänderungen in den anderen Modellobjekten verbunden sind, .**
+Zustandsänderungen in den anderen Modellobjekten verbunden sind.**
 
 In einem verteilten System kann der Zustand einer [Entity](#entity)
 aus den [Domain Events](#domain-event) abgeleitet werden, die einem
@@ -183,21 +183,20 @@ ermöglicht, wenn keine vollständigen Informationen über das System als
 Ganzes vorliegen.
 
 [Doman Events](#domain-event) sind normalerweise unveränderlich, da
-sie eine Aufzeichnung von etwas in der Vergangenheit sind.  Zusätzlich
+sie eine Aufzeichnung von etwas in der Vergangenheit sind. Zusätzlich
 zu einer Beschreibung des Ereignisses enthält ein Domänenereignis
 typischerweise einen Zeitstempel für den Zeitpunkt des Auftretens des
-Ereignisses und die Identität der an dem Ereignis beteiligten
-[Entities](#entity).  Außerdem hat ein Domänenereignis oft einen
+Ereignisses und die Identitäten der an dem Ereignis beteiligten
+[Entities](#entity). Außerdem hat ein Domänenereignis oft einen
 separaten Zeitstempel, der angibt, wann das Ereignis in das System
-eingegeben wurde und die Identität der Person, die es eingegeben hat.
+gelangt ist und die Identität der Person, die es ausgelöst hat.
 Wenn das nützlich ist, kann eine Identität für das Domänenereignis auf
-Basis einiger dieser Eigenschaften definiert werden.  Wenn dann also
+Basis einiger dieser Eigenschaften definiert werden. Wenn dann also
 beispielsweise zwei Instanzen desselben [Domain Events](#domain-event)
-an einem Knoten ankommen, können sie als das gleich Ereigniss erkannt
+an einem Knoten ankommen, können sie als das gleich Ereignis erkannt
 werden.
 
-*[Domain Event](#domain-event) ist ein neuer Begriff, der nach dem
-blauen Buch aus dem Jahre 2004 entstanden ist.*
+*Domain Event ist ein neuer Begriff, der seit dem Buch von 2004 entstanden ist.*
 
 ## Services {#service}
 
@@ -346,7 +345,7 @@ eine bekannte globale Schnittstelle um.  Stelle Methoden zum
 Hinzufügen und Entfernen von Objekten bereit, die das tatsächliche
 Einfügen oder Entfernen von Daten im den Datenspeicher kapseln.  Biete
 Methoden zur Auswahl von Objekten nach Kriterien an, die für
-Domänen-Experten von Bedeutung sind.  Liefere vollständig
+Domänenexperten von Bedeutung sind.  Liefere vollständig
 instanziierte Objekte oder Sammlungen von Objekten zurück, deren
 Attributwerte den Kriterien entsprechen, wodurch die eigentliche
 Speicher- und Abfragetechnologie gekapselt wird, oder gibt Proxies
