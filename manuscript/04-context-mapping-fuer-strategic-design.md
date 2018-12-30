@@ -83,7 +83,7 @@ auch die impliziten
 Modelle von nicht-objekt-orientierten Subsystemen.  Benenne jeden
 [Bounded Context](#bounded-context) und mache diese Namen zu einem
 Teil der 
-[Ubiquituous Language](#ubiquituous-language).**
+[Ubiquitous Language](#ubiquitous-language).**
 
 **Beschreibe  die Berührungspunkte zwischen den Modellen, skizziere
 die explizite Übersetzung für jede Art der Kommunikation, hebe alle
@@ -178,8 +178,8 @@ Anwendungen arbeiten, eine Weile gut vorankommen, aber was sie
 produzieren, passt vielleicht nicht zusammen.  Selbst
 partnerschaftliche Teams können am Ende viel für Übersetzungsschichten
 und Änderungen ausgeben, während sie Aufwände verdoppeln und die
-Vorteile einer gemeinsamen [Ubiquituous
-Language](#ubiquituous-language) verlieren.
+Vorteile einer gemeinsamen [Ubiquitous
+Language](#ubiquitous-language) verlieren.
 
 Daher:
 
@@ -196,8 +196,8 @@ dem anderen Team geändert werden.**
 Definiere einen
 [Continuous-Integration-Prozess](#continuous-integration), der das
 Kernmodell
-kompakt hält und stimme die [Ubiquituous
-Language](#ubiquituous-language) der Teams 
+kompakt hält und stimme die [Ubiquitous
+Language](#ubiquitous-language) der Teams 
 aufeinander ab.  Integriere ein funktionales System häufig, wenn auch
 etwas seltener als das Tempo der [Continuous
 Integration](#continuous-integration) innerhalb 
@@ -269,7 +269,7 @@ hälst.  Obwohl dies den Stil der Downstream-Designer einengt und
 wahrscheinlich nicht das ideale Modell für die Anwendung ergibt,
 vereinfacht Konformität die Integration enorm.  Außerdem
 wirst du dir
-eine [Ubiquituous Language](#ubiquituous-language) mit dem
+eine [Ubiquitous Language](#ubiquitous-language) mit dem
 Upstream-Team teilen.  Upstream
 hat das Sagen. Daher ist es gut, die Kommunikation für sie
 möglichst einfach zu gestalten.  Altruismus kann ausreichen, um sie
