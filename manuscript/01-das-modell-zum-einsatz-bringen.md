@@ -211,35 +211,36 @@ unterstützt.**
 *dt.: Praktizierende Modellierer*
 
 Wenn sich die Personen, die den Code schreiben, nicht für das Modell
-verantwortlich fühlen oder nicht verstehen, wie das Modell einer
+verantwortlich fühlen oder nicht verstehen, wie das Modell für eine
 Anwendung funktionieren soll, dann hat das Modell nichts mit der
-Software zu tun.  Wenn Entwickler nicht erkennen, dass Code-Änderungen
+Software zu tun. Wenn Entwickler nicht erkennen, dass Code-Änderungen
 das Modell verändern, dann wird ihr Refactoring das Modell eher
 schwächen als stärken. Wenn ein Modellierer vom
 Implementierungsprozess getrennt ist, gewinnt er oder sie nie ein
 Gefühl für
-die Restriktionen bei der Implementierung oder verliert sie schnell.
-So geht die grundlegende Bedingung des [Model-driven
-Designs](#model-driven-design), dass
+die Restriktionen bei der Implementierung oder verliert dieses schnell.
+Die grundlegende Bedingung des [Model-Driven
+Designs](#model-driven-design) - dass
 das Modell eine effektive Implementierung unterstützt und wichtige
-Erkenntnisse über die Domain abstrahiert, nahezu verloren und die daraus
+Erkenntnisse über die Domain abstrahiert - geht dadurch nahezu verloren 
+und die daraus
 resultierenden Modelle werden unpraktisch sein. Schließlich werden die
 Kenntnisse und Fähigkeiten erfahrener Designer nicht auf andere
 Entwickler übertragen, wenn die Arbeitsteilung die Art der
-Zusammenarbeit verhindert, die die Feinheiten der Programmierung eines
-modellgetriebenen Designs vermittelt.
+Zusammenarbeit verhindert, welche die Feinheiten der Programmierung 
+eines modellgetriebenen Entwurfs vermittelt.
 
 Daher:
 
 **Jede technische Person, die am Modell mitwirkt, muss einige Zeit
 damit verbringen, am Code zu arbeiten, unabhängig davon, welche
-Rolle sie im Projekt vor allem spielt.  Jeder, der für das Ändern von
-Codes verantwortlich ist, muss lernen, ein Modell durch den Code
-auszudrücken.  Jeder Entwickler muss auf irgendeiner Ebene an der
-Diskussion über das Modell beteiligt sein und Kontakt zu
-Domänenexperten haben.  Diejenigen, die auf andere Weisen zum Projekt
+Rolle sie im Projekt primär hat. Jeder, der für das Ändern von
+Code verantwortlich ist, muss lernen, ein Modell durch Code
+auszudrücken. Jeder Entwickler muss auf der einen oder anderen Ebene an
+der Diskussion über das Modell beteiligt sein und Kontakt zu
+Domänenexperten haben. Diejenigen, die auf andere Weisen zum Projekt
 beitragen, müssen diejenigen, die am Code arbeiten, bewusst in einen
-dynamischen Austausch von Ideen zum Modell durch die [Ubiquitous
+dynamischen Austausch von Ideen zum Modell mithilfe der [Ubiquitous
 Language](#ubiquitous-language) einbeziehen.**
 
 ## Refactoring Towards Deeper Insight {#refactoring-towards-deeper-insight}
