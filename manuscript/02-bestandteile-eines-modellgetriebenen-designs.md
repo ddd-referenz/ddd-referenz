@@ -1,130 +1,133 @@
-# II Bestandteil eines modellgetriebenen Designs
+# II. Bestandteil eines modellgetriebenen Entwurfs
 
-Diese Pattern stellen weit verbreitete Best Practices für
-objekt-orientiertes Designs im Hinblick auf domain-driven Design dar.
-Sie leiten die Entscheidungen zur Präzisierung des Modells und halten
-Modell und Implementierung aufeinander abgestimmt, wobei das eine die
-Effektivität des anderen verstärkt.  Das sorgfältige Ausarbeiten der
+Diese Muster stellen weit verbreitete bewährte Praktiken für
+objekt-orientiertes Designs im Hinblick auf Domain-Driven Design dar.
+Sie leiten Entscheidungen, welche das Modell präzisieren und das Modell 
+und die Implementierung aufeinander abgestimmt halten, wobei das eine 
+die Effektivität des anderen verstärkt. Das sorgfältige Ausarbeiten der
 Details der einzelnen Modellelemente gibt den Entwicklern eine solide
 Plattform, um Modelle zu erforschen und in enger Abstimmung mit der
 Implementierung zu halten.
 
-## Layered Architecture {#layered-architectur}
+## Layered Architecture {#layered-architecture}
 
-*Dt.: Geschichte Architektur*
+*dt.: Geschichtete Architektur*
 
-In einem objektorientierten Programm werden Benutzeroberfläche,
+In einem objekt-orientierten Programm werden Benutzeroberfläche,
 Datenbank und anderer unterstützender Code oft direkt in den
-Business-Objekte implementiert.  Zusätzliche Geschäftslogik ist in das
-Verhalten von UI-Widgets und Datenbankskripten eingebettet.  Dies
+Business-Objekte implementiert. Zusätzliche Geschäftslogik ist in das
+Verhalten von UI-Widgets und in Datenbankskripten eingebettet. Dies
 geschieht, weil es der einfachste Weg ist, die Dinge schnell zum
-Laufen zu bringen.
+Laufen zu bringen, allerdings nur auf kurze Dauer.
 
-Wenn der domänenbezogene Code durch eine so große Menge an anderem
-Code diffus wird, wird es extrem schwierig, ihn zu identifizieren und
-zu verstehen.  Oberflächliche Änderungen an der Benutzeroberfläche
-können in Wirklichkeit die Geschäftslogik verändern.  Um eine
-Geschäftsregel zu ändern, kann das sorgfältige Prüfung von UI-Code,
-Datenbankcode oder anderen Programmelementen erforderlich sein.  Die
+Wenn der domänenbezogene Code durch eine so große Menge an andersartigem
+Code verwischt wird, wird es extrem schwierig, ihn zu identifizieren und
+zu verstehen. Einfache Änderungen an der Benutzeroberfläche
+können in Wirklichkeit die Geschäftslogik verändern. Um eine
+Geschäftsregel zu ändern, kann das akribische Prüfen von UI-Code,
+Datenbankcode oder anderen Programmteilen erforderlich sein. Die
 Implementierung kohärenter, modellgetriebener Objekte wird
-unpraktikabel.  Automatisiertes Testen ist umständlich.  Mit all den
+unpraktikabel. Automatisiertes Testen ist umständlich. Mit all den
 Technologien und der Logik, die in jede einzelne Aktivität involviert
-sind, muss ein Programm muss sehr einfach gehalten werden, oder es
+ist, muss ein Programm sehr einfach gehalten werden, oder es
 wird unmöglich, es zu verstehen.
 
 Daher:
 
 **Isoliere die Umsetzung des Domänenmodells und der Geschäftslogik und
 eliminiere alle Abhängigkeiten zur Infrastruktur, zur
-Benutzeroberfläche und sogar zu der Anwendungslogik, die keine
-Geschäftslogik ist.  Unterteile ein komplexes Programm in Schichten.
-Entwickel innerhalb jeder Schicht ein Design, das kohärent ist und nur
-von den darunter liegenden Schichten abhängt.  Befolge die üblichen
-Architekturmuster, um eine lose Kopplung zu den darüber liegenden
+Benutzeroberfläche und sogar zur Anwendungslogik, die keine
+Geschäftslogik ist. Unterteile ein komplexes Programm in Schichten.
+Entwickle innerhalb jeder Schicht ein Design, das kohärent ist und nur
+von den darunterliegenden Schichten abhängt. Verwende gängige
+Architekturmuster, um eine lose Kopplung zu den darüberliegenden
 Schichten zu erreichen. Konzentriere den gesamten Code, der sich auf
-das Domänenmodell bezieht, in einer Schicht und isoliere es von der
-Benutzeroberfläche, der Anwendungscode und dem Infrastrukturcode.  Die
+das Domänenmodell bezieht, in einer Schicht und isoliere ihn von der
+Benutzeroberfläche, der Anwendungslogik und dem Infrastrukturcode. Die
 Domänenobjekte können sich auf die Umsetzung des Domänenmodells
 konzentrieren und sind frei von der Verantwortlichkeit, sich
 anzuzeigen, sich zu speichern, Aufgaben in der Anwendung zu verwalten
-usw. .  Dies ermöglicht es dem Modell, sich so zu entwickeln, dass es
-reichhaltig genug und klar genug sein kann, um grundlegendes Wissen
-über das Geschäft zu erfassen und umzusetzen.**
+usw. Dies ermöglicht es dem Modell, sich so zu entwickeln, dass es
+reichhaltig genug und klar genug sein kann, um grundlegendes 
+Geschäftswissen zu erfassen und umzusetzen.**
 
-Das Hauptziel dabei ist die Isolation.  Verwandte Muster, wie
-z.B. "Hexagonal Architecture", können ebenso gut oder besser dazu
+Das Hauptziel dabei ist die Isolation. Verwandte Muster, wie
+z.B. die "Hexagonal Architecture", können ebenso gut oder besser dazu
 beitragen, dass unsere Umsetzungen des Domänenmodells Abhängigkeiten
-von und Referenzen zu anderen Systembelangen vermeiden.
+auf und Referenzen zu anderen Systembelangen vermeiden.
 
 ## Entities {#entity}
 
-*Dt.: Entität, auch bekannt als Reference Objects*
+*dt.: Entitäten*
 
 Viele Objekte stellen eine Kontinuität und Identität dar und
 durchlaufen einen Lebenszyklus, obwohl sich ihre Attribute ändern
 können.
 
-Einige Objekte sind nicht in erster Linie durch ihre Attribute
-definiert.  Sie stellen einen Identität dar, die durch die Zeit und
-oft durch verschiedene Darstellungen durchläuft.  Manchmal muss ein
-solches Objekt mit einem anderen Objekt verglichen werden, obwohl die
-Attribute unterschiedlich sind.  Ein Objekt muss von anderen Objekten
-unterschieden werden, auch wenn sie die gleichen Eigenschaften haben
-können.  Eine falsche Identität kann zu Datenkorruption führen.
+Einige Objekte sind nicht in erster Linie über ihre Attribute
+definiert. Sie stellen eine Identität dar, welche die Zeit und oft 
+verschiedene Darstellungen durchläuft. Manchmal muss ein
+solches Objekt mit einem anderen Objekt übereinstimmen, obwohl die
+Attribute unterschiedlich sind. Oder ein Objekt muss von anderen 
+Objekten unterschieden werden, selbst wenn sie die gleichen 
+Attribute haben können. Eine falsche Identität kann zu 
+Datenkorruption führen.
 
 Daher:
 
 **Wenn ein Objekt durch seine Identität und nicht durch seine
 Attribute unterschieden wird, dann mache das zu einem wichtigen Teil
-seiner Definition im Modell.  Halte die Klassendefinition einfach und
+seiner Definition im Modell. Halte die Klassendefinition einfach und
 konzentriere dich auf die Kontinuität des Lebenszyklus und
-Identität.**
+die Identität.**
 
 **Definiere ein Möglichkeit zur Unterscheidung jedes Objekts
-unabhängig von seiner Form oder Geschichte.  Achte auf Anforderungen,
-die einen Abgleich von Objekten über Attribute erfordern.  Definiere
+unabhängig von seiner Form oder Geschichte. Achte auf Anforderungen,
+die einen Abgleich von Objekten über Attribute erfordern. Definiere
 eine Operation, die garantiert ein eindeutiges Ergebnis für jedes
-Objekt liefert, möglicherweise durch Anhängen eines garantiert
-eindeutiges Symbols.  Dieser Identifikationsmechanismus kann von außen
-kommen, oder es kann ein beliebiger Identifikator sein, der vom und
-für das System erstellt wird, aber es muss der Unterscheidung der
-Identität im Modell passen.**
+Objekt liefert, möglicherweise durch Ergänzen eines garantiert
+eindeutigen Attributes. Dieses Attribut zur Identifikation kann von 
+außen kommen, oder es kann ein beliebiger Identifikator sein, der vom 
+und für das System erstellt wird, muss aber zu den 
+Identitätsunterschieden im Modell passen.**
 
 **Das Modell muss definieren, was es bedeutet, dasselbe Ding zu
 sein.**
 
-## Value Object {#value-object}
+(auch bekannt als Reference Objects, dt.: Referenzobjekte)
 
-*Dt.: Wertobjekt*
+## Value Objects {#value-object}
 
-Einige Objekte beschreiben oder berechnen eine Eigenschaft eines Dins.
+*dt.: Wertobjekte*
+
+Einige Objekte beschreiben oder berechnen eine Eigenschaft eines Dings.
 
 Viele Objekte haben keine konzeptionelle Identität.
 
 Die Identität von [Entities](#entity) zu verfolgen ist unerlässlich,
-aber andere Objekte eine Identität zuzuweisen, kann die Systemleistung
+aber anderen Objekten eine Identität zuzuweisen, kann die Systemleistung
 beeinträchtigen, mehr Analysetätigkeiten erwzingen und das Modell
-durcheinander bringen, indem alle Objekte gleich aussehen.
-Software-Design ist ein ständiger Kampf mit Komplexität.  Wir müssen
-differenzieren, damit eine besondere Behandlung nur dann erfolgt, wenn
-sie notwendig ist.
+durcheinander bringen, weil alle Objekte gleich aussehen.
+Softwareentwurf ist ein ständiger Kampf gegen Komplexität. Wir müssen
+Unterscheidungen machen, damit eine besondere Behandlung nur dann 
+erfolgt, wenn sie notwendig ist.
 
 Wenn wir diese Kategorie von Objekten jedoch nur als die Abwesenheit
 von Identität verstehen, haben wir nicht viel zu unserem
-Werkzeugkasten oder Vokabular hinzugefügt.  Tatsächlich haben diese
+Werkzeugkasten oder Vokabular hinzugefügt. Tatsächlich haben diese
 Objekte eigene Eigenschaften und eine eigene Bedeutung für das Modell.
 Dies sind Objekte, die Dinge beschreiben.
 
 Daher:
 
 **Wenn du dich nur um die Attribute und die Logik eines Elements des
-Modells kümmern, klassifiziere es als [Value Object](#value-object).
+Modells kümmerst, klassifiziere es als Wertobjekt.
 Lass es die Bedeutung der Attribute ausdrücken, die es enthält, und
-gib ihm die entsprechende Funktionalität.  Behandel das Wertobjekt als
-unveränderlich.  Machen alle Operationen zu [Side-effect-free
-Functions](#side-effect-free-functions), die nicht von einem
-veränderlichen Zustand abhängig sind.  Gib dem Wertobjekt keine
-Identität und vermeide die Designkomplexitäten, die zur Wartung von
+gib ihm die zugehörige Funktionalität. Behandle das Wertobjekt als
+unveränderlich. Mache alle Operationen zu [Side-effect-free
+Functions](#side-effect-free-functions), die nicht von
+veränderlichem Zustand abhängig sind. Gib dem Wertobjekt keine
+Identität und vermeide die Komplexität, die zur Wartung von
 Entitäten notwendig sind.**
 
 ## Domain Event {#domain-event}
