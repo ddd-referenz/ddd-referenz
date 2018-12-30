@@ -1,4 +1,4 @@
-# II. Bestandteil eines modellgetriebenen Entwurfs
+# II. Bestandteile eines modellgetriebenen Entwurfs
 
 Diese Muster stellen weit verbreitete bewährte Praktiken für
 objekt-orientiertes Designs im Hinblick auf Domain-Driven Design dar.
