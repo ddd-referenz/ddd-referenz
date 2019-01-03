@@ -1,7 +1,7 @@
 ## Danksagungen
 
 Es ist nun über zehn Jahre her, dass mein Buch "Domain-Driven Design,
-Tackling Complexity in the Heart of Software" (oder "The Big Blue Book", wie einige Leute es nennen) veröffentlicht
+Tackling Complexity in the Heart of Software" (oder *The Big Blue Book* – das große blaue Buch, wie einige Leute es nennen) veröffentlicht
 wurde.  In diesen zehn Jahren haben sich die im Buch diskutierten
 Grundlagen nicht wesentlich verändert, aber es hat sich *viel* daran
 geändert, wie wir Software entwickeln. DDD ist relevant geblieben,
