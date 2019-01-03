@@ -29,7 +29,7 @@ Datenbankcode oder anderen Programmteilen erforderlich sein. Die
 Implementierung kohärenter, modellgetriebener Objekte wird
 unpraktikabel. Automatisiertes Testen ist umständlich. Mit all den
 Technologien und der Logik, die in jede einzelne Aktivität involviert
-ist, muss ein Programm sehr einfach gehalten werden, oder es
+sind, muss ein Programm sehr einfach gehalten werden, oder es
 wird unmöglich, es zu verstehen.
 
 Daher:
