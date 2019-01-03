@@ -311,55 +311,52 @@ Verteilungsproblematik.
 
 ## Repositories {#repository}
 
-*Dt.: Repsitory*
+*Zugriff auf Aggregate durch Anfragen, die in der [Ubiquitous
+Language](#ubiquitous-language) ausgedrückt sind.*
 
-*Zugriff auf Aggregate durch Anfragen, die in der [Ubiquituous
-Language](#ubiquituous-language) ausgedrückt sind.*
-
-Die Verbreitung von übergreifenden Assoziationen, die nur dazu dienen,
-Dinge zu finden, bringen das Modell durcheinandner.  In ausgereiften
-Modellen drücken Abfragen oft Domänenkonzepte aus.  Dennoch können
+Die Verbreitung von traversierbaren Beziehungen, die nur dazu dienen,
+Dinge zu finden, bringen das Modell durcheinandner. In ausgereiften
+Modellen drücken Abfragen oft Domänenkonzepte aus. Dennoch können
 Abfragen zu Problemen führen.
 
-Die schiere technische Komplexität bei der Anwendung der meisten
-Datenbankzugriffsinfrastrukturen beeinträchtigt schnell den Client-Code,
-was Entwickler dazu bringt, die Domänenebene zu reduzieren, was das
-Modell irrelevant macht.
+Die schiere technische Komplexität bei der Verwendung der meisten 
+Infrastrukturen für den Datenbankzugriff beeinträchtigt schnell den 
+Client-Code, was Entwickler dazu bringt, die Domänenebene zu 
+reduzieren, was wiederum das Modell irrelevant macht.
 
 Ein Query-Framework kann den größten Teil dieser technischen
 Komplexität kapseln, so dass Entwickler genau die Daten, die sie
 benötigen, automatisiert oder deklarativ aus der Datenbank beziehen
 können, aber das löst nur einen Teil des Problems.
 
-Uneingeschränkte Abfragen können bestimmte Felder aus Objekten
-auslesen, die Einkapselung durchbrechen oder bestimmte Objekte aus dem
-Inneren eines [Aggregats](#aggregate) instanziieren, die
-Aggregatwurzel umgehen und es diesen Objekten unmöglich machen, die
-Regeln des Domänenmodells durchzusetzen. Die Domänenlogik verlagert
-sich in Abfragen und Code der Anwendungsschicht, und die
+Uneingeschränkte Abfragen können nur bestimmte Felder aus Objekten
+auslesen und so die Kapselung durchbrechen oder bestimmte Objekte aus 
+dem inneren Zustand eines [Aggregats](#aggregate) instanziieren und 
+dabei die Wurzel eines Aggregats umgehen und es so diesen Objekten 
+unmöglich 
+machen, die Regeln des Domänenmodells durchzusetzen. Die Domänenlogik 
+verlagert sich in Abfragen und in Code der Anwendungsschicht, und die
 [Entities](#entity) und [Value Objects](#value-object) werden zu
 reinen Datencontainern.
 
 Daher:
 
-**Erstelle für jeden Aggregattyp, der global zugegriffen werden muss ,
-einen Dienst, der die Illusion einer Sammlung aller Objekte des
-Wurzeltyps dieses Aggregats vermitteln kann.  Setze den Zugriff über
-eine bekannte globale Schnittstelle um.  Stelle Methoden zum
-Hinzufügen und Entfernen von Objekten bereit, die das tatsächliche
-Einfügen oder Entfernen von Daten im den Datenspeicher kapseln.  Biete
+**Erstelle für jeden Aggregattyp, auf den global zugegriffen werden muss,
+einen Dienst, der die Illusion einer Sammlung aller Objekte des Typs der Wurzel dieses Aggregats vermitteln kann. Setze den Zugriff über
+eine bekannte globale Schnittstelle um. Stelle Methoden zum
+Hinzufügen und Entfernen von Objekten bereit, welche das tatsächliche
+Einfügen oder Entfernen von Daten in die Datenbank kapseln. Biete
 Methoden zur Auswahl von Objekten nach Kriterien an, die für
-Domänenexperten von Bedeutung sind.  Liefere vollständig
+Domänenexperten von Bedeutung sind. Liefere vollständig
 instanziierte Objekte oder Sammlungen von Objekten zurück, deren
 Attributwerte den Kriterien entsprechen, wodurch die eigentliche
-Speicher- und Abfragetechnologie gekapselt wird, oder gibt Proxies
-zurück, die die Illusion von vollständig instanziierten Aggregaten
-vermitteln, aber die Daten lazy nachladen.  Stelle
-[Repositories](#repository) nur für die Wurzeln der Aggregates bereit,
-die tatsächlich direkten Zugriff benötigen.  Halte die Anwendungslogik
-auf das Modell fokussier tund delegiere die gesamte Speicherung der
-Objekte und den Zugriff auf die Objekte zu den
-[Repositories](#repository).**
+Speicher- und Abfragetechnologie gekapselt wird, oder gib Proxies
+zurück, welche die Illusion von vollständig instanziierten Aggregaten
+vermitteln, aber die Daten verzögert nachladen. Stelle Repositories 
+nur für Aggregattypen bereit,
+die tatsächlich direkten Zugriff benötigen. Halte die Anwendungslogik
+auf das Modell fokussiert und delegiere die gesamte Speicherung der
+Objekte und den Zugriff auf die Objekte an die Repositories.**
 
 ## Factories {#factory}
 
