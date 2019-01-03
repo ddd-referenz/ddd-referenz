@@ -14,7 +14,7 @@ Projekt anzugehen. Das hat uns auch dazu motiviert, die Übersetzung
 unter dieselbe Lizenz zu stellen und kostenlos als eBook anzubieten.
 
 Bedanken wollen wir uns bei der gesamten DDD-Gemeinde, bei Eric Evans
-und bei unserem Arbeitgeber, der INNOQ, die dieses Projekt unterstützt
+und bei unserem Arbeitgeber INNOQ, der dieses Projekt unterstützt
 hat.
 
 Wir freuen uns natürlich über Feedback - zum Beispiel als Issue im
