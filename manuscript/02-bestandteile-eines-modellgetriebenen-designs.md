@@ -360,31 +360,32 @@ Objekte und den Zugriff auf die Objekte an die Repositories.**
 
 ## Factories {#factory}
 
-*Dt.: Fabriken*
+*dt.: Fabriken*
 
-Wenn die Erstellung eines gesamten, intern konsistenten
-[Aggregates](#aggregate) oder eines großen [Value
-Objects](#value-object) kompliziert wird oder zu viel von der internen
-Struktur enthüllt, bieten [Factories](#factory) eine Kapselung.
+Wenn die Erstellung eines ganzen, intern konsistenten
+[Aggregats](#aggregate) oder eines großen [Value Objects](#value-object)
+kompliziert wird oder zu viel von der internen
+Struktur preisgibt, bieten [Factories](#factory) eine Kapselung.
 
 Das Erzeugen eines Objekts kann ein wichtiger Vorgang an sich sein,
-aber komplexe Operationen zumm Zusammenbauen eines Objekts passen
-nicht in die Verantwortung der erstellten Objekte.  Die Kombination
-dieser Verantwortlichkeiten kann zu schwer verständlichen Designs
-führen.  Indem man den Client dazu bringt, das Objekt direkt zu
-erzeugen, durchbricht man die Einkapselung des erzeugten Objekts oder
-[Aggregates](#aggregate) und koppelt den Client zu stark  mit der
-Implementierung des erstellten Objekts.
+aber komplexe Operationen für das Zusammenbauen eines Objekts passen
+nicht in die Verantwortung der erstellten Objekte selbst. Werden diese 
+Verantwortlichkeiten vermischt, kann dies zu schwer verständlichen 
+Entwürfen führen. Muss der Client das Objekt direkt erzeugen, wird die 
+Kapselung des erzeugten [Value Objects](#value-object) oder 
+[Aggregats](#aggregate) gebrochen und der Client zu stark an die
+Implementierung des erstellten Objekts gekoppelt.
 
 Daher:
 
 **Verlagere die Verantwortung für das Erstellen von Instanzen
-komplexer Objekte und [Aggregates](#aggregate) auf ein separates
+komplexer Objekte und [Aggregats](#aggregate) auf ein separates
 Objekt, das selbst keine Verantwortung im Domänenmodell hat, aber
-dennoch Teil des Domänendesigns ist.  Stelle eine Schnittstelle zur
-Verfügung, die alle komplexen Erzeugungsmöglichkeiten kapselt und die
-es nicht erfordert, dass der Client Referenzen auf die konkreten
-Klassen der zu instanziierenden Objekte hat.  Erstelle ein ganzes
+dennoch Teil des Domänenentwurfs ist. Stelle eine Schnittstelle zur
+Verfügung, die den komplexen Zusammenbau kapselt und die
+es erlaubt, dass der Client keine Referenzen auf die konkreten
+Klassen der zu instanziierenden Objekte haben muss. Erstelle ein ganzes
 [Aggregat](#aggregate) als ein Stück und erzwinge seine Invarianten.
 Erstelle ein komplexes [Value Object](#value-object) am Stück,
-eventuell nach der Zusammenbauen der Elemente mit einem Builder.**
+womöglich durch Verwendung eines Builders für den Zusammenbau der 
+einzelnen Elemente.**
