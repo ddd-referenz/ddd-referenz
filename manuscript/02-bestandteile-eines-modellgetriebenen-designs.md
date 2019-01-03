@@ -268,44 +268,46 @@ entsprechend entkoppelt ist.**
 
 ## Aggregates {#aggregate}
 
+*dt.: Aggregate*
+
 Es ist schwierig, die Konsistenz von Änderungen an Objekten in einem
-Modell mit komplexen Assoziationen zu gewährleisten.  Objekte sollen
+Modell mit komplexen Beziehungen zu gewährleisten. Objekte sollen
 ihren eigenen internen konsistenten Zustand beibehalten, können aber
-bei Änderungen an anderen Objekten, die konzeptionell Bestandteile
-dieser Objekte sind, übergangen werden. Vorsichtige
+bei Änderungen in anderen Objekten, die konzeptionell Bestandteile
+dieser ersten Objekte sind, übergangen werden. Vorsichtige
 Datenbank-Sperrschemata führen dazu, dass sich mehrere Benutzer
 sinnlos gegenseitig stören, und können ein System unbrauchbar machen.
 Ähnliche Probleme entstehen bei der Verteilung von Objekten auf
 mehrere Server, oder beim Entwurf asynchroner Transaktionen.
 
-Deshalb:
+Daher:
 
 **Gruppiere die [Entities](#entity) und [Value Objects](#value-object)
-zu [Aggregates](#aggregate) und definiere Grenzen um diese herum.
-Wähle eine [Entity](#entity) als Wurzel jedes Aggregats und erlaube
-externen Objekten, nur Referenzen auf die Wurzel zu halten. Referenzen
+zu Aggregaten und definiere Grenzen um jede dieser Gruppen herum.
+Wähle eine [Entity](#entity) als Wurzel eines jeden Aggregats und erlaube
+externen Objekten, nur Referenzen auf die Wurzel zu halten (Referenzen
 auf interne Elemente werden nur für die Verwendung innerhalb einer
-einzigen Operation ausgegeben.  Definiere Eigenschaften und
+einzigen Operation ausgegeben). Definiere Eigenschaften und
 Invarianten für das Aggregat als Ganzes und übertrage die
-Verantwortung für die Durchsetzung auf die Wurzel. oder einen bestimmten
-Mechanismus im Framework.**
+Verantwortung für deren Durchsetzung an die Wurzel oder an einen 
+ausgewiesenen Mechanismus im Framework.**
 
-Verwende die gleichen Aggregate-Grenzen für die Steuerung von
-Transaktionen und Verteilung-
+Verwende die gleichen Aggregatsgrenzen für die Steuerung von
+Transaktionen und Verteilung.
 
-Wende innerhalb der Grenze eines [Aggregates](#aggregate) die
-Konsistenzregeln synchron an. Über Grenzen hinweg können Updates
-asynchron behandelt werden.
+Wende innerhalb der Grenze eines Aggregats die
+Konsistenzregeln synchron an. Behandle Änderungen über Grenzen hinweg 
+asynchron.
 
-Halte das gesamte Aggregat auf einem Server.  Erlaube die Verteilung
-verschiedener Aggregate auf die Knoten.
+Halte ein einzelnes Aggregat als Ganzes auf einem Server. Erlaube die 
+Verteilung verschiedener Aggregate auf unterschiedliche Knoten.
 
-Wenn diese Designentscheidungen nicht gut von den Grenzen der
-[Aggregates](#aggregate) geleitet werden, überdenke das Modell.
+Wenn diese Entwurfsentscheidungen nicht gut von den Grenzen der
+Aggregate geleitet werden, überdenke das Modell.
 Deutet das Szenario in der Domäne auf eine wichtige neue Erkenntnis
-hin?  Solche Änderungen verbessern oft die Aussagekraft und
+hin? Solche Änderungen verbessern oft die Aussagekraft und
 Flexibilität des Modells sowie die Lösung der Transaktions- und
-Verteilungsfragen.
+Verteilungsproblematik.
 
 ## Repositories {#repository}
 
