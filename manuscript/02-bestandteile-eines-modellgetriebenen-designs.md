@@ -121,14 +121,14 @@ Dies sind Objekte, die Dinge beschreiben.
 Daher:
 
 **Wenn du dich nur um die Attribute und die Logik eines Elements des
-Modells kümmerst, klassifiziere es als Wertobjekt.
+Modells kümmerst, klassifiziere es als Value Object.
 Lass es die Bedeutung der Attribute ausdrücken, die es enthält, und
-gib ihm die zugehörige Funktionalität. Behandle das Wertobjekt als
+gib ihm die zugehörige Funktionalität. Behandle das Value Object als
 unveränderlich. Mache alle Operationen zu [Side-effect-free
 Functions](#side-effect-free-functions), die nicht von
-veränderlichem Zustand abhängig sind. Gib dem Wertobjekt keine
+veränderlichem Zustand abhängig sind. Gib dem Value Object keine
 Identität und vermeide die Komplexität, die zur Wartung von
-Entitäten notwendig sind.**
+Entities notwendig sind.**
 
 ## Domain Event {#domain-event}
 
