@@ -3,6 +3,7 @@
 00-ueberblick.md
 01-das-modell-zum-einsatz-bringen.md
 02-bestandteile-eines-modellgetriebenen-designs.md
+03-flexibles-design.md
 04-context-mapping-fuer-strategic-design.md
 05-destillieren-fuer-strategic-design.md
 06-grobe-struktur-fuer-strategic-design.md
