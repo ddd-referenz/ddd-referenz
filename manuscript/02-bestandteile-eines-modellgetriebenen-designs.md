@@ -132,7 +132,7 @@ Entitäten notwendig sind.**
 
 ## Domain Event {#domain-event}
 
-*Dt.: Domänenereignis*
+*dt.: Domänenereignis*
 
 Etwas ist passiert, was für Domänenexperten wichtig ist.
 
@@ -200,14 +200,14 @@ werden.
 
 ## Services {#service}
 
-*Dt.: Dienste*
+*dt.: Dienste*
 
 Manchmal ist es einfach kein Ding.
 
 Einige Konzepte aus der Domäne können nicht geeignet als Objekte
-modelliert werden. Die Zwang, dass die erforderliche
+modelliert werden. Der Zwang, dass die notwendige
 Domänenfunktionalität in die Verantwortung einer [Entity](#entity)
-oder eines [Value Objects](#value-object) fällt, verzerrt entweder die
+oder eines [Value Objects](#value-object) fallen soll, verzerrt entweder die
 Definition eines modellbasierten Objekts oder fügt bedeutungslose
 künstliche Objekte hinzu.
 
@@ -217,13 +217,13 @@ Daher:
 der Domäne nicht in der natürlichen Verantwortung einer
 [Entity](#entity) oder eines [Value Objects](#value-object) liegt,
 füge dem Modell eine Operation als eigenständige Schnittstelle hinzu,
-die als [Service](#service) deklariert ist.  Definiere einen
-Servicevertrag, eine Reihe von [Assertions](#assertion) über
-Interaktionen mit dem [Service](#service).  Geben Sie diese
-[Assertions](#assertion) in der [Ubiquituous
-Language](#ubiquituous-language) eines bestimmten [Bounded
-Context](#bounded-context) an.  Gib dem [Service](#service) einen
-Namen, der auch Teil der [Ubiquituous Language](#ubiquituous-language)
+die als [Service](#service) deklariert ist. Definiere einen
+Servicevertrag, eine Reihe von [Assertions](#assertion) zu
+Interaktionen mit dem [Service](#service). Drücke diese
+[Assertions](#assertion) in der [Ubiquitous
+Language](#ubiquitous-language) eines bestimmten [Bounded
+Context](#bounded-context) aus. Gib dem [Service](#service) einen
+Namen, der ebenfalls Teil der [Ubiquitous Language](#ubiquitous-language)
 wird.**
 
 ## Modules {#module}
