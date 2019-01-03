@@ -228,41 +228,43 @@ wird.**
 
 ## Modules {#module}
 
-*Dt.: Module, auch bekannt als Packages*
+*dt.: Module*
 
-Jeder verwendet [Modules](#module), aber nur wenige behandeln sie als
-vollwertigen Teil des Modells.  Code wird in alle möglichen Kategorien
+Jeder verwendet Module, aber nur wenige behandeln sie als
+vollwertigen Teil des Modells. Code wird in alle möglichen Kategorien
 unterteilt, von Aspekten der technischen Architektur bis hin zu den
 Aufgaben der Entwickler. Selbst Entwickler, die viel refactorn,
 begnügen sich oft mit den Modulen, die frühzeitig im Projekt
-konzipiert wurden.
+entstanden sind.
 
 Erklärungen von Kopplung und Kohäsion lassen diese Begriffe
 tendenziell wie technische Metriken wirken, die mechanisch anhand der
-Verteilungen von Assoziationen und Interaktionen beurteilt werden.
+Verteilungen von Beziehungen und Interaktionen beurteilt werden sollen.
 Dabei geht es nicht nur um die Aufteilung von Code in Module, sondern
-auch um Konzepte.  Es gibt eine Grenze, an wie viele Dinge eine Person
-auf einmal denken kann (daher niedrige Kopplung).  Inkohärente
+auch in Konzepte. Es gibt eine Grenze, an wie viele Dinge eine Person
+auf einmal denken kann (daher niedrige Kopplung). Unzusammenhängende
 Fragmente von Ideen sind so schwer zu verstehen wie eine
 undifferenzierte Ideensuppe (daher hohe Kohäsion).
 
 Daher:
 
-**Wähle Module, die die Geschichte des Systems erzählen und einen
-zusammenhängenden Satz von Konzepten enthalten.  Gib den Modulen
-Namen, die Teil der [Ubiquituous Language](#ubiquituous-language)
-werden.  Module sind Teil des Modells und ihre Namen sollten den
-Einblick in die Domäne widerspiegeln.**
+**Wähle Module, welche die Geschichte des Systems erzählen und einen
+zusammenhängenden Satz von Konzepten enthalten. Gib den Modulen
+Namen, die Teil der [Ubiquitous Language](#ubiquitous-language)
+werden. Module sind Teil des Modells und ihre Namen sollten das 
+Verständnis der Domäne widerspiegeln.**
 
-**Dies führt oft zu einer geringen Kopplung zwischen den Modulen,
-außer wenn man nicht nach Wegen sucht, um das Modell zu ändern und so
-die Konzepte zu entwirren, oder nach einem übergreifendem Konzept, das
-die Grundlage für ein Modul sein kann, das die Elemente sinnvoll
-zusammenbringen würde.  Suchen Sie eine niedrige Kopplung im Sinne von
+**Dies führt oft zu einer geringen Kopplung zwischen den Modulen, und 
+falls nicht: suche nach Wegen, um das Modell zu ändern und so
+die Konzepte zu entwirren, oder nach einem bisher unbemerkten Konzept, 
+das die Grundlage für ein Modul sein kann, welches die Elemente sinnvoll
+zusammenbringen würde. Suche eine niedrige Kopplung im Sinne von
 Konzepten, die unabhängig voneinander verstanden und begründet werden
-können.  Verfeinern Sie das Modell, bis es nach
-High-Level-Domänenkonzepten partitioniert ist und auch der Code
+können. Verfeinere das Modell, bis es nach
+hochwertigen Domänenkonzepten partitioniert ist und auch der Code
 entsprechend entkoppelt ist.**
+
+(auch bekannt als Packages, dt.: Pakete)
 
 ## Aggregates {#aggregate}
 
