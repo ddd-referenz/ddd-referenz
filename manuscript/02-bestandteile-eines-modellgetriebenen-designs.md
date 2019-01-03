@@ -66,8 +66,8 @@ können.
 
 Einige Objekte sind nicht in erster Linie über ihre Attribute
 definiert. Sie stellen eine Identität dar, welche die Zeit und oft 
-verschiedene Darstellungen durchläuft. Manchmal muss ein
-solches Objekt mit einem anderen Objekt übereinstimmen, obwohl die
+verschiedene Darstellungen durchläuft. Manchmal stimmt ein
+solches Objekt mit einem anderen Objekt überein, obwohl die
 Attribute unterschiedlich sind. Oder ein Objekt muss von anderen 
 Objekten unterschieden werden, selbst wenn sie die gleichen 
 Attribute haben können. Eine falsche Identität kann zu 
