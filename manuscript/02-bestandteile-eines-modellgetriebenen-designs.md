@@ -218,10 +218,10 @@ füge dem Modell eine Operation als eigenständige Schnittstelle hinzu,
 die als [Service](#service) deklariert ist.  Definiere einen
 Servicevertrag, eine Reihe von [Assertions](#assertion) über
 Interaktionen mit dem [Service](#service).  Geben Sie diese
-[Assertions](#assertion) in der [Ubiquituous
-Language](#ubiquituous-language) eines bestimmten [Bounded
+[Assertions](#assertion) in der [Ubiquitous
+Language](#ubiquitous-language) eines bestimmten [Bounded
 Context](#bounded-context) an.  Gib dem [Service](#service) einen
-Namen, der auch Teil der [Ubiquituous Language](#ubiquituous-language)
+Namen, der auch Teil der [Ubiquitous Language](#ubiquitous-language)
 wird.**
 
 ## Modules {#module}
@@ -248,7 +248,7 @@ Daher:
 
 **Wähle Module, die die Geschichte des Systems erzählen und einen
 zusammenhängenden Satz von Konzepten enthalten.  Gib den Modulen
-Namen, die Teil der [Ubiquituous Language](#ubiquituous-language)
+Namen, die Teil der [Ubiquitous Language](#ubiquitous-language)
 werden.  Module sind Teil des Modells und ihre Namen sollten den
 Einblick in die Domäne widerspiegeln.**
 
@@ -307,8 +307,8 @@ Verteilungsfragen.
 
 *Dt.: Repsitory*
 
-*Zugriff auf Aggregate durch Anfragen, die in der [Ubiquituous
-Language](#ubiquituous-language) ausgedrückt sind.*
+*Zugriff auf Aggregate durch Anfragen, die in der [Ubiquitous
+Language](#ubiquitous-language) ausgedrückt sind.*
 
 Die Verbreitung von übergreifenden Assoziationen, die nur dazu dienen,
 Dinge zu finden, bringen das Modell durcheinandner.  In ausgereiften
