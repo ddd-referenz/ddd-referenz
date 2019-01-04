@@ -13,6 +13,11 @@ Creative-Common-Lizenz steht, war es auch problemlos möglich, dieses
 Projekt anzugehen. Das hat uns auch dazu motiviert, die Übersetzung
 unter dieselbe Lizenz zu stellen und kostenlos als eBook anzubieten.
 
+Für uns ist es wichtig, dass die Übersetzung sich möglichst eng an dem
+ursprünglichen Text orientiert. So ist sichergestellt, dass die genaue
+Bedeutung der Muster nicht verloren geht. Zugunsten dieses Ziels
+mussten wir teilweise Kompromisse bei der einfachen Lesbarkeit machen.
+
 Bedanken wollen wir uns bei der gesamten DDD-Gemeinde, bei Eric Evans
 und bei unserem Arbeitgeber INNOQ, der dieses Projekt unterstützt
 hat.
