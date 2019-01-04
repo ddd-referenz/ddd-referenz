@@ -1,8 +1,8 @@
-# Definitionen
+## Definitionen
 
 ### Domain {#domain}
 
-Ein Bereich von Wissens, Einfluss oder Aktivität.  Das Fachgebiet, auf
+Ein Bereich von Wissen, Einfluss oder Aktivität. Das Fachgebiet, auf
 das der Benutzer ein Programm anwendet, ist die *Domain* (dt.: Domäne)
 der Software.
 
@@ -14,7 +14,7 @@ Problemen im Zusammenhang mit dieser Domain verwendet werden kann.
 
 ### Ubiquitous Language
 
-Die [*Ubiquitous Language*](#ubiquituous-language) (dt.:
+Die [*Ubiquitous Language*](#ubiquitous-language) (dt.:
 allgegenwärtige Sprache) ist eine
 Sprache, die um das Domänenmodell herum gruppiert ist und von allen
 Teammitgliedern in einem *Bounded Context* verwendet wird, um alle
