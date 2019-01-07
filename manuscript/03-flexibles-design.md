@@ -74,19 +74,19 @@ Manchmal erreicht man dieses Muster nur halb: das Argument passt zum Implementie
 
 ## Declarative Design {#declarative-design}
 
-*Dt.: Deklaratives Design*
+*dt.: Deklarativer Entwurf*
 
-Es kann keine wirklichen Garantien in prozeduraler Software geben. Um nur eine Möglichkeit zu nennen, Assertions zu umgehen, könnte Code zusätzliche Seiteneffekte haben, die nicht ausdrücklich ausgeschlossen wurden. Egal wie modellgetrieben unser Design ist, wir schreiben immer noch Prozeduren, um die Wirkung der konzeptionellen Interaktionen zu erzeugen. Und wir verbringen einen Großteil unserer Zeit damit, Boilerplate Code zu schreiben, der keine wirkliche Bedeutung oder Verhalten hat. Intention-revaling Interfaces und die anderen Patterns in diesem Kapitel helfen, aber sie können konventionellen objektorientierten Programmen niemals formale Strenge verleihen.
+Es kann keine wirklichen Garantien in prozeduraler Software geben. Um nur eine Möglichkei für das Umgehen von Zusicherungen zu nennen: Code könnte zusätzliche Seiteneffekte haben, die nicht ausdrücklich ausgeschlossen wurden. Egal wie modellgetrieben unser Entwurf ist, wir schreiben immer noch Prozeduren, um die Wirkung von konzeptionellen Interaktionen zu erzeugen. Und wir verbringen einen Großteil unserer Zeit damit, Boilerplate Code zu schreiben, der keine wirkliche Bedeutung oder kein Verhalten hat. [Intention-Revaling Interfaces](#intention-revealing-interfaces) und die anderen Muster in diesem Kapitel helfen, aber sie können konventionellen objektorientierten Programmen niemals formale Strenge verleihen.
 
-Dies sind einige der Motivationen für Declarative Design. Dieser Begriff bedeutet verschiedenen Menschen unterschiedliche Dinge, aber normalerweise zeigt er einen Weg an, ein Programm oder einen Teil eines Programms als eine Art ausführbare Spezifikation zu schreiben. Eine sehr genaue Beschreibung der Eigenschaften steuert die Software tatsächlich. In seinen verschiedenen Herangehensweisen könnte dies durch Reflection oder zur Kompilierzeit durch Codegenerierung (automatische Erzeugung von konventionellem Code auf der Grundlage der Deklaration) geschehen. Dieser Ansatz ermöglicht es einem anderen Entwickler, die Deklaration zum Nennwert zu nehmen. Es ist eine absolute Garantie.
+Dies sind einige der Motivationen für deklarativen Entwurf. Dieser Begriff bedeutet verschiedenen Menschen unterschiedliche Dinge, aber normalerweise beschreibt er einen Weg, ein Programm oder einen Teil eines Programms als eine Art ausführbare Spezifikation zu schreiben. Eine sehr genaue Beschreibung der Eigenschaften steuert effektiv die Software. Nach verschiedenen Herangehensweisen könnte dies durch Reflection oder zur Kompilierzeit durch Codegenerierung (automatische Erzeugung von konventionellem Code auf der Grundlage der Deklaration) geschehen. Dieser Ansatz ermöglicht es einem anderen Entwickler, die Deklaration zum Nennwert zu nehmen. Es ist eine absolute Garantie.
 
-Viele deklarative Ansätze können korrumpiert werden, wenn die Entwickler sie absichtlich oder unabsichtlich umgehen. Dies ist wahrscheinlich, wenn das System schwer zu bedienen oder zu restriktiv ist. Jeder muss die Regeln des Rahmens befolgen, um die Vorteile eines deklarativen Programms zu nutzen.
+Viele deklarative Ansätze können korrumpiert werden, wenn die Entwickler sie absichtlich oder unabsichtlich umgehen. Dies ist wahrscheinlich, wenn das System schwer zu bedienen oder zu restriktiv ist. Jeder muss die Regeln des Frameworks befolgen, um die Vorteile eines deklarativen Programms zu nutzen.
 
-### Ein deklarativer Design-Stil
+### Ein deklarativer Entwurfstil
 
-Sobald Ihr Entwurf über intention-revealing Interfaces, side-effect-free Functions und Assertions verfügt, begeben Sie sich in deklaratives Gebiet. Viele der Vorteile des Declarative Designs werden erzielt, sobald Sie kombinierbare Elemente haben, die ihre Bedeutung kommunizieren, und die charakteristische oder offensichtliche Effekte oder gar keine beobachtbaren Effekte haben.
+Sobald Dein Entwurf über [Intention-Revealing Interfaces](#intention-revealing-interfaces), [Side-Effect-Free Functions](#side-effect-free-functions) und [Assertions](#assertions) verfügt, begibst Du Dich in deklaratives Gebiet. Viele der Vorteile des deklarativen Entwurfs werden erzielt, sobald Du kombinierbare Elemente hast, die ihre Bedeutung kommunizieren, und die charakteristische oder offensichtliche Effekte oder gar keine beobachtbaren Effekte haben.
 
-Ein flexibles Design kann es dem Kundencode ermöglichen, einen deklarativen Designstil zu verwenden. Zur Veranschaulichung werden im nächsten Abschnitt einige der Muster in diesem Kapitel zusammengefasst, um die Spezifikation flexibler und deklarativer zu gestalten.
+Ein flexibles Design kann es dem Client-Code ermöglichen, einen deklarativen Entwurfstil zu verwenden. Zur Veranschaulichung werden im nächsten Abschnitt einige der Muster in diesem Kapitel zusammengefasst, um die Spezifikation flexibler und deklarativer zu gestalten.
 
 ## Arbeiten auf Basis etablierter Formalismen
 
