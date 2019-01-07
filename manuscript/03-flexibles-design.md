@@ -24,15 +24,15 @@ Daher:
 
 ## Side-Effect-Free Functions {#side-effect-free-functions}
 
-*Dt.: Seiteneffektfreie Funktionen*
+*dt.: Seiteneffektfreie Funktionen*
 
-Interaktionen mehrerer Regeln oder Zusammensetzungen von Berechnungen werden extrem schwer vorherzusagen sein. Der Entickler, der eine Operation aufruft, muss ihre Durchführung und die Durchführung aller seiner Delegationen verstehen, um das Ergebnis zu antizipieren. Der Nutzen jeder Abstraktion von Interfaces ist begrenzt, wenn die Entwickler gezwungen sind, den Schleier zu durchbrechen. Ohne sicher vorhersehbare Abstraktionen müssen die Entwickler die kombinatorische Auflösung begrenzen und den Reichtum an Verhalten, der sich aufbauen lässt, mit einer niedrigen Grenze begrenzen.
+Interaktionen mehrerer Regeln oder Kompositionen von Berechnungen werden extrem schwer vorherzusagen. Der Entwickler, der eine Operation aufruft, muss ihre Implementierung und die Implementierung aller Delegationen verstehen, um das Ergebnis voraussehen zu können. Der Nutzen jeder Abstraktion von Schnittstellen ist begrenzt, wenn Entwickler gezwungen sind, diesen Schleier zu lüften. Ohne sicher vorhersehbare Abstraktionen müssen Entwickler die kombinatorische Vielfalt begrenzt halten, was eine obere Grenzen für die Menge an Verhalten darstellt, die umgesetzt werden kann.
 
 Daher:
 
-**Platzieren Sie so viel von der Logik des Programms wie möglich in Funktionen, Operationen, die Ergebnisse ohne beobachtbare Nebenwirkungen liefern. Trennen Sie Befehle (Methoden, die zu Änderungen des beobachtbaren Zustands führen) strikt in sehr einfache Operationen, die keine Domäneninformationen zurückgeben. Beherrschen Sie Seiteneffekte indem komplexe Logik in Value-Objects verschoben wird, wenn sich ein der Fachlichkeit entsprechendes Konzept präsentiert.
+**Platziere so viel von der Programmlogik wie möglich in Funktionen, also Operationen, die Ergebnisse ohne beobachtbare Nebenwirkungen liefern. Separiere Kommandos (Methoden, die zu Änderungen des beobachtbaren Zustands führen) strikt in sehr einfache Operationen, die keine Domäneninformationen zurückgeben. Kontrolliere Seiteneffekte zusätzlich, indem komplexe Logik in Value Objects verschoben wird, wenn sich in der Fachlichkeit ein entsprechendes Konzept zeigt.
 
-Alle Operationen eines Value-Objects sollten seiteneffektfreie Funktionen sein.**
+Alle Operationen eines Value Objects sollten seiteneffektfreie Funktionen sein.**
 
 ## Assertions {#assertions}
 
