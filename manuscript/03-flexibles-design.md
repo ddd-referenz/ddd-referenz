@@ -36,19 +36,19 @@ Alle Operationen eines Value Objects sollten seiteneffektfreie Funktionen sein.*
 
 ## Assertions {#assertions}
 
-*Dt.: Versicherungen / Validierungen*
+*dt.: Zusicherungen*
 
-Wenn die Nebenwirkungen von Operationen nur implizit durch ihre Umsetzung definiert werden, werden Designs mit viel Delegation zu einem Gewirr aus Ursache und Wirkung. Der einzige Weg, ein Programm zu verstehen, besteht darin, die Ausführung durch verzweigte Pfade zu verfolgen. Der Wert der Kapselung geht verloren. Die Notwendigkeit, die konkrete Ausführung zu verfolgen, besiegt die Abstraktion.
+Wenn die Nebenwirkungen von Operationen nur implizit durch ihre Umsetzung definiert sind, werden Entwürfe mit viel Delegation zu einem Gewirr aus Ursache und Wirkung. Der einzige Weg, ein Programm zu verstehen, besteht darin, die Ausführung durch verzweigte Pfade hindurch nachzuverfolgen. Der Wert der Kapselung geht verloren. Die Notwendigkeit, die konkrete Ausführung nachverfolgen zu müssen, zerstört die Abstraktion.
 
 Daher:
 
-**Geben Sie die Folgezustände der Operationen und die Invarianten der Klassen und Aggregate an. Wenn Assertions nicht direkt in Ihrer Programmiersprache kodiert werden können, schreiben Sie automatisierte Komponententests für sie. Schreiben Sie sie in Dokumentationen oder Diagramme, wie es zum Stil des Entwicklungsprozesses eines Projekts passt.**
+**Gib die Nachbedingungen von Operationen und die Invarianten von Klassen und Aggregaten an. Wenn Zusicherungen nicht direkt in Deiner Programmiersprache kodiert werden können, schreibe automatisierte Unit Tests für sie. Schreibe sie in Dokumentationen oder in Diagramme, falls dies zum Stil des Entwicklungsprozesses des Projekts passt.**
 
-Suchen Sie nach Modellen mit kohärenten Konzepten, die einen Entwickler dazu bringen, die beabsichtigten Assertions abzuleiten, die Lernkurve zu beschleunigen und das Risiko von widersprüchlichem Code zu reduzieren.
+Suche nach Modellen mit kohärenten Konzepten, die einen Entwickler unterstützen, die beabsichtigten Zusicherungen zu erkennen, dadurch die Lernkurve zu beschleunigen und das Risiko von widersprüchlichem Code zu reduzieren.
 
-Assertions definieren Service Contrsacts und Entitätsmodifikatoren. 
+Zusicherungen definieren Schnittstellenverträge und Modifikatoren von Entitäten. 
 
-Assertions definieren Invarianten auf Aggregates.
+Zusicherungen definieren Invarianten auf Aggregaten.
 
 ## Standalone Classes {#standalone-classses}
 
