@@ -14,13 +14,13 @@ Ebenso wichtig ist, dass das Design dem Entwickler, der daran arbeitet, dienen m
 
 ## Intention-Revealing Interfaces {#intention-revealing-interfaces}
 
-*Dt.: Ausdrucksstarke-Interfaces*
+*dt.: Ausdrucksstarke Schnittstellen*
 
-Wenn ein Entwickler die Implementierung einer Komponente in Betracht ziehen muss, um sie zu nutzen, geht der Wert der Kapselung verloren. Wenn jemand anderes als der ursprüngliche Entwickler den Zweck eines Objekts oder einer Operation aufgrund seiner Implementierung ableiten muss, kann dieser neue Entwickler einen Zweck ableiten, den die Operation oder Klasse nur durch Zufall erfüllt. Wenn das nicht die Absicht war, kann der Code im Moment funktionieren, aber die konzeptionelle Grundlage des Designs wird beschädigt worden sein, und die beiden Entwickler werden mit Widersprüchen arbeiten.
+Wenn ein Entwickler die Implementierung einer Komponente berücksichten muss, um sie zu nutzen, geht der Wert der Kapselung verloren. Wenn jemand anderes als der ursprüngliche Entwickler den Zweck eines Objekts oder einer Operation aufgrund seiner Implementierung ableiten muss, kann dieser neue Entwickler einen Zweck ableiten, den die Operation oder Klasse nur durch Zufall erfüllt. Wenn das nicht die Absicht war, kann der Code im Moment funktionieren, aber die konzeptionelle Grundlage des Designs wird beschädigt sein, und die beiden Entwickler werden gegeneinander arbeiten.
 
 Daher:
 
-**Benennen Sie Klassen und Operationen, um ihre Wirkung und ihren Zweck zu beschreiben, ohne Bezugnahme auf die Mittel, mit denen sie tun, was sie versprechen. Dies befreit den Client-Entwickler von der Notwendigkeit, die Einbauten zu verstehen. Diese Namen sollten der Ubiquitous Language entsprechen, damit die Teammitglieder schnell ihre Bedeutung ableiten können. Schreiben Sie einen Test für ein Verhalten, bevor Sie es erstellen, um Ihr Denken in den Client-Entwicklermodus zu zwingen.**
+**Benenne Klassen und Operationen, um ihre Wirkung und ihren Zweck zu beschreiben, ohne die Mittel zu nennen, mit denen sie das tun, was sie versprechen. Dies befreit den Client-Entwickler von der Notwendigkeit, das Innenleben zu verstehen. Diese Namen sollten der Ubiquitous Language entsprechen, damit Teammitglieder schnell ihre Bedeutung ableiten können. Schreibe einen Test für ein Verhalten, bevor Du es implementierst, um Dein Denken in den Client-Entwicklermodus zu zwingen.**
 
 ## Side-Effect-Free Functions {#side-effect-free-functions}
 
