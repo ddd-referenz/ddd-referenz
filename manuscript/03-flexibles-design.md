@@ -98,16 +98,16 @@ Ein praktisches Beispiel, "Shares Math", wurde in Kapitel 8 des Buches "Domain-D
 
 ## Conceptual Contours
 
-*Dt.: Konzeptionelle Konturen*
+*dt.: Konzeptionelle Konturen*
 
-Manchmal favorisieren Leute einen feingranularen Schnitt der Funktionalität, um eine flexible Kombination zu ermöglichen. Manchmal favorisieren sie einen eher grobgranularen Schnitt, um die Komplexität zu kapseln. Manchmal streben sie nach einer konsistenten Granularität, wodurch alle Klassen und Operationen in ähnlicher Größenordnung durchgeführt werden. Das sind übertriebene Vereinfachungen, die als allgemeine Regeln nicht gut funktionieren. Aber sie sind durch grundlegende Probleme motiviert.
+Manchmal schneiden Leute die Funktionalität in kleine Teile, um eine flexible Kombination zu ermöglichen. Manchmal favorisieren sie einen eher grobgranularen Schnitt, um die Komplexität zu kapseln. Manchmal streben sie nach einer konsistenten Granularität, wodurch alle Klassen und Operationen in ähnlicher Größenordnung umgesetzt werden. Das sind übertriebene Vereinfachungen, die als allgemeine Regeln nicht gut funktionieren. Aber sie sind durch grundlegende Probleme motiviert.
 
-Wenn Elemente eines Modells oder Designs in ein monolithisches Konstrukt eingebettet sind, wird deren Funktionalität dupliziert. Die externe Schnittstelle sagt nicht alles, was einem Kunden wichtig sein könnte. Ihre Bedeutung ist schwer zu verstehen, da verschiedene Konzepte miteinander vermischt werden.
+Wenn Elemente eines Modells oder Entwurfs in ein monolithisches Konstrukt eingebettet sind, wird deren Funktionalität dupliziert. Die externe Schnittstelle sagt nicht alles, was einem Verwender wichtig sein könnte. Ihre Bedeutung ist schwer zu verstehen, da verschiedene Konzepte miteinander vermischt werden.
 
-Umgekehrt kann die Zerlegung von Klassen und Methoden den Client sinnlos verkomplizieren, indem sie Clients dazu zwingt, zu verstehen, wie kleine Teile zusammenpassen. Schlimmer noch, ein Konzept kann völlig verloren gehen. Die Hälfte eines Uranatoms ist nicht Uran. Und natürlich zählt nicht nur die Korngröße, sondern auch die Art und Weise, wie das Korn läuft.
+Umgekehrt kann die Zerlegung von Klassen und Methoden den Client sinnlos verkomplizieren, indem sie Clients dazu zwingt, zu verstehen, wie kleine Teile zusammenpassen. Schlimmer noch, ein Konzept kann völlig verloren gehen. Die Hälfte eines Uranatoms ist nicht Uran. Natürlich kommt es nicht nur auf die Grösse der Elemente an, sondern auch, wie gut diese zusammen funktionieren.
 
 Daher:
 
-**Zerlege die Designelemente (Funktionen, Interfaces, Klassen und Aggregates) in zusammenhängende Einheiten, wobei Du Deine Intuition der wichtigen Teilbereiche in der Domäne berücksichtigst. Beobachte die Achsen von Veränderung und Stabilität durch sukzessives Refactoring und suche nach den zugrunde liegenden konzeptionellen Konturen, die diese Schermuster erklären. Richte das Modell auf die konsistenten Aspekte der Domäne aus, die es überhaupt zu einem lebensfähigen Wissensgebiet machen.**
+**Zerlege die Entwurfselement (Funktionen, Schnittellen, Klassen und Aggregate) in zusammenhängende Einheiten, wobei Du Deine Intuition der wichtigen Teilbereiche in der Domäne berücksichtigst. Beobachte die Achsen von Veränderung und Stabilität durch sukzessives Refactoring und suche nach den zugrunde liegenden konzeptionellen Konturen, die dieses Schnittmuster erklären. Richte das Modell auf die konsistenten Aspekte der Domäne aus, die es überhaupt zu einem lebensfähigen Wissensgebiet machen.**
 
 Ein flexibles Design, das auf einem tiefgehenden Modell basiert, ergibt eine einfache Reihe von Schnittstellen, die sich logisch kombinieren, um sinnvolle Aussagen in der Ubiquitous Language zu treffen, ohne die Ablenkung und den Wartungsaufwand irrelevanter Optionen.
