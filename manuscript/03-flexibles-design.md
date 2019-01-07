@@ -60,17 +60,17 @@ Selbst innerhalb eines Moduls nimmt die Schwierigkeit der Interpretation eines E
 
 ## Closure of Operations {#closure-of-operations}
 
-*Dt.: Geschlossene Funktionen*
+*dt.: Geschlossene Funktionen*
 
 Die meisten interessanten Objekte tun am Ende Dinge, die nicht nur von primitiven Datentypen charakterisiert werden können.
 
 Daher:
 
-**Wenn es passt, definieren Sie eine Funktion, deren Rückgabetyp derselbe ist wie der Typ ihrer Argumente. Wenn der Implementierer einen Zustand hat, der bei der Berechnung verwendet wird, dann ist der Implementierer praktisch ein Argument der Funktion, so dass das/die Argument(e) und der Rückgabewert vom gleichen Typ wie der Implementierer sein sollten. Eine solche Funktion wird unter der Menge der Instanzen dieses Typs geschlossen. Eine geschlossene Funktion bietet eine High-Level-Schnittstelle, ohne Abhängigkeit auf andere Konzepte.**
+**Wenn es passt, definiere eine Funktion, deren Rückgabetyp derselbe ist wie der Typ ihres/ihrer Argumente(s). Wenn der Implementierer einen Zustand hat, der bei der Berechnung verwendet wird, dann ist der Implementierer faktisch ein Argument der Funktion, so dass das/die Argument(e) und der Rückgabewert vom gleichen Typ wie der Implementierer sein sollten. Eine solche Funktion ist unter der Menge der Instanzen dieses Typs geschlossen. Eine geschlossene Funktion bietet eine höherwertige Schnittstelle, ohne Abhängigkeit auf andere Konzepte.**
 
-Dieses Muster wird am häufigsten auf die Operationen eines Value-Objects angewendet. Da der Lebenszyklus einer Entity eine Bedeutung in der Domäne hat, kann man nicht einfach ein neue erzeugen, um eine Frage zu beantworten. Es gibt Vorgänge, die unter einem Entitätstyp abgeschlossen sind. Sie können ein Mitarbeiterobjekt nach seinem Vorgesetzten fragen und einen anderen Mitarbeiter zurückholen. Aber im Allgemeinen sind Entities nicht die Art von Konzepten, die wahrscheinlich das Ergebnis einer Berechnung sind. Dies ist also in den meisten Fällen eine Gelegenheit, nach Value Objects Ausschau zu halten.
+Dieses Muster wird meistens auf die Operationen eines Value Objects angewendet. Da der Lebenszyklus einer Entität eine Bedeutung in der Domäne hat, kann man nicht einfach ein neue Entität erzeugen, um eine Anfrage zu beantworten. Es gibt Vorgänge, die unter einem Entitätstyp abgeschlossen sind. Du kannst ein Mitarbeiterobjekt nach seinem Vorgesetzten fragen und ein anderes Mitarbeiterobjekt zurückerhalten. Aber im Allgemeinen sind Entitäten keine Konzepte, die häufig das Ergebnis einer Berechnung sind. In den meisten Fällen ist dies also eine Eigenschaft, die in Value Objects zu suchen ist.
 
-Manchmal kommt man auf halbem Weg zu diesem Muster. Das Argument passt zum Implementierer, aber der Rückgabetyp ist unterschiedlich, oder der Rückgabetyp passt zum Empfänger und das Argument ist unterschiedlich. Diese Funktionen sind nicht geschlossen, aber sie bieten einen Teil des Vorteils der Schließung, indem sie den Geist befreien.
+Manchmal erreicht man dieses Muster nur halb: das Argument passt zum Implementierer, aber der Rückgabetyp ist unterschiedlich, oder der Rückgabetyp passt zum Empfänger, aber das Argument ist unterschiedlich. Diese Funktionen sind nicht geschlossen, aber sie bieten einen Teil des Vorteils der Geschlossenheit, indem sie einfacher verständlich sind.
 
 ## Declarative Design {#declarative-design}
 
