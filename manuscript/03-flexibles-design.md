@@ -12,7 +12,7 @@ Ebenso wichtig ist, dass das Design dem Entwickler dienen muss, der daran arbeit
 - Reduktion der Änderungskosten
 - Erstellung von Software, mit der Entwickler*innen gerne arbeiten
 
-## Intention-Revealing Interfaces {#intention-revealing-interfaces}
+## Intention-Revealing Interfaces {#intention-revealing-interface}
 
 *Dt.: Ausdrucksstarke-Interfaces*
 
@@ -34,7 +34,7 @@ Daher:
 
 Alle Operationen eines Value-Objects sollten seiteneffektfreie Funktionen sein.**
 
-## Assertions {#assertions}
+## Assertions {#assertion}
 
 *Dt.: Versicherungen / Validierungen*
 
