@@ -52,11 +52,11 @@ Zusicherungen definieren Invarianten auf Aggregaten.
 
 ## Standalone Classes {#standalone-classses}
 
-*Dt.: Eigenständige Klassen*
+*dt.: Eigenständige Klassen*
 
-Selbst innerhalb eines Moduls nimmt die Schwierigkeit der Interpretation eines Designs mit zunehmenden Abhängigkeiten stark zu. Dies erhöht die geistige Überlastung und begrenzt die Komplexität des Designs, mit der ein Entwickler umgehen kann. Implizite Konzepte tragen zu dieser Belastung noch mehr bei als explizite Referenzen.
+Selbst innerhalb eines Moduls nimmt die Schwierigkeit der Interpretation eines Entwurfs mit zunehmenden Abhängigkeiten stark zu. Dies führt zu geistiger Überlastung und begrenzt die Komplexität des Entwurfs, mit der ein Entwickler umgehen kann. Implizite Konzepte tragen zu dieser Belastung noch mehr bei als explizite Referenzen.
 
-**Eine niedrige Kopplung ist für den Entwurf von Objekten von grundlegender Bedeutung. Wenn Sie könnten, sollten Sie ohne Kompromisse den ganzen Weg gehen. Eliminieren Sie alle anderen Konzepte aus dem Bild. Dann ist eine Klasse völlig in sich geschlossen und kann allein studiert und verstanden werden. Jede dieser in sich geschlossenen Klassen erleichtert das Verständnis eines Moduls erheblich.**
+**Eine geringe Kopplung ist für den Entwurf von Objekten von grundlegender Bedeutung. Wenn Du kannst, gehe den ganzen Weg: eliminiere alle anderen Konzepte aus dem Bild. Dann ist eine Klasse völlig in sich geschlossen und kann allein studiert und verstanden werden. Jede dieser in sich geschlossenen Klassen erleichtert das Verständnis eines Moduls erheblich.**
 
 ## Closure of Operations {#closure-of-operations}
 
