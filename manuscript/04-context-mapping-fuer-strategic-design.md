@@ -430,7 +430,7 @@ Deshalb:
 
 **Zeichne eine Grenze um das gesamte Durcheinander und bezeichne es
 als einen Big Ball of Mud. Versuche nicht, in
-diesem Context eine
+diesem Kontext eine
 ausgeklügelte Modellierung anzuwenden.  Sei auf der Hut vor der
 Tendenz, dass sich solche Systeme in andere Kontexte ausbreiten.**
 
