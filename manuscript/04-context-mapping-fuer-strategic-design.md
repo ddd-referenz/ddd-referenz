@@ -290,40 +290,38 @@ den beiden Modellen.**
 
 ## Open-host Service {#open-host-service}
 
-*Dt.: Offener Host*
+*Dt.: Offen angebotener Dienst*
 
-*Typischerweise definierst du für jeden [Bounded
-Context](#bounded-context) eine
-Übersetzungsschicht für jede Komponente, in die du integrieren musst
-und die außerhalb des Kontextes liegt.  Wenn jede Integration anders
-ist, vermeidet dieser Ansatz, eine Übersetzungsschicht für jedes
-externe System einzufügen, die Korruption der Modelle mit minimalen
+*Typischerweise definierst du für jeden [Bounded Context](#bounded-context) eine
+Übersetzungsschicht für jede Komponente, mit der du integrieren musst
+und die außerhalb des Kontextes liegt. Wenn jede Integration anders
+ist, vermeidet dieser Ansatz mit einer Übersetzungsschicht für jedes
+externe System die Korruption der Modelle mit minimalen
 Kosten. Wenn dein Subsystem jedoch stark nachgefragt ist, benötigst
 du möglicherweise einen flexibleren Ansatz.*
 
 Wenn ein Subsystem mit vielen anderen integriert werden muss, kann die
-Anpassung eines Übersetzers für jede einzelne Integration das Team
-dazu bringen sich zu verzetteln.  Es gibt immer mehr zu warten und
+Anpassung der Übersetzungsschicht für jede einzelne Integration das Team
+dazu bringen sich zu verzetteln. Es gibt immer mehr zu warten und
 immer mehr zu beachten, wenn Änderungen vorgenommen werden.
 
 Daher:
 
 **Definiere ein Protokoll, das den Zugriff auf dein Subsystem als eine
-Reihe von [Services](#service) ermöglicht.  Öffne das Protokoll, so dass
+Menge von Diensten ermöglicht. Öffne das Protokoll, so dass
 alle, die sich mit dir integrieren müssen, das Protokoll nutzen
 können.  Verbessere
 und erweitere das Protokoll, um neue Integrationsanforderungen zu
-erfüllen, es sei denn, ein einzelnes Team hat individuelle
-Anforderungen.  Verwende dann einen spezifischen Übersetzer, um das
+erfüllen, es sei denn, ein einzelnes Team hat eigenartige
+Anforderungen. Verwende dann eine spezifische Übersetzungsschicht, um das
 Protokoll für diesen speziellen Fall zu erweitern, so dass das
 gemeinsame Protokoll einfach und kohärent bleibt.**
 
 Damit befindet sich der Anbieter des Service in der Upstream-Position.
-Jeder Kunde ist Downstream, und typischerweise sind einige von ihnen
-[Conformist](#conformist) und andere bilden [Anticorruption
-Layer](#anticorruption-layer).  Ein Kontext
-mit einem Open Host Service kann jede Art von Beziehung zu anderen
-Kontexten haben, die nicht seine Clients sind.
+Jeder Client ist Downstream, und typischerweise sind einige von ihnen
+[Conformist](#conformist) und andere bauen [Anticorruption Layer](#anticorruption-layer). Ein Kontext
+mit einem Open Host Service kann zudem jede Art von Beziehung zu anderen
+Kontexten haben, die nicht solche Clients sind.
 
 ## Published Language {#published-language}
 
