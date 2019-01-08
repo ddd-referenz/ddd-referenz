@@ -1,9 +1,8 @@
-# IV Context Mapping für Strategic Design
+# IV. Context Mapping für strategisches Design
 
 ### Bounded Context
 
-Der [Bounded Context](#bounded-context) (Dt.: begrenzter Kontext)
-ist eine Beschreibung
+Eine Beschreibung
 einer Grenze (typischerweise ein Subsystem oder die Arbeit eines
 bestimmten Teams), innerhalb derer ein bestimmtes Modell definiert und
 anwendbar ist.
@@ -13,7 +12,7 @@ anwendbar ist.
 Eine Beziehung zwischen zwei Gruppen, in der die Handlungen der
 "Upstream"-Gruppe den Projekterfolg der "Downstream"-Gruppe
 beeinflussen, während die Handlungen der Downstream-Gruppe die
-Upstream-Projekte nicht wesentlich beeinflussen. (Wenn zwei Städte am
+Upstream-Projekte nicht wesentlich beeinflussen. (Z.B. wenn zwei Städte am
 gleichen Fluss liegen, wirkt sich die Verschmutzung der upstream (Dt.:
 flussaufwärts) gelegenen Stadt in erster Linie auf die downstream
 gelegene Stadt (Dt.: flussabwärts) aus).
@@ -25,27 +24,23 @@ erfolgreich sein.
 
 Mutually Dependent (Dt.: wechselseitig abhängig) beschreibt eine Situation,
 in der zwei Softwareentwicklungsprojekte in getrennten Kontexten
-beide liefern müssen, damit jedes von beiden als erfolgreich angesehen
-werden können. 
-
-Wenn zwei Systeme jeweils auf Informationen oder Funktionen des
+beide geliefert werden müssen, damit jedes von beiden als erfolgreich angesehen werden kann. (Wenn zwei Systeme jeweils auf Informationen oder Funktionen des
 anderen angewiesen sind - was wir im Allgemeinen vermeiden würden -
-sehen wir natürlich die Projekte, die diese Systeme entwickeln, als
+sehen wir die Projekte, die diese Systeme entwickeln, natürlich als
 wechselseitig miteinander verflochten.  Es gibt aber auch
 wechselseitig abhängige
 Projekte, bei denen Systemabhängigkeiten nur in eine Richtung
 verlaufen.  Wenn ein System ohne ein bestimmtes abhängiges System und
-die Integration mit diesem abhängigen System wenig Wert hat -
+ohne die Integration mit diesem abhängigen System wenig Wert hat -
 vielleicht weil dies der einzige Ort ist, an dem es verwendet wird -
 dann führt es zu einem Misserfolg beider Projekte, wenn das abhängige
-System nicht ausgeliefert wird.
+System nicht ausgeliefert wird.)
 
 ### Free {#free}
 
 Ein Softwareentwicklungskontext ist free (Dt.: frei), wenn die
 Ausrichtung, der Erfolg oder das Scheitern der Entwicklungsarbeit in
-anderen Kontexten wenig Einfluss auf die Auslieferung dieses Konext
-hat.
+anderen Kontexten wenig Einfluss auf die Auslieferung hat.
 
 ## Context Map {#context-map}
 
