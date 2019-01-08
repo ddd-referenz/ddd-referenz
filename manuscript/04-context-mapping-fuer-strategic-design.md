@@ -187,22 +187,22 @@ der Teams.
 
 ## Customer/Supplier Development {#customer-supplier}
 
-*Dt.: Kunde / Zulieferer*
+*Dt.: Kunde/Lieferant*
 
 *Wenn sich zwei Teams in einer
-[Upstream-Downstream-Beziehung](#upstream-downstream)
+[Upstream-Downstream](#upstream-downstream)-Beziehung
 befinden, in der das Upstream-Team unabhängig vom Schicksal des
 Downstream-Teams erfolgreich sein kann, werden die Bedürfnisse des
-Downstream-Teams auf verschiedene Arten mit einer vielen unterschiedlichen
+Downstream-Teams auf verschiedene Arten mit vielen unterschiedlichen
 Konsequenzen berücksichtigt.*
 
-Ein Downstream-Team kann hilflos sein, wenn es den
-Upstream-Prioritäten ausgeliefert ist.  Währenddessen kann das
+Ein Downstream-Team kann hilflos sein, vollständig den
+Upstream-Prioritäten ausgeliefert ist. Währenddessen kann das
 Upstream-Team blockiert sein, weil es sich Sorgen macht, dass
-Upstream-Systeme gebrochen werden.  Die Probleme des Downstream-Teams
-werden auch durch umständliche Verfahren zum Anfordern von Änderungen
-mit
-komplexen Genehmigungsprozessen nicht geringer.  Und die ungehinderte
+Downstream-Systeme gebrochen werden. Die Probleme des Downstream-Teams
+werden zudem durch umständliche Verfahren zum Anfordern von Änderungen
+über 
+komplexe Genehmigungsprozesse nicht geringer. Und die ungehinderte
 Entwicklung des Upstream-Teams wird gestoppt, wenn das Downstream-Team
 ein Vetorecht bei Änderungen hat.
 
@@ -215,14 +215,13 @@ Upstream-Planung ein. Verhandel und budgetiere Aufgaben für die
 Downstream-Anforderungen, so dass jeder die Verpflichtungen und den
 Zeitplan versteht.**
 
-Agile Teams können dem Downstream-Team bei der Planung die Rolle des
-Kunden gegenüber dem Upstream-Team spielen lassen.  Gemeinsam
+Agile Teams können das Downstream-Team bei der Planung die Rolle des
+Kunden gegenüber des Upstream-Teams spielen lassen. Gemeinsam
 entwickelte automatisierte Akzeptanztests können die erwartete
-Schnittstelle vom Upstream validieren.  Das Hinzufügen dieser Tests
-zur Testsuite des Upstream-Teams, die im Rahmen der [Continuous
-Integration](#continuous-integration) durchgeführt wird, befreit das
-Upstream-Team bei
-Änderungen von der Angst, unbeabsichtigte  Auswirkungen auf Downstream
+Schnittstelle vom Upstream validieren. Das Hinzufügen dieser Tests
+zur Testsuite des Upstream-Teams, die im Rahmen der [Continuous Integration](#continuous-integration) 
+ausgeführt wird, befreit das Upstream-Team bei
+Änderungen von der Angst, unbeabsichtigte Auswirkungen auf Downstream
 zu haben.
 
 ## Conformist {#conformist}
