@@ -222,7 +222,7 @@ die Restriktionen bei der Implementierung oder verliert dieses schnell.
 Die grundlegende Bedingung des [Model-Driven
 Designs](#model-driven-design) - dass
 das Modell eine effektive Implementierung unterstützt und wichtige
-Erkenntnisse über die Domain abstrahiert - geht dadurch nahezu verloren 
+Erkenntnisse über die Domäne abstrahiert - geht dadurch nahezu verloren 
 und die daraus
 resultierenden Modelle werden unpraktisch sein. Schließlich werden die
 Kenntnisse und Fähigkeiten erfahrener Designer nicht auf andere

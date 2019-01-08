@@ -9,8 +9,8 @@ der Software.
 ### Model {#model}
 
 Ein *Model* (dt.: Modell) ist ein System von Abstraktionen, das
-ausgewählte Aspekte einer Domain beschreibt und zur Lösung von
-Problemen im Zusammenhang mit dieser Domain verwendet werden kann.
+ausgewählte Aspekte einer Domäne beschreibt und zur Lösung von
+Problemen im Zusammenhang mit dieser Domäne verwendet werden kann.
 
 ### Ubiquitous Language
 
