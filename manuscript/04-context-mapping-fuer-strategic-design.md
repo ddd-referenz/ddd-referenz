@@ -200,7 +200,7 @@ Ein Downstream-Team kann hilflos sein, vollständig den
 Upstream-Prioritäten ausgeliefert. Währenddessen kann das
 Upstream-Team blockiert sein, weil es sich Sorgen macht, dass
 Downstream-Systeme gebrochen werden. Die Probleme des Downstream-Teams
-werden zudem durch umständliche Verfahren zum Anfordern von Änderungen
+werden durch umständliche Verfahren zum Anfordern von Änderungen
 über 
 komplexe Genehmigungsprozesse nicht geringer. Und die ungehinderte
 Entwicklung des Upstream-Teams wird gestoppt, wenn das Downstream-Team
