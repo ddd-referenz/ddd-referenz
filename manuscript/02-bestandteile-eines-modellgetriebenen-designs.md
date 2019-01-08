@@ -1,7 +1,7 @@
 # II. Bestandteile eines modellgetriebenen Entwurfs
 
 Diese Muster stellen weit verbreitete bewährte Praktiken für
-objekt-orientiertes Designs im Hinblick auf Domain-Driven Design dar.
+objekt-orientiertes Designs im Hinblick auf Domain-driven Design dar.
 Sie leiten Entscheidungen, welche das Modell präzisieren und das Modell 
 und die Implementierung aufeinander abgestimmt halten, wobei das eine 
 die Effektivität des anderen verstärkt. Das sorgfältige Ausarbeiten der
