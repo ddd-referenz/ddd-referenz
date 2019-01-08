@@ -164,9 +164,9 @@ Daher:
 eine Reihe von diskreten Ereignissen. Stelle jedes Ereignis als
 Domänenobjekt dar. Diese unterscheiden sich von Systemereignissen,
 welche die Aktivität innerhalb der Software selbst widerspiegeln, obwohl
-oft ein Systemereignis mit einem Domänenereignis verbunden ist,
-entweder als Teil einer Reaktion auf das Domänenereignis oder als
-Möglichkeit, Informationen über das Domänenereignis in das System zu
+oft ein Systemereignis mit einem Domain Event verbunden ist,
+entweder als Teil einer Reaktion auf das Domain Event oder als
+Möglichkeit, Informationen über das Domain Event in das System zu
 übertragen.**
 
 **Ein Domain Event ist ein vollwertiger Teil des
@@ -184,13 +184,13 @@ Ganzes vorliegen.
 
 Domain Events sind normalerweise unveränderlich, da
 sie eine Aufzeichnung von etwas in der Vergangenheit sind. Zusätzlich
-zu einer Beschreibung des Ereignisses enthält ein Domänenereignis
+zu einer Beschreibung des Ereignisses enthält ein Domain Event
 typischerweise einen Zeitstempel für den Zeitpunkt des Auftretens des
 Ereignisses und die Identitäten der an dem Ereignis beteiligten
-[Entities](#entity). Außerdem hat ein Domänenereignis oft einen
+[Entities](#entity). Außerdem hat ein Domain Event oft einen
 separaten Zeitstempel, der angibt, wann das Ereignis in das System
 gelangt ist und die Identität der Person, die es ausgelöst hat.
-Wenn das nützlich ist, kann eine Identität für das Domänenereignis auf
+Wenn das nützlich ist, kann eine Identität für das Domain Event auf
 Basis einiger dieser Eigenschaften definiert werden. Wenn dann also
 beispielsweise zwei Instanzen desselben Domain Events
 an einem Knoten ankommen, können sie als das gleich Ereignis erkannt
