@@ -143,51 +143,46 @@ werden kann.
 *Dt.: Gemeinsamer Kern*
 
 *Die gemeinsame Nutzung eines Teils des Modells und des zugehörigen
-Codes erzeugen eine sehr enge wechselseitige Abhängigkeit, die der
-Designarbeit nutzen 
-oder sie behindern kann.*
+Codes erzeugt eine sehr enge wechselseitige Abhängigkeit, welche die
+Entuwrfsarbeit in Schwung bringen oder sie untegraben kann.*
 
 Wenn die funktionale Integration begrenzt ist, kann der Aufwand für
 die [Continuous Integration](#continuous-integration) eines großen
 Kontextes für zu hoch
-gehalten werden.  Das kann insbesondere der Fall sein, wenn das Team
+gehalten werden. Das kann insbesondere der Fall sein, wenn das Team
 nicht über die Fähigkeit oder die politische Organisation verfügt,
 eine [Continuous Integration](#continuous-integration)
 aufrechtzuerhalten, oder wenn ein
-einzelnes Team einfach zu groß und zu schwer in den Griff zu bekommen
-wäre.  So können stattdessen
+einzelnes Team einfach zu groß und zu schwerfällig
+wäre. So können stattdessen
 getrennte [Bounded Contexts](#bounded-context) definiert und mehrere
-Teams gebildet 
-werden.
+Teams gebildet werden.
 
 Einmal getrennt, können unkoordinierte Teams, die an eng verwandten
-Anwendungen arbeiten, eine Weile gut vorankommen, aber was sie
-produzieren, passt vielleicht nicht zusammen.  Selbst
+Anwendungen arbeiten, eine Weile schnell vorankommen, aber was sie
+produzieren, passt vielleicht nicht zusammen. Selbst
 partnerschaftliche Teams können am Ende viel für Übersetzungsschichten
-und Änderungen ausgeben, während sie Aufwände verdoppeln und die
-Vorteile einer gemeinsamen [Ubiquitous
-Language](#ubiquitous-language) verlieren.
+und Umbauten ausgeben, während sie Aufwände verdoppeln und die
+Vorteile einer gemeinsamen [Ubiquitous Language](#ubiquitous-language) verlieren.
 
 Daher:
 
-**Markiere eine explizite Grenze für eine Teilmenge des
-Domänenmodells, das die Teams gemeinsam nutzen wollen. Halte diesen
+**Markiere mit einer expliziten Grenze eine Teilmenge des
+Domänenmodells, welche die Teams gemeinsam nutzen wollen. Halte diesen
 Kern klein.**
 
 **Füge innerhalb dieser Grenze neben dieser Teilmenge des Modells die
 Teilmenge des Codes oder des Datenbankdesigns hinzu, die mit diesem
-Teil des Modells verbunden ist.  Diese explizit geteilten Artefakte
-haben einen besonderen Status und sollte nicht ohne Rücksprache mit
+Teil des Modells verbunden ist. Diese explizit geteilten Artefakte
+haben einen besonderen Status und sollten nicht ohne Rücksprache mit
 dem anderen Team geändert werden.**
 
-Definiere einen
-[Continuous-Integration-Prozess](#continuous-integration), der das
+Definiere einen Prozess für 
+[Continuous Integration](#continuous-integration), der das
 Kernmodell
-kompakt hält und stimme die [Ubiquitous
-Language](#ubiquitous-language) der Teams 
-aufeinander ab.  Integriere ein funktionales System häufig, wenn auch
-etwas seltener als das Tempo der [Continuous
-Integration](#continuous-integration) innerhalb 
+kompakt hält und stimme die [Ubiquitous Language](#ubiquitous-language) der Teams 
+aufeinander ab. Integriere ein funktionales System häufig, wenn auch
+etwas seltener als das Tempo der [Continuous Integration](#continuous-integration) innerhalb 
 der Teams.
 
 ## Customer/Supplier Development {#customer-supplier}
