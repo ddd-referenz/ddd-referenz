@@ -93,54 +93,50 @@ zwischen [Bounded Contexts](#bounded-context) konkretisiert.
 
 *Dt.: Partnerschaft*
 
-*Wenn Teams in zwei Kontexten gemeinsam erfolgreich sind oder
-scheitern, entsteht oft eine kooperative Beziehung.*
+*Wenn Teams in zwei Kontexten gemeinsam erfolgreich sein oder
+scheitern werden, entsteht oft eine kooperative Beziehung.*
 
 Eine schlechte Koordination voneinander abhängiger Subsysteme in
 getrennten Kontexten führt bei beiden Projekten dazu, dass sie nicht
 erfolgreich
-liefern können.  Ein wichtiges Feature, das in einem System fehlt,
+liefern können. Eine wichtige Funktionalität, die in einem System fehlt,
 kann dazu führen, dass das andere System nicht liefern
 kann. Schnittstellen, die nicht den Erwartungen der Entwickler des
 anderen Subsystems entsprechen, können zum Fehlschlagen der
-Integration führen.  Eine gemeinsam vereinbarte Schnittstelle kann
-sich als so umständlich erweisen, dass sie die Entwicklung des
-Client-Systems verlangsamt, oder so schwer zu implementieren, dass sie
-die Entwicklung des Server-Subsystems verlangsamt.  Ein Misserfolg
+Integration führen. Eine gemeinsam vereinbarte Schnittstelle kann
+sich als so umständlich in der Verwendung erweisen, dass sie die Entwicklung des
+Client-Systems verlangsamt, oder als so schwer zu implementieren, dass sie
+die Entwicklung des Server-Subsystems verlangsamt. Ein Misserfolg
 bringt beide Projekte zum Scheitern.
 
 Daher:
 
 **Wenn ein Fehlschlag bei der Entwicklung in einem der beiden Kontexte
-zu einem Misserfolg für beide führen würde, solltest du ein
-Partnership zwischen den für die beiden Kontexte
-zuständigen Teams
-etablieren.  Führe einen Prozess zur koordinierten Planung der
+zu einem Misserfolg für beide führen würde, solltest du eine
+Partnerschaft zwischen den für die beiden Kontexte zuständigen Teams
+etablieren. Führe einen Prozess zur koordinierten Planung der
 Entwicklung und zum gemeinsamen Managements der Integration ein.**
 
 **Die Teams müssen bei der Entwicklung ihrer Schnittstellen
 zusammenarbeiten, um die Bedürfnisse bei der Entwicklung beider
-Systeme zu befriedigen. Voneinander abhängige Features sollten so
-eingeplant werden, dass sie für das gleiche Release abgeschlossen
+Systeme zu befriedigen. Voneinander abhängige Funktionalitäten sollten so
+eingeplant werden, dass sie auf das gleiche Release hin abgeschlossen
 werden.**
 
 Es ist in den meisten Fällen nicht notwendig, dass Entwickler das
 Modell des anderen Subsystems im Detail verstehen, aber sie müssen
-ihre Projektplanung koordinieren.  Wenn die Entwicklung in einem
+ihre Projektplanung koordinieren. Wenn die Entwicklung in einem
 Kontext auf Hindernisse stößt, ist eine gemeinsame Auseinandersetzung
-mit dem Thema erforderlich, um eine schnelle Designlösung zu finden,
+mit dem Thema erforderlich, um eine schnelle Entwurfslösung zu finden,
 die beide Kontexte nicht übermäßig negativ beeinträchtigt.
 
 Außerdem ist ein klarer Prozess zur Steuerung der Integration
-erforderlich.  So kann beispielsweise eine spezielle Testsuite
+erforderlich. So kann beispielsweise eine spezielle Testsuite
 definiert werden, die zeigt, dass die Schnittstelle den Erwartungen
-des Client-Systems entspricht und die im Rahmen der [Continuous
-Integration](#continuous-integration) auf dem Serversystem ausgeführt
+des Client-Systems entspricht und die im Rahmen der [Continuous Integration](#continuous-integration) auf dem Server-System ausgeführt
 werden kann.
 
-*Partnership ist ein neuer Begriff, der nach dem
-blauen Buch aus dem Jahre
-2004 entstanden ist.*
+*Partnership ist ein neuer Begriff, der seit dem Buch von 2004 entstanden ist.*
 
 ## Shared Kernel {#shared-kernel}
 
