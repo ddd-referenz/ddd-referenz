@@ -197,7 +197,7 @@ Downstream-Teams auf verschiedene Arten mit vielen unterschiedlichen
 Konsequenzen berücksichtigt.*
 
 Ein Downstream-Team kann hilflos sein, vollständig den
-Upstream-Prioritäten ausgeliefert ist. Währenddessen kann das
+Upstream-Prioritäten ausgeliefert. Währenddessen kann das
 Upstream-Team blockiert sein, weil es sich Sorgen macht, dass
 Downstream-Systeme gebrochen werden. Die Probleme des Downstream-Teams
 werden zudem durch umständliche Verfahren zum Anfordern von Änderungen
