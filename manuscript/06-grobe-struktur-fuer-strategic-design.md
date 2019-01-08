@@ -127,7 +127,7 @@ Verantwortlichkeiten.  Diese Verantwortlichkeiten sollten eine
 Geschichte über den Zweck und das Design deines Systems auf grober
 Ebene erzählen.  Refaktoriere das Modell so, dass die
 Verantwortlichkeiten der einzelnen Domänenobjekte,
-[Aggregates](#aggregate) und [Modules](#module) genau in die
+[Aggregates](#aggregate) und Module genau in die
 Verantwortung einer
 Schicht passen.**
 
