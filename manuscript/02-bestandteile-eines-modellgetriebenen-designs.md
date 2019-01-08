@@ -177,12 +177,12 @@ bei denen sie benachrichtigt werden möchten oder die mit
 Zustandsänderungen in den anderen Modellobjekten verbunden sind.**
 
 In einem verteilten System kann der Zustand einer [Entity](#entity)
-aus den [Domain Events](#domain-event) abgeleitet werden, die einem
+aus den Domain Events abgeleitet werden, die einem
 bestimmten Knoten derzeit bekannt sind, was ein kohärentes Modell
 ermöglicht, wenn keine vollständigen Informationen über das System als
 Ganzes vorliegen.
 
-[Doman Events](#domain-event) sind normalerweise unveränderlich, da
+Domain Events sind normalerweise unveränderlich, da
 sie eine Aufzeichnung von etwas in der Vergangenheit sind. Zusätzlich
 zu einer Beschreibung des Ereignisses enthält ein Domänenereignis
 typischerweise einen Zeitstempel für den Zeitpunkt des Auftretens des
@@ -192,7 +192,7 @@ separaten Zeitstempel, der angibt, wann das Ereignis in das System
 gelangt ist und die Identität der Person, die es ausgelöst hat.
 Wenn das nützlich ist, kann eine Identität für das Domänenereignis auf
 Basis einiger dieser Eigenschaften definiert werden. Wenn dann also
-beispielsweise zwei Instanzen desselben [Domain Events](#domain-event)
+beispielsweise zwei Instanzen desselben Domain Events
 an einem Knoten ankommen, können sie als das gleich Ereignis erkannt
 werden.
 
@@ -217,12 +217,12 @@ Daher:
 der Domäne nicht in der natürlichen Verantwortung einer
 [Entity](#entity) oder eines [Value Objects](#value-object) liegt,
 füge dem Modell eine Operation als eigenständige Schnittstelle hinzu,
-die als [Service](#service) deklariert ist. Definiere einen
+die als Service deklariert ist. Definiere einen
 Servicevertrag, eine Reihe von [Assertions](#assertion) zu
-Interaktionen mit dem [Service](#service). Drücke diese
+Interaktionen mit dem Service. Drücke diese
 [Assertions](#assertion) in der [Ubiquitous
 Language](#ubiquitous-language) eines bestimmten [Bounded
-Context](#bounded-context) aus. Gib dem [Service](#service) einen
+Context](#bounded-context) aus. Gib dem Service einen
 Namen, der ebenfalls Teil der [Ubiquitous Language](#ubiquitous-language)
 wird.**
 

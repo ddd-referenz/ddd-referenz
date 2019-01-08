@@ -92,8 +92,8 @@ der Teammitglieder einfängt und das Denken in eine nützliche Richtung
 zu lenken scheint, adaptiere es als [Large-scale
 Structure](#large-scale-structure).  Organisiere
 das Design um diese Metapher herum und nimm es in die [Ubiquitous
-Language](#ubiquitous-language) auf.  Die [System
-Metaphor](#system-metaphor) sollte sowohl
+Language](#ubiquitous-language) auf.  Die System
+Metaphor sollte sowohl
 die Kommunikation über das System erleichtern als auch die Entwicklung
 des Systems leiten.  Dies erhöht die Konsistenz in verschiedenen
 Teilen des Systems, möglicherweise sogar über verschiedene [Bounded

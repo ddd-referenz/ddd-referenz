@@ -39,7 +39,7 @@ Anzahl unterstützender Modelle und Codes zu unterscheiden. Bringe die
 wertvollsten und spezialisiertesten Konzepte auf den Punkt. Mache den
 Kern klein.**
 
-**Nutze die besten Talente für die [Core Domain](#core-domain) und
+**Nutze die besten Talente für die Core Domain und
 rekrutiere entsprechend.  Investiere genügend Aufwände, um ein
 tiefgreifendes Modell zu finden und ein flexibles Design zu
 entwickeln, das ausreicht, um die Vision des Systems zu erfüllen.**
@@ -72,8 +72,8 @@ Spuren deiner Spezialitäten in ihnen.**
 niedrigere Priorität als der [Core Domain](#core-domain) und vermeiden
 es, Kernentwickler den Aufgaben zuzuordnen (da sie von ihnen wenig
 Domänenwissen erhalten).  Erwägen Sie auch Standardlösungen oder
-öffentlich verfügbare Modelle für diese [Generic
-Subdomains](#generic-subdomains).**
+öffentlich verfügbare Modelle für diese Generic
+Subdomains.**
 
 ## Domain Vision Statement {#domain-vision-statement}
 
@@ -126,13 +126,13 @@ immer kurzfristig praktikabel.  Tatsächlich sind solche großen
 Code-Änderungen nur schwer durchführbar, ohne die Sichtweise, die dem
 Team fehlt.
 
-Daher (eine Form des [Highlighted Core](#highlighted-core)):
+Daher (eine Form des Highlighted Core):
 
 **Schreibe ein sehr kurzes Dokument (drei bis sieben kurze Seiten), das
 die [Core Domain](#core-domain) und die primären Interaktionen
 zwischen den Kernelementen beschreibt.**
 
-und/oder (als eine weitere Form des [Highlighted Core](#highlighted-core)):
+und/oder (als eine weitere Form des Highlighted Core):
 
 **Markiere die Elemente der [Core Domain](#core-domain) im primären
 Repository des Modells, ohne besonders seine Rolle besonders zu
@@ -153,7 +153,7 @@ im Laufe ihrer Arbeit wahrgenommen.  So haben Entwickler die volle
 Unabhängigkeit, die die meisten agilen Prozesse vorschlagen.
 
 *Obwohl das [Domain Vision Statement](#domain-vision-statement) und der
-[Highlighted Core](#highlighted-core) informiert und leitet, ändern
+Highlighted Core informiert und leitet, ändern
 sie nicht wirklich das Modell oder den Code selbst.  [Generic
 Subdomains](#generic-subdomain) aufzuteilen entfernt tatsächlich
 einige störende Elemente.  Als nächstes werden wir uns andere
