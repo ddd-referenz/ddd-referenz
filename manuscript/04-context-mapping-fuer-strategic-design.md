@@ -44,54 +44,50 @@ anderen Kontexten wenig Einfluss auf die Auslieferung hat.
 
 ## Context Map {#context-map}
 
-*Dt.: Kontext-Karte*
+*Dt.: Kontextlandkarte*
 
-*Um die Strategie zu planen, benötigen wir eine realistische, groß
+*Um eine Strategie entwickeln zu können, benötigen wir eine realistische, groß
 angelegte Sicht auf die Modellentwicklung, die sich über unser
 gesamtes Projekt und andere, in die wir integrieren, erstreckt.*
 
 Ein einzelner [Bounded Context](#bounded-context) hinterlässt einige
 Probleme, wenn
-keine globale Sichtweise vorhanden ist.  Der Kontext anderer Modelle
-kann noch vage und im Fluss sein.
+keine globale Sichtweise vorhanden ist. Der Kontext anderer Modelle
+kann immer noch vage und im Fluss sein.
 
-Leute in anderen Teams sind sich der Grenzen der [Bounded
-Contexts](#bounded-context) 
-nicht sehr bewusst und nehmen unwissentlich Änderungen vor, die die
-Übergänge verwischen oder die Zusammenhänge komplizieren.  Wenn
+Leute in anderen Teams sind sich der Grenzen der [Bounded Contexts](#bounded-context) 
+nicht sehr bewusst und nehmen unwissentlich Änderungen vor, welche die
+Übergänge verwischen oder die Abhängigkeiten verkomplizieren. Wenn
 Verbindungen zwischen verschiedenen Kontexten hergestellt werden
-müssen, neigen sie dazu, ineinander zu verlaufen.
+müssen, neigen diese dazu, ineinander zu verlaufen.
 
 Selbst wenn die Grenzen klar sind, stellen Beziehungen zu anderen
-Kontexten Einschränkungen für die Art des Modells oder das erreichbare
-Änderungstempo 
-dar.  Diese Einschränkungen manifestieren
+Kontexten Einschränkungen für die Art des Modells oder das mögliche
+Änderungstempo dar. Diese Einschränkungen manifestieren
 sich in erster Linie durch nicht-technische Kanäle, die manchmal
-schwer mit den von ihnen betroffenen Designentscheidungen in
+schwer mit den von ihnen betroffenen Entwurfsentscheidungen in
 Verbindung zu bringen sind.
 
 Daher:
 
 **Identifiziere jedes Modell, das beim Projekt im Spiel ist und
-definiere seinen [Bounded Context](#bounded-context).  Dazu gehören
+definiere seinen [Bounded Context](#bounded-context). Dazu gehören
 auch die impliziten 
-Modelle von nicht-objekt-orientierten Subsystemen.  Benenne jeden
+Modelle von nicht-objekt-orientierten Subsystemen. Benenne jeden
 [Bounded Context](#bounded-context) und mache diese Namen zu einem
-Teil der 
-[Ubiquitous Language](#ubiquitous-language).**
+Teil der [Ubiquitous Language](#ubiquitous-language).**
 
-**Beschreibe  die Berührungspunkte zwischen den Modellen, skizziere
+**Beschreibe die Berührungspunkte zwischen den Modellen, skizziere
 die explizite Übersetzung für jede Art der Kommunikation, hebe alle
 Austausch-, Isolations- und Einflussmechanismen hervor.**
 
-**Kartografiere das vorhandene Gelände. Nimm Transformationen erst später
-vor.**
+**Kartografiere das vorhandene Gelände. Nimm Transformationen erst 
+später vor.**
 
 Diese Karte kann die Grundlage für eine realistische Design-Strategie sein.
 
-Die Charakterisierung von Beziehungen wird auf den folgenden Seiten
-konkretisiert, mit einer Reihe von üblichen Pattern für Beziehungen
-zwischen [Bounded Contexts](#bounded-context).
+Die Charakterisierung von Beziehungen wird auf den folgenden Seiten mit einer Reihe von gängigen Mustern für Beziehungen
+zwischen [Bounded Contexts](#bounded-context) konkretisiert.
 
 ## Partnership {#partnership}
 
