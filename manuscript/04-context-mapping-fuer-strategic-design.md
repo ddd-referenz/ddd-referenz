@@ -2,7 +2,7 @@
 
 ### Bounded Context
 
-Der [Bounded Context](#bounded-context) (dt.: begrenzter Kontext)
+Der [Bounded Context](#bounded-context) (Dt.: begrenzter Kontext)
 ist eine Beschreibung
 einer Grenze (typischerweise ein Subsystem oder die Arbeit eines
 bestimmten Teams), innerhalb derer ein bestimmtes Modell definiert und
@@ -14,16 +14,16 @@ Eine Beziehung zwischen zwei Gruppen, in der die Handlungen der
 "Upstream"-Gruppe den Projekterfolg der "Downstream"-Gruppe
 beeinflussen, während die Handlungen der Downstream-Gruppe die
 Upstream-Projekte nicht wesentlich beeinflussen. (Wenn zwei Städte am
-gleichen Fluss liegen, wirkt sich die Verschmutzung der upstream (dt.:
+gleichen Fluss liegen, wirkt sich die Verschmutzung der upstream (Dt.:
 flussaufwärts) gelegenen Stadt in erster Linie auf die downstream
-gelegene Stadt (dt.: flussabwärts) aus).
+gelegene Stadt (Dt.: flussabwärts) aus).
 
 Das Upstream-Team kann unabhängig vom Schicksal des Downstream-Teams
 erfolgreich sein.
 
 ### Mutually Dependent {#mutually-dependent}
 
-Mutually Dependent (dt.: wechselseitig abhängig) beschreibt eine Situation,
+Mutually Dependent (Dt.: wechselseitig abhängig) beschreibt eine Situation,
 in der zwei Softwareentwicklungsprojekte in getrennten Kontexten
 beide liefern müssen, damit jedes von beiden als erfolgreich angesehen
 werden können. 
@@ -42,14 +42,14 @@ System nicht ausgeliefert wird.
 
 ### Free {#free}
 
-Ein Softwareentwicklungskontext ist free (dt.: frei), wenn die
+Ein Softwareentwicklungskontext ist free (Dt.: frei), wenn die
 Ausrichtung, der Erfolg oder das Scheitern der Entwicklungsarbeit in
 anderen Kontexten wenig Einfluss auf die Auslieferung dieses Konext
 hat.
 
 ## Context Map {#context-map}
 
-*dt.: Kontext-Karte*
+*Dt.: Kontext-Karte*
 
 *Um die Strategie zu planen, benötigen wir eine realistische, groß
 angelegte Sicht auf die Modellentwicklung, die sich über unser
@@ -100,7 +100,7 @@ zwischen [Bounded Contexts](#bounded-context).
 
 ## Partnership {#partnership}
 
-*dt.: Partnerschaft*
+*Dt.: Partnerschaft*
 
 *Wenn Teams in zwei Kontexten gemeinsam erfolgreich sind oder
 scheitern, entsteht oft eine kooperative Beziehung.*
@@ -153,7 +153,7 @@ blauen Buch aus dem Jahre
 
 ## Shared Kernel {#shared-kernel}
 
-*dt.: Gemeinsamer Kern*
+*Dt.: Gemeinsamer Kern*
 
 *Die gemeinsame Nutzung eines Teils des Modells und des zugehörigen
 Codes erzeugen eine sehr enge wechselseitige Abhängigkeit, die der
@@ -205,7 +205,7 @@ der Teams.
 
 ## Customer/Supplier Development {#customer-supplier}
 
-*dt.: Kunde / Zulieferer*
+*Dt.: Kunde / Zulieferer*
 
 *Wenn sich zwei Teams in einer
 [Upstream-Downstream-Beziehung](#upstream-downstream)
@@ -245,7 +245,7 @@ zu haben.
 
 ## Conformist {#conformist}
 
-*dt.: Konformist*
+*Dt.: Konformist*
 
 Wenn zwei Entwicklungsteams eine Upstream/Downstream-Beziehung haben,
 in der Upstream keine Motivation hat, den Bedürfnisse des
@@ -277,7 +277,7 @@ dazu zu bringen, Informationen mit dir zu teilen.**
 
 ## Anticorruption-Layer {#anticorruption-layer}
 
-*dt.: Antikorruptionsschicht*
+*Dt.: Antikorruptionsschicht*
 
 Übersetzungsschichten können einfach, ja sogar elegant sein, wenn es
 darum geht, gut gestaltete [Bounded Context](#bounded-context)
@@ -312,7 +312,7 @@ den beiden Modellen.**
 
 ## Open-host Service {#open-host-service}
 
-*dt.: Offener Host*
+*Dt.: Offener Host*
 
 *Typischerweise definierst du für jeden [Bounded
 Context](#bounded-context) eine
@@ -349,7 +349,7 @@ Kontexten haben, die nicht seine Clients sind.
 
 ## Published Language {#published-language}
 
-*dt.: veröffentlichte Sprache*
+*Dt.: veröffentlichte Sprache*
 
 *Die Übersetzung zwischen den Modellen zweier [Bounded
 Contexts](#bounded-context)
@@ -380,7 +380,7 @@ Service](#open-host-service) kombiniert.
 
 ## Separate Ways {#separate-ways}
 
-*dt.: Getrennte Wege*
+*Dt.: Getrennte Wege*
 
 Wir müssen rücksichtslos sein, wenn es um die Definition von
 Anforderungen geht.  Wenn zwei Mengen von Funktionalitäten keine
@@ -398,7 +398,7 @@ diesem kleinen Bereich finden können.**
 
 ## Big Ball of Mud {#big-ball-of-mud}
 
-*dt.: Großer Schlammball*
+*Dt.: Großer Schlammball*
 
 Wenn wir bestehende Softwaresysteme untersuchen und versuchen zu
 verstehen, wie unterschiedliche Modelle innerhalb definierter Grenzen

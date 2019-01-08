@@ -3,18 +3,18 @@
 ### Domain {#domain}
 
 Ein Bereich von Wissen, Einfluss oder Aktivität. Das Fachgebiet, auf
-das der Benutzer ein Programm anwendet, ist die *Domain* (dt.: Domäne)
+das der Benutzer ein Programm anwendet, ist die *Domain* (Dt.: Domäne)
 der Software.
 
 ### Model {#model}
 
-Ein *Model* (dt.: Modell) ist ein System von Abstraktionen, das
+Ein *Model* (Dt.: Modell) ist ein System von Abstraktionen, das
 ausgewählte Aspekte einer Domain beschreibt und zur Lösung von
 Problemen im Zusammenhang mit dieser Domain verwendet werden kann.
 
 ### Ubiquitous Language
 
-Die [*Ubiquitous Language*](#ubiquitous-language) (dt.:
+Die [*Ubiquitous Language*](#ubiquitous-language) (Dt.:
 allgegenwärtige Sprache) ist eine
 Sprache, die um das Domänenmodell herum gruppiert ist und von allen
 Teammitgliedern in einem *Bounded Context* verwendet wird, um alle
@@ -24,11 +24,11 @@ Aktivitäten des Teams mit der Software zu verbinden.
 
 Der Bereich, in dem ein Wort oder eine Aussage auftaucht und der dabei
 ihre Bedeutung bestimmt.  *Aussagen über ein Modell können nur in
-einem Context (dt.: Kontext) verstanden werden.*
+einem Context (Dt.: Kontext) verstanden werden.*
 
 ### Bounded Context
 
-Der [*Bounded Context*](#bounded-context) (dt.: begrenzter Kontext)
+Der [*Bounded Context*](#bounded-context) (Dt.: begrenzter Kontext)
 ist eine Beschreibung
 einer Grenze (typischerweise ein Subsystem oder die Arbeit eines
 bestimmten Teams), innerhalb derer ein bestimmtes Modell definiert und

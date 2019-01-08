@@ -11,7 +11,7 @@ Implementierung zu halten.
 
 ## Layered Architecture {#layered-architecture}
 
-*dt.: Geschichtete Architektur*
+*Dt.: Geschichtete Architektur*
 
 In einem objekt-orientierten Programm werden Benutzeroberfläche,
 Datenbank und anderer unterstützender Code oft direkt in den
@@ -58,7 +58,7 @@ auf und Referenzen zu anderen Systembelangen vermeiden.
 
 ## Entities {#entity}
 
-*dt.: Entitäten*
+*Dt.: Entitäten*
 
 Viele Objekte stellen eine Kontinuität und Identität dar und
 durchlaufen einen Lebenszyklus, obwohl sich ihre Attribute ändern
@@ -94,11 +94,11 @@ Identitätsunterschieden im Modell passen.**
 **Das Modell muss definieren, was es bedeutet, dasselbe Ding zu
 sein.**
 
-(auch bekannt als Reference Objects, dt.: Referenzobjekte)
+(auch bekannt als Reference Objects, Dt.: Referenzobjekte)
 
 ## Value Objects {#value-object}
 
-*dt.: Wertobjekte*
+*Dt.: Wertobjekte*
 
 Einige Objekte beschreiben oder berechnen eine Eigenschaft eines Dings.
 
@@ -132,7 +132,7 @@ Entities notwendig sind.**
 
 ## Domain Event {#domain-event}
 
-*dt.: Domänenereignis*
+*Dt.: Domänenereignis*
 
 Etwas ist passiert, was für Domänenexperten wichtig ist.
 
@@ -200,7 +200,7 @@ werden.
 
 ## Services {#service}
 
-*dt.: Dienste*
+*Dt.: Dienste*
 
 Manchmal ist es einfach kein Ding.
 
@@ -228,7 +228,7 @@ wird.**
 
 ## Modules {#module}
 
-*dt.: Module*
+*Dt.: Module*
 
 Jeder verwendet Module, aber nur wenige behandeln sie als
 vollwertigen Teil des Modells. Code wird in alle möglichen Kategorien
@@ -264,11 +264,11 @@ können. Verfeinere das Modell, bis es nach
 hochwertigen Domänenkonzepten partitioniert ist und auch der Code
 entsprechend entkoppelt ist.**
 
-(auch bekannt als Packages, dt.: Pakete)
+(auch bekannt als Packages, Dt.: Pakete)
 
 ## Aggregates {#aggregate}
 
-*dt.: Aggregate*
+*Dt.: Aggregate*
 
 Es ist schwierig, die Konsistenz von Änderungen an Objekten in einem
 Modell mit komplexen Beziehungen zu gewährleisten. Objekte sollen
@@ -360,7 +360,7 @@ Objekte und den Zugriff auf die Objekte an die Repositories.**
 
 ## Factories {#factory}
 
-*dt.: Fabriken*
+*Dt.: Fabriken*
 
 Wenn die Erstellung eines ganzen, intern konsistenten
 [Aggregats](#aggregate) oder eines großen [Value Objects](#value-object)
