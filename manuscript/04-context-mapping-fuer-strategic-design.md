@@ -216,7 +216,7 @@ Downstream-Anforderungen, so dass jeder die Verpflichtungen und den
 Zeitplan versteht.**
 
 Agile Teams können das Downstream-Team bei der Planung die Rolle des
-Kunden gegenüber des Upstream-Teams spielen lassen. Gemeinsam
+Kunden gegenüber dem Upstream-Team spielen lassen. Gemeinsam
 entwickelte automatisierte Akzeptanztests können die erwartete
 Schnittstelle vom Upstream validieren. Das Hinzufügen dieser Tests
 zur Testsuite des Upstream-Teams, die im Rahmen der [Continuous Integration](#continuous-integration) 
