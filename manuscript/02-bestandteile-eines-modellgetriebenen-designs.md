@@ -151,7 +151,7 @@ Domänenebene herausgedrängt wird.
 
 In verteilten Systemen entsteht ein anderer, wenn auch verwandter
 Themenkomplex. Der Zustand eines verteilten Systems kann nicht immer
-vollständig konsistent gehalten werden. Wir halten die Aggregate
+vollständig konsistent gehalten werden. Wir halten die [Aggregates](#aggregate)
 intern jederzeit konsistent, während wir andere Änderungen asynchron
 vornehmen. Da sich Änderungen über die Knoten eines Netzwerks
 ausbreiten, kann es schwierig sein, mehrere Änderungen zu verarbeiten,
@@ -283,27 +283,27 @@ mehrere Server, oder beim Entwurf asynchroner Transaktionen.
 Daher:
 
 **Gruppiere die [Entities](#entity) und [Value Objects](#value-object)
-zu Aggregaten und definiere Grenzen um jede dieser Gruppen herum.
-Wähle eine [Entity](#entity) als Wurzel eines jeden Aggregats und erlaube
+zu Aggregates und definiere Grenzen um jede dieser Gruppen herum.
+Wähle eine [Entity](#entity) als Wurzel eines jeden Aggregates und erlaube
 externen Objekten, nur Referenzen auf die Wurzel zu halten (Referenzen
 auf interne Elemente werden nur für die Verwendung innerhalb einer
 einzigen Operation ausgegeben). Definiere Eigenschaften und
-Invarianten für das Aggregat als Ganzes und übertrage die
+Invarianten für das Aggregate als Ganzes und übertrage die
 Verantwortung für deren Durchsetzung an die Wurzel oder an einen 
 ausgewiesenen Mechanismus im Framework.**
 
-Verwende die gleichen Aggregatsgrenzen für die Steuerung von
+Verwende die gleichen Aggregate-Grenzen für die Steuerung von
 Transaktionen und Verteilung.
 
-Wende innerhalb der Grenze eines Aggregats die
+Wende innerhalb der Grenze eines Aggregates die
 Konsistenzregeln synchron an. Behandle Änderungen über Grenzen hinweg 
 asynchron.
 
-Halte ein einzelnes Aggregat als Ganzes auf einem Server. Erlaube die 
-Verteilung verschiedener Aggregate auf unterschiedliche Knoten.
+Halte ein einzelnes Aggregate als Ganzes auf einem Server. Erlaube die 
+Verteilung verschiedener Aggregates auf unterschiedliche Knoten.
 
 Wenn diese Entwurfsentscheidungen nicht gut von den Grenzen der
-Aggregate geleitet werden, überdenke das Modell.
+Aggregates geleitet werden, überdenke das Modell.
 Deutet das Szenario in der Domäne auf eine wichtige neue Erkenntnis
 hin? Solche Änderungen verbessern oft die Aussagekraft und
 Flexibilität des Modells sowie die Lösung der Transaktions- und
@@ -311,7 +311,7 @@ Verteilungsproblematik.
 
 ## Repositories {#repository}
 
-*Zugriff auf Aggregate durch Anfragen, die in der [Ubiquitous
+*Zugriff auf [Aggregates](#aggregate) durch Anfragen, die in der [Ubiquitous
 Language](#ubiquitous-language) ausgedrückt sind.*
 
 Die Verbreitung von traversierbaren Beziehungen, die nur dazu dienen,
@@ -331,8 +331,8 @@ können, aber das löst nur einen Teil des Problems.
 
 Uneingeschränkte Abfragen können nur bestimmte Felder aus Objekten
 auslesen und so die Kapselung durchbrechen oder bestimmte Objekte aus 
-dem inneren Zustand eines [Aggregats](#aggregate) instanziieren und 
-dabei die Wurzel eines Aggregats umgehen und es so diesen Objekten 
+dem inneren Zustand eines [Aggregates](#aggregate) instanziieren und 
+dabei die Wurzel eines [Aggregates](#aggregate) umgehen und es so diesen Objekten 
 unmöglich 
 machen, die Regeln des Domänenmodells durchzusetzen. Die Domänenlogik 
 verlagert sich in Abfragen und in Code der Anwendungsschicht, und die
@@ -341,8 +341,8 @@ reinen Datencontainern.
 
 Daher:
 
-**Erstelle für jeden Aggregattyp, auf den global zugegriffen werden muss,
-einen Dienst, der die Illusion einer Sammlung aller Objekte des Typs der Wurzel dieses Aggregats vermitteln kann. Setze den Zugriff über
+**Erstelle für jeden Aggregate-Typ, auf den global zugegriffen werden muss,
+einen Dienst, der die Illusion einer Sammlung aller Objekte des Typs der Wurzel dieses [Aggregates](#aggregate) vermitteln kann. Setze den Zugriff über
 eine bekannte globale Schnittstelle um. Stelle Methoden zum
 Hinzufügen und Entfernen von Objekten bereit, welche das tatsächliche
 Einfügen oder Entfernen von Daten in die Datenbank kapseln. Biete
@@ -351,9 +351,9 @@ Domänenexperten von Bedeutung sind. Liefere vollständig
 instanziierte Objekte oder Sammlungen von Objekten zurück, deren
 Attributwerte den Kriterien entsprechen, wodurch die eigentliche
 Speicher- und Abfragetechnologie gekapselt wird, oder gib Proxies
-zurück, welche die Illusion von vollständig instanziierten Aggregaten
+zurück, welche die Illusion von vollständig instanziierten [Aggregates](#aggregate)
 vermitteln, aber die Daten verzögert nachladen. Stelle Repositories 
-nur für Aggregattypen bereit,
+nur für Aggregate-Typen bereit,
 die tatsächlich direkten Zugriff benötigen. Halte die Anwendungslogik
 auf das Modell fokussiert und delegiere die gesamte Speicherung der
 Objekte und den Zugriff auf die Objekte an die Repositories.**
@@ -363,7 +363,7 @@ Objekte und den Zugriff auf die Objekte an die Repositories.**
 *dt.: Fabriken*
 
 Wenn die Erstellung eines ganzen, intern konsistenten
-[Aggregats](#aggregate) oder eines großen [Value Objects](#value-object)
+[Aggregates](#aggregate) oder eines großen [Value Objects](#value-object)
 kompliziert wird oder zu viel von der internen
 Struktur preisgibt, bieten [Factories](#factory) eine Kapselung.
 
@@ -373,19 +373,19 @@ nicht in die Verantwortung der erstellten Objekte selbst. Werden diese
 Verantwortlichkeiten vermischt, kann dies zu schwer verständlichen 
 Entwürfen führen. Muss der Client das Objekt direkt erzeugen, wird die 
 Kapselung des erzeugten [Value Objects](#value-object) oder 
-[Aggregats](#aggregate) gebrochen und der Client zu stark an die
+[Aggregates](#aggregate) gebrochen und der Client zu stark an die
 Implementierung des erstellten Objekts gekoppelt.
 
 Daher:
 
 **Verlagere die Verantwortung für das Erstellen von Instanzen
-komplexer Objekte und [Aggregats](#aggregate) auf ein separates
+komplexer Objekte und [Aggregates](#aggregate) auf ein separates
 Objekt, das selbst keine Verantwortung im Domänenmodell hat, aber
 dennoch Teil des Domänenentwurfs ist. Stelle eine Schnittstelle zur
 Verfügung, die den komplexen Zusammenbau kapselt und die
 es erlaubt, dass der Client keine Referenzen auf die konkreten
 Klassen der zu instanziierenden Objekte haben muss. Erstelle ein ganzes
-[Aggregat](#aggregate) als ein Stück und erzwinge seine Invarianten.
+[Aggregate](#aggregate) als ein Stück und erzwinge seine Invarianten.
 Erstelle ein komplexes [Value Object](#value-object) am Stück,
 womöglich durch Verwendung eines Builders für den Zusammenbau der 
 einzelnen Elemente.**
