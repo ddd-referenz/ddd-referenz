@@ -140,7 +140,7 @@ werden kann.
 
 ## Shared Kernel {#shared-kernel}
 
-*Dt.: Gemeinsamer Kern*
+*Dt.: Geteilter Kern*
 
 *Die gemeinsame Nutzung eines Teils des Modells und des zugehörigen
 Codes erzeugt eine sehr enge wechselseitige Abhängigkeit, welche die
@@ -254,38 +254,37 @@ hat das Sagen, daher ist es gut, die Kommunikation für sie
 möglichst einfach zu gestalten. Altruismus kann ausreichen, um sie
 dazu zu bringen, Informationen mit dir zu teilen.**
 
-## Anticorruption-Layer {#anticorruption-layer}
+## Anticorruption Layer {#anticorruption-layer}
 
 *Dt.: Antikorruptionsschicht*
 
 Übersetzungsschichten können einfach, ja sogar elegant sein, wenn es
 darum geht, gut gestaltete [Bounded Context](#bounded-context)
 kooperativer Teams zu
-verbinden.  Aber wenn die Kontrolle oder die Kommunikation nicht
+verbinden. Aber wenn die Kontrolle oder die Kommunikation nicht
 ausreicht, um einen [Shared Kernel](#shared-kernel), eine
-[Partnership](#partnership) oder [Customer
-/ Supplier](#customer-supplier) zu erreichen, wird die Übersetzung
-komplexer.  Die
+[Partnership](#partnership) oder [Customer/Supplier](#customer-supplier)-Beziehung zu erreichen, wird die Übersetzung
+komplexer. Die
 Übersetzungsschicht nimmt eher einen defensiven Charakter an.
 
 Eine große Schnittstelle mit einem Upstream-System kann am Ende
 die Absicht des Downstream-Modells insgesamt überfordern, so
 dass das Modell ad hoc an das Modell des anderen Systems angeglichen
-wird.  Die Modelle von Altsystemen sind in der Regel schwach (wenn
+wird. Die Modelle von Altsystemen sind in der Regel schwach (wenn
 nicht sogar [Big Balls of Mud](#big-ball-of-mud)), und selbst wenn das
 Modell
 ausnahmsweise gut gestaltet ist, mag es nicht den Anforderungen des
 aktuellen Projekts entsprechen, so dass es unpraktisch wäre,
-sich an das Upstream-Modell anzupassen.  Dennoch kann die Integration
+sich an das Upstream-Modell anzupassen. Dennoch kann die Integration
 für das Downstream-Projekt sehr wertvoll oder sogar erforderlich sein.
 
 Daher:
 
 **Erstelle als Downstream-Client eine Isolationsschicht, um deinem
 System die Funktionalität des Upstream-Systems in Form deines eigenen
-Domänenmodells zur Verfügung zu stellen.  Diese Schicht spricht mit
+Domänenmodells zur Verfügung zu stellen. Diese Schicht spricht mit
 dem anderen System über seine bestehende Schnittstelle und erfordert
-wenig oder gar keine Änderungen am anderen System.  Intern übersetzt
+wenig oder gar keine Änderungen am anderen System. Intern übersetzt
 die Schicht je nach Bedarf in eine oder beide Richtungen zwischen
 den beiden Modellen.**
 
