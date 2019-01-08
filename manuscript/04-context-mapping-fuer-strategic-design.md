@@ -332,27 +332,25 @@ Contexts](#bounded-context)
 erfordert eine gemeinsame Sprache.*
 
 Die direkte Übersetzung in und aus den bestehenden Domänenmodellen
-ist möglicherweise keine gute Lösung.  Diese Modelle können übermäßig
+ist möglicherweise keine gute Lösung. Diese Modelle können übermäßig
 komplex oder schlecht aufgeteilt sein. Sie sind wahrscheinlich
-undokumentiert.  Wenn man ein solches Modell als Datenaustauschsprache
-verwendet, 
-wird es schlussendlich eingefroren und kann nicht auf neue
+undokumentiert. Wenn eines dieser Modelle als Datenaustauschsprache
+verwendet wird, 
+wird es im Wesentlichen eingefroren und kann nicht auf neue
 Entwicklungsbedürfnisse reagieren.
 
 Deshalb:
 
-**Verwende eine gut dokumentierte gemeinsame Sprache, die notwendigen
+**Verwende eine gut dokumentierte gemeinsame Sprache, welche die notwendigen
 Domäneninformationen als gemeinsames Kommunikationsmedium ausdrückt
-und bei Bedarf in diese Sprache und aus dieser Sprache übersetzen
-kann.**
+und übersetze nach Bedarf in diese Sprache bzw. aus dieser Sprache.**
 
 Viele Branchen definieren Published Languages
 in Form von 
-Datenaustauschstandards.  Projektteams entwickeln aber auch ihre
+Datenaustauschstandards. Projektteams entwickeln aber auch ihre
 eigenen für den Einsatz in ihrem Unternehmen.
 
-Published Language wird oft mit dem [Open Host
-Service](#open-host-service) kombiniert.
+Published Language wird oft mit [Open Host Service](#open-host-service) kombiniert.
 
 ## Separate Ways {#separate-ways}
 
