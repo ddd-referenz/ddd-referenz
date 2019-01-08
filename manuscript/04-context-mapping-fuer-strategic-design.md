@@ -372,44 +372,42 @@ diesem kleinen Bereich finden können.**
 
 ## Big Ball of Mud {#big-ball-of-mud}
 
-*Dt.: Großer Schlammball*
+*Dt.: Große Matschkugel*
 
 Wenn wir bestehende Softwaresysteme untersuchen und versuchen zu
 verstehen, wie unterschiedliche Modelle innerhalb definierter Grenzen
-angewendet werden, finden wir Teile von Systemen, oft große, wo
+angewendet werden, finden wir Teile von Systemen, oft große, in denen
 Modelle gemischt sind und Grenzen inkonsistent sind.
 
-Es ist leicht, sich daran festzubeißen, die Kontextgrenzen
+Es ist leicht, beim Versuch festzufahren, die Kontextgrenzen
 von Modellen in Systemen zu beschreiben, in denen es einfach keine
 Grenzen gibt.
 
 Gut definierte Kontextgrenzen entstehen erst durch intellektuelle
-Entscheidungen und soziale Kräfte (auch wenn die Personen, die die
+Entscheidungen und soziale Kräfte (auch wenn die Personen, welche die
 Systeme schaffen, sich dieser Ursachen zu dem jeweiligen Zeitpunkt
 nicht immer bewusst
-waren).  Wenn diese Faktoren fehlen oder verschwinden, vermischen sich
-mehrere konzeptuelle Systeme und machen Definitionen und Regeln
-mehrdeutig oder widersprüchlich.  Die Systeme werden dazu gebracht, 
-nach einer unklaren Logik zu funktionieren, wenn Feature hinzugefügt
-werden.  Abhängigkeiten durchziehen die Software.  Ursache und Wirkung
-werden immer schwieriger nachvollziehbar.  Schließlich erstarrt die
-Software zu einem großen Schlammball.
+waren). Wenn diese Faktoren fehlen oder verschwinden, vermischen sich
+mehrere konzeptionelle Systeme und machen Definitionen und Regeln
+mehrdeutig oder widersprüchlich. Die Systeme beginnen nach einer unvorhergesehenen Logik zu funktionieren, wenn Funktionalitäten hinzugefügt
+werden. Abhängigkeiten durchziehen die Software kreuz und quer. Ursache und Wirkung
+werden immer schwieriger nachvollziehbar. Schließlich erstarrt die
+Software zu einer grossen Matschkugel.
 
-Big Ball of Mud ist für einige Situationen eigentlich recht
+Ein solcher Big Ball of Mud ist für einige Situationen tatsächlich recht
 praktisch (wie im Originalartikel von Foote und Yoder beschrieben),
 aber er verhindert fast vollständig die Subtilität und Präzision, die
 für nützliche Modelle erforderlich ist.
 
 Deshalb:
 
-**Zeichne eine Grenze um das gesamte Durcheinander und bezeichne es
+**Ziehe eine Grenze um das gesamte Durcheinander und bezeichne es
 als einen Big Ball of Mud. Versuche nicht, in
 diesem Kontext eine
-ausgeklügelte Modellierung anzuwenden.  Sei auf der Hut vor der
+ausgeklügelte Modellierung anzuwenden. Sei auf der Hut vor der
 Tendenz, dass sich solche Systeme in andere Kontexte ausbreiten.**
 
 (siehe
-  [Big Ball of Mud von Brian Foote und Joseph Yoder](http://www.laputan.org/mud/mud.html))
+  [http://www.laputan.org/mud/mud.html](http://www.laputan.org/mud/mud.html), Brian Foote und Joseph Yoder)
 
-*Big Ball of Mud ist ein neuer Begriff, der nach
-dem blauen Buch aus dem Jahre 2004 entstanden ist.*
+*Big Ball of Mud ist ein neuer Begriff, der seit dem Buch von 2004 entstanden ist.*
