@@ -139,7 +139,7 @@ Schicht passen.**
 Gruppe von Objekten verhalten soll.*
 
 In einer Anwendung, in der die Rollen und Beziehungen zwischen den
-Entitäten in verschiedenen Situationen unterschiedlich sind, kann die
+[Entities](#entity) in verschiedenen Situationen unterschiedlich sind, kann die
 Komplexität explodieren. Weder ganz allgemeine noch sehr individuelle
 Modelle erfüllen die Bedürfnisse der Anwender.  Am Ende haben Objekte
 Referenzen auf andere Typen, um eine Vielzahl von Fällen abzudecken,
