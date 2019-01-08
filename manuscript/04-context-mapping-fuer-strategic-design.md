@@ -229,31 +229,29 @@ zu haben.
 *Dt.: Konformist*
 
 Wenn zwei Entwicklungsteams eine Upstream/Downstream-Beziehung haben,
-in der Upstream keine Motivation hat, den Bedürfnisse des
+in der Upstream keine Motivation hat, den Bedürfnissen des
 Downstream-Teams zu entsprechen, ist das Downstream-Team hilflos.
 Altruismus mag Upstream-Entwickler motivieren, Versprechungen zu
-machen, aber sie werden wahrscheinlich nicht erfüllt werden.  Der
+machen, aber sie werden wahrscheinlich nicht erfüllt werden. Der
 Glaube an diese guten Absichten führt dazu, dass das
-Downstream-Team auf der Grundlage von Features plant, die nie
-verfügbar sein werden.  Das Downstream-Projekt wird sich verzögern,
-bis
+Downstream-Team auf der Grundlage von Funktionalitäten plant, die nie
+verfügbar sein werden. Das Downstream-Projekt wird sich verzögern, bis
 das Team schließlich lernt, mit dem zu leben, was ihm gegeben wird.
 Eine auf die Bedürfnisse des Downstream-Teams zugeschnittene
 Schnittstelle ist nicht in Sicht.
 
 Daher:
 
-**Eliminiere die Komplexität der Übersetzung zwischen [Bounded
-Contexts](#bounded-context), indem du dich sklavisch an das Modell des
+**Eliminiere die Komplexität der Übersetzung zwischen [Bounded Contexts](#bounded-context), indem du dich sklavisch an das Modell des
 Upstream-Teams
-hälst.  Obwohl dies den Stil der Downstream-Designer einengt und
+hälst. Obwohl dies den Stil der Downstream-Designer einengt und
 wahrscheinlich nicht das ideale Modell für die Anwendung ergibt,
-vereinfacht Konformität die Integration enorm.  Außerdem
+vereinfacht Konformität die Integration enorm. Außerdem
 wirst du dir
 eine [Ubiquitous Language](#ubiquitous-language) mit dem
-Upstream-Team teilen.  Upstream
-hat das Sagen. Daher ist es gut, die Kommunikation für sie
-möglichst einfach zu gestalten.  Altruismus kann ausreichen, um sie
+Upstream-Team teilen. Upstream
+hat das Sagen, daher ist es gut, die Kommunikation für sie
+möglichst einfach zu gestalten. Altruismus kann ausreichen, um sie
 dazu zu bringen, Informationen mit dir zu teilen.**
 
 ## Anticorruption-Layer {#anticorruption-layer}
