@@ -22,8 +22,8 @@ die Modellierung und Softwareentwicklung vor, der von kleinen Details
 bis hin zur übergreifenden Vision reicht. Strenge Konventionen für die 
 Modellierung müssen gegen das freie Erforschen von
 Modellen zusammen mit nicht-technischen Personen abgewogen werden.
-Taktik und Strategie müssen kombiniert werden, um erfolgreich zu sein 
-und DDD befasst sich sowohl mit taktischem als auch mit strategischem
+Taktik und Strategie müssen kombiniert werden, um erfolgreich zu sein.
+DDD befasst sich sowohl mit taktischem als auch mit strategischem
 Design.
 
 ## Bounded Context {#bounded-context}
@@ -41,7 +41,7 @@ gemeinsam genutzt werden kann.
 
 Mehrere Modelle sind unvermeidlich, aber wenn Code, der auf
 verschiedenen Modellen basiert, kombiniert wird, wird Software
-fehlerhaft, unzuverlässig und schweirig verständlich. Die Kommunikation
+fehlerhaft, unzuverlässig und schwer verständlich. Die Kommunikation
 zwischen den Teammitgliedern wird konfus. Oft ist unklar, in
 welchem Zusammenhang ein Modell nicht angewendet werden soll.
 
@@ -165,7 +165,7 @@ Daher:
   Konzepte in den Köpfen der verschiedenen beteiligten Personen 
   weiterentwickeln.**
 
-## Model-Driven Design {#model-driven-design}
+## Model-driven Design {#model-driven-design}
 
 *Dt.: modellgetriebener Entwurf*
 
@@ -219,10 +219,10 @@ schwächen als stärken. Wenn ein Modellierer vom
 Implementierungsprozess getrennt ist, gewinnt er oder sie nie ein
 Gefühl für
 die Restriktionen bei der Implementierung oder verliert dieses schnell.
-Die grundlegende Bedingung des [Model-Driven
+Die grundlegende Bedingung des [Model-driven
 Designs](#model-driven-design) - dass
 das Modell eine effektive Implementierung unterstützt und wichtige
-Erkenntnisse über die Domain abstrahiert - geht dadurch nahezu verloren 
+Erkenntnisse über die Domäne abstrahiert - geht dadurch nahezu verloren 
 und die daraus
 resultierenden Modelle werden unpraktisch sein. Schließlich werden die
 Kenntnisse und Fähigkeiten erfahrener Designer nicht auf andere

@@ -122,7 +122,7 @@ Daher:
 
 **Wenn ein Fehlschlag bei der Entwicklung in einem der beiden Kontexte
 zu einem Misserfolg für beide führen würde, solltest du ein
-[Partnership](#partnership) zwischen den für die beiden Kontexte
+Partnership zwischen den für die beiden Kontexte
 zuständigen Teams
 etablieren.  Führe einen Prozess zur koordinierten Planung der
 Entwicklung und zum gemeinsamen Managements der Integration ein.**
@@ -147,7 +147,7 @@ des Client-Systems entspricht und die im Rahmen der [Continuous
 Integration](#continuous-integration) auf dem Serversystem ausgeführt
 werden kann.
 
-*[Partnership](#partnership) ist ein neuer Begriff, der nach dem
+*Partnership ist ein neuer Begriff, der nach dem
 blauen Buch aus dem Jahre
 2004 entstanden ist.*
 
@@ -227,7 +227,7 @@ ein Vetorecht bei Änderungen hat.
 Daher:
 
 **Etabliere eine klare
-[Customer-Supplier-Beziehung](#customer-supplier) zwischen den 
+Customer-Supplier-Beziehung zwischen den 
 beiden Teams, d.h. Downstream-Prioritäten fließen in die
 Upstream-Planung ein. Verhandel und budgetiere Aufgaben für die
 Downstream-Anforderungen, so dass jeder die Verpflichtungen und den
@@ -370,12 +370,12 @@ Domäneninformationen als gemeinsames Kommunikationsmedium ausdrückt
 und bei Bedarf in diese Sprache und aus dieser Sprache übersetzen
 kann.**
 
-Viele Branchen definieren [Published Languages](#published-language)
+Viele Branchen definieren Published Languages
 in Form von 
 Datenaustauschstandards.  Projektteams entwickeln aber auch ihre
 eigenen für den Einsatz in ihrem Unternehmen.
 
-[Published Language](#published-language) wird oft mit dem [Open Host
+Published Language wird oft mit dem [Open Host
 Service](#open-host-service) kombiniert.
 
 ## Separate Ways {#separate-ways}
@@ -421,7 +421,7 @@ werden.  Abhängigkeiten durchziehen die Software.  Ursache und Wirkung
 werden immer schwieriger nachvollziehbar.  Schließlich erstarrt die
 Software zu einem großen Schlammball.
 
-[Big Ball of Mud](#big-ball-of-mud) ist für einige Situationen eigentlich recht
+Big Ball of Mud ist für einige Situationen eigentlich recht
 praktisch (wie im Originalartikel von Foote und Yoder beschrieben),
 aber er verhindert fast vollständig die Subtilität und Präzision, die
 für nützliche Modelle erforderlich ist.
@@ -429,13 +429,13 @@ für nützliche Modelle erforderlich ist.
 Deshalb:
 
 **Zeichne eine Grenze um das gesamte Durcheinander und bezeichne es
-als einen [Big Ball of Mud](#big-ball-of-mud).  Versuche nicht, in
-diesem Context eine
+als einen Big Ball of Mud. Versuche nicht, in
+diesem Kontext eine
 ausgeklügelte Modellierung anzuwenden.  Sei auf der Hut vor der
 Tendenz, dass sich solche Systeme in andere Kontexte ausbreiten.**
 
 (siehe
   [Big Ball of Mud von Brian Foote und Joseph Yoder](http://www.laputan.org/mud/mud.html))
 
-*[Big Ball of Mud](#big-ball-of-mud) ist ein neuer Begriff, der nach
+*Big Ball of Mud ist ein neuer Begriff, der nach
 dem blauen Buch aus dem Jahre 2004 entstanden ist.*

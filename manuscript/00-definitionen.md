@@ -9,12 +9,12 @@ der Software.
 ### Model {#model}
 
 Ein *Model* (Dt.: Modell) ist ein System von Abstraktionen, das
-ausgewählte Aspekte einer Domain beschreibt und zur Lösung von
-Problemen im Zusammenhang mit dieser Domain verwendet werden kann.
+ausgewählte Aspekte einer Domäne beschreibt und zur Lösung von
+Problemen im Zusammenhang mit dieser Domäne verwendet werden kann.
 
 ### Ubiquitous Language
 
-Die [*Ubiquitous Language*](#ubiquitous-language) (Dt.:
+Die *Ubiquitous Language* (Dt.:
 allgegenwärtige Sprache) ist eine
 Sprache, die um das Domänenmodell herum gruppiert ist und von allen
 Teammitgliedern in einem *Bounded Context* verwendet wird, um alle
@@ -28,7 +28,7 @@ einem Context (Dt.: Kontext) verstanden werden.*
 
 ### Bounded Context
 
-Der [*Bounded Context*](#bounded-context) (Dt.: begrenzter Kontext)
+Der *Bounded Context* (Dt.: begrenzter Kontext)
 ist eine Beschreibung
 einer Grenze (typischerweise ein Subsystem oder die Arbeit eines
 bestimmten Teams), innerhalb derer ein bestimmtes Modell definiert und

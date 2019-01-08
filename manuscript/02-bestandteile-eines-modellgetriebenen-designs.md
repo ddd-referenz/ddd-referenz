@@ -1,7 +1,7 @@
 # II. Bestandteile eines modellgetriebenen Entwurfs
 
 Diese Muster stellen weit verbreitete bewährte Praktiken für
-objekt-orientiertes Designs im Hinblick auf Domain-Driven Design dar.
+objekt-orientiertes Designs im Hinblick auf Domain-driven Design dar.
 Sie leiten Entscheidungen, welche das Modell präzisieren und das Modell 
 und die Implementierung aufeinander abgestimmt halten, wobei das eine 
 die Effektivität des anderen verstärkt. Das sorgfältige Ausarbeiten der
@@ -151,7 +151,7 @@ Domänenebene herausgedrängt wird.
 
 In verteilten Systemen entsteht ein anderer, wenn auch verwandter
 Themenkomplex. Der Zustand eines verteilten Systems kann nicht immer
-vollständig konsistent gehalten werden. Wir halten die Aggregate
+vollständig konsistent gehalten werden. Wir halten die [Aggregates](#aggregate)
 intern jederzeit konsistent, während wir andere Änderungen asynchron
 vornehmen. Da sich Änderungen über die Knoten eines Netzwerks
 ausbreiten, kann es schwierig sein, mehrere Änderungen zu verarbeiten,
@@ -164,9 +164,9 @@ Daher:
 eine Reihe von diskreten Ereignissen. Stelle jedes Ereignis als
 Domänenobjekt dar. Diese unterscheiden sich von Systemereignissen,
 welche die Aktivität innerhalb der Software selbst widerspiegeln, obwohl
-oft ein Systemereignis mit einem Domänenereignis verbunden ist,
-entweder als Teil einer Reaktion auf das Domänenereignis oder als
-Möglichkeit, Informationen über das Domänenereignis in das System zu
+oft ein Systemereignis mit einem Domain Event verbunden ist,
+entweder als Teil einer Reaktion auf das Domain Event oder als
+Möglichkeit, Informationen über das Domain Event in das System zu
 übertragen.**
 
 **Ein Domain Event ist ein vollwertiger Teil des
@@ -177,22 +177,22 @@ bei denen sie benachrichtigt werden möchten oder die mit
 Zustandsänderungen in den anderen Modellobjekten verbunden sind.**
 
 In einem verteilten System kann der Zustand einer [Entity](#entity)
-aus den [Domain Events](#domain-event) abgeleitet werden, die einem
+aus den Domain Events abgeleitet werden, die einem
 bestimmten Knoten derzeit bekannt sind, was ein kohärentes Modell
 ermöglicht, wenn keine vollständigen Informationen über das System als
 Ganzes vorliegen.
 
-[Doman Events](#domain-event) sind normalerweise unveränderlich, da
+Domain Events sind normalerweise unveränderlich, da
 sie eine Aufzeichnung von etwas in der Vergangenheit sind. Zusätzlich
-zu einer Beschreibung des Ereignisses enthält ein Domänenereignis
+zu einer Beschreibung des Ereignisses enthält ein Domain Event
 typischerweise einen Zeitstempel für den Zeitpunkt des Auftretens des
 Ereignisses und die Identitäten der an dem Ereignis beteiligten
-[Entities](#entity). Außerdem hat ein Domänenereignis oft einen
+[Entities](#entity). Außerdem hat ein Domain Event oft einen
 separaten Zeitstempel, der angibt, wann das Ereignis in das System
 gelangt ist und die Identität der Person, die es ausgelöst hat.
-Wenn das nützlich ist, kann eine Identität für das Domänenereignis auf
+Wenn das nützlich ist, kann eine Identität für das Domain Event auf
 Basis einiger dieser Eigenschaften definiert werden. Wenn dann also
-beispielsweise zwei Instanzen desselben [Domain Events](#domain-event)
+beispielsweise zwei Instanzen desselben Domain Events
 an einem Knoten ankommen, können sie als das gleich Ereignis erkannt
 werden.
 
@@ -217,12 +217,12 @@ Daher:
 der Domäne nicht in der natürlichen Verantwortung einer
 [Entity](#entity) oder eines [Value Objects](#value-object) liegt,
 füge dem Modell eine Operation als eigenständige Schnittstelle hinzu,
-die als [Service](#service) deklariert ist. Definiere einen
+die als Service deklariert ist. Definiere einen
 Servicevertrag, eine Reihe von [Assertions](#assertion) zu
-Interaktionen mit dem [Service](#service). Drücke diese
+Interaktionen mit dem Service. Drücke diese
 [Assertions](#assertion) in der [Ubiquitous
 Language](#ubiquitous-language) eines bestimmten [Bounded
-Context](#bounded-context) aus. Gib dem [Service](#service) einen
+Context](#bounded-context) aus. Gib dem Service einen
 Namen, der ebenfalls Teil der [Ubiquitous Language](#ubiquitous-language)
 wird.**
 
@@ -283,27 +283,27 @@ mehrere Server, oder beim Entwurf asynchroner Transaktionen.
 Daher:
 
 **Gruppiere die [Entities](#entity) und [Value Objects](#value-object)
-zu Aggregaten und definiere Grenzen um jede dieser Gruppen herum.
-Wähle eine [Entity](#entity) als Wurzel eines jeden Aggregats und erlaube
+zu Aggregates und definiere Grenzen um jede dieser Gruppen herum.
+Wähle eine [Entity](#entity) als Wurzel eines jeden Aggregates und erlaube
 externen Objekten, nur Referenzen auf die Wurzel zu halten (Referenzen
 auf interne Elemente werden nur für die Verwendung innerhalb einer
 einzigen Operation ausgegeben). Definiere Eigenschaften und
-Invarianten für das Aggregat als Ganzes und übertrage die
+Invarianten für das Aggregate als Ganzes und übertrage die
 Verantwortung für deren Durchsetzung an die Wurzel oder an einen 
 ausgewiesenen Mechanismus im Framework.**
 
-Verwende die gleichen Aggregatsgrenzen für die Steuerung von
+Verwende die gleichen Aggregate-Grenzen für die Steuerung von
 Transaktionen und Verteilung.
 
-Wende innerhalb der Grenze eines Aggregats die
+Wende innerhalb der Grenze eines Aggregates die
 Konsistenzregeln synchron an. Behandle Änderungen über Grenzen hinweg 
 asynchron.
 
-Halte ein einzelnes Aggregat als Ganzes auf einem Server. Erlaube die 
-Verteilung verschiedener Aggregate auf unterschiedliche Knoten.
+Halte ein einzelnes Aggregate als Ganzes auf einem Server. Erlaube die 
+Verteilung verschiedener Aggregates auf unterschiedliche Knoten.
 
 Wenn diese Entwurfsentscheidungen nicht gut von den Grenzen der
-Aggregate geleitet werden, überdenke das Modell.
+Aggregates geleitet werden, überdenke das Modell.
 Deutet das Szenario in der Domäne auf eine wichtige neue Erkenntnis
 hin? Solche Änderungen verbessern oft die Aussagekraft und
 Flexibilität des Modells sowie die Lösung der Transaktions- und
@@ -311,7 +311,7 @@ Verteilungsproblematik.
 
 ## Repositories {#repository}
 
-*Zugriff auf Aggregate durch Anfragen, die in der [Ubiquitous
+*Zugriff auf [Aggregates](#aggregate) durch Anfragen, die in der [Ubiquitous
 Language](#ubiquitous-language) ausgedrückt sind.*
 
 Die Verbreitung von traversierbaren Beziehungen, die nur dazu dienen,
@@ -331,8 +331,8 @@ können, aber das löst nur einen Teil des Problems.
 
 Uneingeschränkte Abfragen können nur bestimmte Felder aus Objekten
 auslesen und so die Kapselung durchbrechen oder bestimmte Objekte aus 
-dem inneren Zustand eines [Aggregats](#aggregate) instanziieren und 
-dabei die Wurzel eines Aggregats umgehen und es so diesen Objekten 
+dem inneren Zustand eines [Aggregates](#aggregate) instanziieren und 
+dabei die Wurzel eines [Aggregates](#aggregate) umgehen und es so diesen Objekten 
 unmöglich 
 machen, die Regeln des Domänenmodells durchzusetzen. Die Domänenlogik 
 verlagert sich in Abfragen und in Code der Anwendungsschicht, und die
@@ -341,8 +341,8 @@ reinen Datencontainern.
 
 Daher:
 
-**Erstelle für jeden Aggregattyp, auf den global zugegriffen werden muss,
-einen Dienst, der die Illusion einer Sammlung aller Objekte des Typs der Wurzel dieses Aggregats vermitteln kann. Setze den Zugriff über
+**Erstelle für jeden Aggregate-Typ, auf den global zugegriffen werden muss,
+einen Dienst, der die Illusion einer Sammlung aller Objekte des Typs der Wurzel dieses [Aggregates](#aggregate) vermitteln kann. Setze den Zugriff über
 eine bekannte globale Schnittstelle um. Stelle Methoden zum
 Hinzufügen und Entfernen von Objekten bereit, welche das tatsächliche
 Einfügen oder Entfernen von Daten in die Datenbank kapseln. Biete
@@ -351,9 +351,9 @@ Domänenexperten von Bedeutung sind. Liefere vollständig
 instanziierte Objekte oder Sammlungen von Objekten zurück, deren
 Attributwerte den Kriterien entsprechen, wodurch die eigentliche
 Speicher- und Abfragetechnologie gekapselt wird, oder gib Proxies
-zurück, welche die Illusion von vollständig instanziierten Aggregaten
+zurück, welche die Illusion von vollständig instanziierten [Aggregates](#aggregate)
 vermitteln, aber die Daten verzögert nachladen. Stelle Repositories 
-nur für Aggregattypen bereit,
+nur für Aggregate-Typen bereit,
 die tatsächlich direkten Zugriff benötigen. Halte die Anwendungslogik
 auf das Modell fokussiert und delegiere die gesamte Speicherung der
 Objekte und den Zugriff auf die Objekte an die Repositories.**
@@ -363,7 +363,7 @@ Objekte und den Zugriff auf die Objekte an die Repositories.**
 *Dt.: Fabriken*
 
 Wenn die Erstellung eines ganzen, intern konsistenten
-[Aggregats](#aggregate) oder eines großen [Value Objects](#value-object)
+[Aggregates](#aggregate) oder eines großen [Value Objects](#value-object)
 kompliziert wird oder zu viel von der internen
 Struktur preisgibt, bieten [Factories](#factory) eine Kapselung.
 
@@ -373,19 +373,19 @@ nicht in die Verantwortung der erstellten Objekte selbst. Werden diese
 Verantwortlichkeiten vermischt, kann dies zu schwer verständlichen 
 Entwürfen führen. Muss der Client das Objekt direkt erzeugen, wird die 
 Kapselung des erzeugten [Value Objects](#value-object) oder 
-[Aggregats](#aggregate) gebrochen und der Client zu stark an die
+[Aggregates](#aggregate) gebrochen und der Client zu stark an die
 Implementierung des erstellten Objekts gekoppelt.
 
 Daher:
 
 **Verlagere die Verantwortung für das Erstellen von Instanzen
-komplexer Objekte und [Aggregats](#aggregate) auf ein separates
+komplexer Objekte und [Aggregates](#aggregate) auf ein separates
 Objekt, das selbst keine Verantwortung im Domänenmodell hat, aber
 dennoch Teil des Domänenentwurfs ist. Stelle eine Schnittstelle zur
 Verfügung, die den komplexen Zusammenbau kapselt und die
 es erlaubt, dass der Client keine Referenzen auf die konkreten
 Klassen der zu instanziierenden Objekte haben muss. Erstelle ein ganzes
-[Aggregat](#aggregate) als ein Stück und erzwinge seine Invarianten.
+[Aggregate](#aggregate) als ein Stück und erzwinge seine Invarianten.
 Erstelle ein komplexes [Value Object](#value-object) am Stück,
 womöglich durch Verwendung eines Builders für den Zusammenbau der 
 einzelnen Elemente.**

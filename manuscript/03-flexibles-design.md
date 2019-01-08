@@ -1,113 +1,113 @@
-# III Flexibles Design
+# III. Flexibles Design
 
 Ein Projekt, welches im Laufe der Entwicklung Fahrt aufnehmen kann - anstatt durch sein eigenes Erbe belastet zu werden - erfordert ein Design, mit dem man gerne arbeitet und das zum Wandel einlädt. Ein flexibles Design.
 
-Flexibles Design ist eine Ergänzung zur tiefgehenden Modellierung.
+Flexibles Design ist die Ergänzung zur tiefgehenden Modellierung.
 
-Entwickler spielen hierbei zwei Rollen, von denen jede durch das Design bedient werden muss. Die gleiche Person könnte durchaus beide Rollen spielen - sogar innerhalb von Minuten hin und her wechseln - aber die Beziehung zum Code ist dennoch unterschiedlich. Eine Rolle ist der Entwickler eines Clients, der die Domänenobjekte in den Anwendungscode oder einen anderen Domänenschichtcode einbindet und dabei die Möglichkeiten des Designs nutzt. Ein flexibles Design offenbart ein tiefes Grundmodell, das sein Potenzial deutlich macht. Die Client-Entwicklerin kann flexibel einen minimalen Satz lose gekoppelter Konzepte verwenden, um eine Reihe von Szenarien in der Domäne auszudrücken. Designelemente passen auf natürliche Weise zusammen, mit einem Ergebnis, das vorhersehbar, klar charakterisiert und robust ist.
+Entwickler spielen zwei Rollen, von denen jede durch das Design unterstützt werden muss. Die gleiche Person könnte durchaus beide Rollen spielen - sogar innerhalb von Minuten hin und her wechseln - aber die Beziehung zum Code ist dennoch unterschiedlich. Eine Rolle ist der Entwickler eines Clients, der die Domänenobjekte in den Anwendungscode oder einen anderen Domänenschichtcode einbindet und dabei die Möglichkeiten des Designs nutzt. Ein flexibles Design offenbart ein tiefes, zugrunde liegendes Modell, das sein Potenzial deutlich macht. Die Client-Entwicklerin kann flexibel einen minimalen Satz lose gekoppelter Konzepte verwenden, um eine Reihe von Szenarien in der Domäne auszudrücken. Elemente des Designs passen auf natürliche Weise zusammen, mit einem Ergebnis, das vorhersehbar, klar charakterisiert und robust ist.
 
-Ebenso wichtig ist, dass das Design dem Entwickler dienen muss, der daran arbeitet, es zu ändern. Um offen für Veränderungen zu sein, muss ein Design leicht verständlich sein und das gleiche zugrunde liegende Modell offenbaren, auf das der Client-Entwickler zurückgreift. Es muss den Konturen eines tiefen Modells der Domäne folgen, so dass die meisten Änderungen das Design an flexiblen Punkten biegen. Die Auswirkungen des Codes müssen transparent sein, so dass die Folgen einer Änderung leicht zu antizipieren sind.
+Ebenso wichtig ist, dass das Design den Entwickler, der daran arbeitet, dabei unterstützen muss, es zu ändern. Um offen für Veränderungen zu sein, muss ein Design leicht verständlich sein und das gleiche zugrunde liegende Modell offenbaren, auf das der Client-Entwickler zurückgreift. Es muss den Konturen eines tiefen Modells der Domäne folgen, so dass die meisten Änderungen das Design an flexiblen Punkten biegen. Die Auswirkungen des Codes müssen transparent sein, so dass die Folgen einer Änderung leicht voraussehbar sind.
 
-- Verhalten sichtbar machen
+- Verhalten offensichtlich machen
 - Reduktion der Änderungskosten
 - Erstellung von Software, mit der Entwickler*innen gerne arbeiten
 
 ## Intention-Revealing Interfaces {#intention-revealing-interface}
 
-*Dt.: Ausdrucksstarke-Interfaces*
+*dt.: Ausdrucksstarke Schnittstellen*
 
-Wenn ein Entwickler die Implementierung einer Komponente in Betracht ziehen muss, um sie zu nutzen, geht der Wert der Kapselung verloren. Wenn jemand anderes als der ursprüngliche Entwickler den Zweck eines Objekts oder einer Operation aufgrund seiner Implementierung ableiten muss, kann dieser neue Entwickler einen Zweck ableiten, den die Operation oder Klasse nur durch Zufall erfüllt. Wenn das nicht die Absicht war, kann der Code im Moment funktionieren, aber die konzeptionelle Grundlage des Designs wird beschädigt worden sein, und die beiden Entwickler werden mit Widersprüchen arbeiten.
+Wenn ein Entwickler die Implementierung einer Komponente berücksichten muss, um sie zu nutzen, geht der Wert der Kapselung verloren. Wenn jemand anderes als der ursprüngliche Entwickler den Zweck eines Objekts oder einer Operation aufgrund seiner Implementierung ableiten muss, kann dieser neue Entwickler einen Zweck ableiten, den die Operation oder Klasse nur durch Zufall erfüllt. Wenn das nicht die Absicht war, kann der Code im Moment funktionieren, aber die konzeptionelle Grundlage des Designs wird beschädigt sein, und die beiden Entwickler werden gegeneinander arbeiten.
 
 Daher:
 
-**Benennen Sie Klassen und Operationen, um ihre Wirkung und ihren Zweck zu beschreiben, ohne Bezugnahme auf die Mittel, mit denen sie tun, was sie versprechen. Dies befreit den Client-Entwickler von der Notwendigkeit, die Einbauten zu verstehen. Diese Namen sollten der Ubiquitous Language entsprechen, damit die Teammitglieder schnell ihre Bedeutung ableiten können. Schreiben Sie einen Test für ein Verhalten, bevor Sie es erstellen, um Ihr Denken in den Client-Entwicklermodus zu zwingen.**
+**Benenne Klassen und Operationen, um ihre Wirkung und ihren Zweck zu beschreiben, ohne die Mittel zu nennen, mit denen sie das tun, was sie versprechen. Dies befreit den Client-Entwickler von der Notwendigkeit, das Innenleben zu verstehen. Diese Namen sollten der [Ubiquitous Language](#ubiquitous-language) entsprechen, damit Teammitglieder schnell ihre Bedeutung ableiten können. Schreibe einen Test für ein Verhalten, bevor Du es implementierst, um Dein Denken in den Client-Entwicklermodus zu zwingen.**
 
 ## Side-Effect-Free Functions {#side-effect-free-functions}
 
-*Dt.: Seiteneffektfreie Funktionen*
+*dt.: Seiteneffektfreie Funktionen*
 
-Interaktionen mehrerer Regeln oder Zusammensetzungen von Berechnungen werden extrem schwer vorherzusagen sein. Der Entickler, der eine Operation aufruft, muss ihre Durchführung und die Durchführung aller seiner Delegationen verstehen, um das Ergebnis zu antizipieren. Der Nutzen jeder Abstraktion von Interfaces ist begrenzt, wenn die Entwickler gezwungen sind, den Schleier zu durchbrechen. Ohne sicher vorhersehbare Abstraktionen müssen die Entwickler die kombinatorische Auflösung begrenzen und den Reichtum an Verhalten, der sich aufbauen lässt, mit einer niedrigen Grenze begrenzen.
+Interaktionen mehrerer Regeln oder Kompositionen von Berechnungen werden extrem schwer vorherzusagen. Der Entwickler, der eine Operation aufruft, muss ihre Implementierung und die Implementierung aller Delegationen verstehen, um das Ergebnis voraussehen zu können. Der Nutzen jeder Abstraktion von Schnittstellen ist begrenzt, wenn Entwickler gezwungen sind, diesen Schleier zu lüften. Ohne sicher vorhersehbare Abstraktionen müssen Entwickler die kombinatorische Explosion begrenzt halten, was eine obere Grenzen für die Menge an Verhalten darstellt, die umgesetzt werden kann.
 
 Daher:
 
-**Platzieren Sie so viel von der Logik des Programms wie möglich in Funktionen, Operationen, die Ergebnisse ohne beobachtbare Nebenwirkungen liefern. Trennen Sie Befehle (Methoden, die zu Änderungen des beobachtbaren Zustands führen) strikt in sehr einfache Operationen, die keine Domäneninformationen zurückgeben. Beherrschen Sie Seiteneffekte indem komplexe Logik in Value-Objects verschoben wird, wenn sich ein der Fachlichkeit entsprechendes Konzept präsentiert.
+**Platziere so viel von der Programmlogik wie möglich in Funktionen, also Operationen, die Ergebnisse ohne beobachtbare Nebenwirkungen liefern. Separiere Kommandos (Methoden, die zu Änderungen des beobachtbaren Zustands führen) strikt in sehr einfache Operationen, die keine Domäneninformationen zurückgeben. Kontrolliere Seiteneffekte zusätzlich, indem komplexe Logik in [Value Objects](#value-object) verschoben wird, wenn sich in der Fachlichkeit ein entsprechendes Konzept zeigt.**
 
-Alle Operationen eines Value-Objects sollten seiteneffektfreie Funktionen sein.**
+**Alle Operationen eines [Value Objects](#value-object) sollten seiteneffektfreie Funktionen sein.**
 
 ## Assertions {#assertion}
 
-*Dt.: Versicherungen / Validierungen*
+*dt.: Zusicherungen*
 
-Wenn die Nebenwirkungen von Operationen nur implizit durch ihre Umsetzung definiert werden, werden Designs mit viel Delegation zu einem Gewirr aus Ursache und Wirkung. Der einzige Weg, ein Programm zu verstehen, besteht darin, die Ausführung durch verzweigte Pfade zu verfolgen. Der Wert der Kapselung geht verloren. Die Notwendigkeit, die konkrete Ausführung zu verfolgen, besiegt die Abstraktion.
+Wenn die Nebenwirkungen von Operationen nur implizit durch ihre Umsetzung definiert sind, werden Entwürfe mit viel Delegation zu einem Gewirr aus Ursache und Wirkung. Der einzige Weg, ein Programm zu verstehen, besteht darin, die Ausführung durch verzweigte Pfade hindurch nachzuverfolgen. Der Wert der Kapselung geht verloren. Die Notwendigkeit, die konkrete Ausführung nachverfolgen zu müssen, zerstört die Abstraktion.
 
 Daher:
 
-**Geben Sie die Folgezustände der Operationen und die Invarianten der Klassen und Aggregate an. Wenn Assertions nicht direkt in Ihrer Programmiersprache kodiert werden können, schreiben Sie automatisierte Komponententests für sie. Schreiben Sie sie in Dokumentationen oder Diagramme, wie es zum Stil des Entwicklungsprozesses eines Projekts passt.**
+**Gib die Nachbedingungen von Operationen und die Invarianten von Klassen und Aggregaten an. Wenn Zusicherungen nicht direkt in der Programmiersprache kodiert werden können, schreibe automatisierte Unit Tests für sie. Schreibe sie in Dokumentationen oder in Diagramme, falls dies zum Stil des Entwicklungsprozesses des Projekts passt.**
 
-Suchen Sie nach Modellen mit kohärenten Konzepten, die einen Entwickler dazu bringen, die beabsichtigten Assertions abzuleiten, die Lernkurve zu beschleunigen und das Risiko von widersprüchlichem Code zu reduzieren.
+Suche nach Modellen mit kohärenten Konzepten, die einen Entwickler unterstützen, die beabsichtigten Zusicherungen zu erkennen, dadurch die Lernkurve zu beschleunigen und das Risiko von widersprüchlichem Code zu reduzieren.
 
-Assertions definieren Service Contrsacts und Entitätsmodifikatoren. 
+Zusicherungen definieren Schnittstellenverträge und Modifikatoren von [Entitäten](#entity). 
 
-Assertions definieren Invarianten auf Aggregates.
+Zusicherungen definieren Invarianten auf [Aggregaten](#aggregate).
 
 ## Standalone Classes {#standalone-classses}
 
-*Dt.: Eigenständige Klassen*
+*dt.: Eigenständige Klassen*
 
-Selbst innerhalb eines Moduls nimmt die Schwierigkeit der Interpretation eines Designs mit zunehmenden Abhängigkeiten stark zu. Dies erhöht die geistige Überlastung und begrenzt die Komplexität des Designs, mit der ein Entwickler umgehen kann. Implizite Konzepte tragen zu dieser Belastung noch mehr bei als explizite Referenzen.
+Selbst innerhalb eines Moduls nimmt die Schwierigkeit der Interpretation eines Entwurfs mit zunehmenden Abhängigkeiten stark zu. Dies führt zu geistiger Überlastung und begrenzt die Komplexität des Entwurfs, mit der ein Entwickler umgehen kann. Implizite Konzepte tragen zu dieser Belastung noch mehr bei als explizite Referenzen.
 
-**Eine niedrige Kopplung ist für den Entwurf von Objekten von grundlegender Bedeutung. Wenn Sie könnten, sollten Sie ohne Kompromisse den ganzen Weg gehen. Eliminieren Sie alle anderen Konzepte aus dem Bild. Dann ist eine Klasse völlig in sich geschlossen und kann allein studiert und verstanden werden. Jede dieser in sich geschlossenen Klassen erleichtert das Verständnis eines Moduls erheblich.**
+**Eine geringe Kopplung ist für den Entwurf von Objekten von grundlegender Bedeutung. Wenn du kannst, gehe den ganzen Weg: eliminiere alle anderen Konzepte aus dem Bild. Dann ist eine Klasse völlig in sich geschlossen und kann allein studiert und verstanden werden. Jede dieser in sich geschlossenen Klassen erleichtert das Verständnis eines Moduls erheblich.**
 
 ## Closure of Operations {#closure-of-operations}
 
-*Dt.: Geschlossene Funktionen*
+*dt.: Geschlossene Funktionen*
 
 Die meisten interessanten Objekte tun am Ende Dinge, die nicht nur von primitiven Datentypen charakterisiert werden können.
 
 Daher:
 
-**Wenn es passt, definieren Sie eine Funktion, deren Rückgabetyp derselbe ist wie der Typ ihrer Argumente. Wenn der Implementierer einen Zustand hat, der bei der Berechnung verwendet wird, dann ist der Implementierer praktisch ein Argument der Funktion, so dass das/die Argument(e) und der Rückgabewert vom gleichen Typ wie der Implementierer sein sollten. Eine solche Funktion wird unter der Menge der Instanzen dieses Typs geschlossen. Eine geschlossene Funktion bietet eine High-Level-Schnittstelle, ohne Abhängigkeit auf andere Konzepte.**
+**Wenn es passt, definiere eine Funktion, deren Rückgabetyp derselbe ist wie der Typ ihres/ihrer Argumente(s). Wenn der Implementierer einen Zustand hat, der bei der Berechnung verwendet wird, dann ist der Implementierer faktisch ein Argument der Funktion, so dass das/die Argument(e) und der Rückgabewert vom gleichen Typ wie der Implementierer sein sollten. Eine solche Funktion ist unter der Menge der Instanzen dieses Typs geschlossen. Eine geschlossene Funktion bietet eine höherwertige Schnittstelle, ohne Abhängigkeit auf andere Konzepte.**
 
-Dieses Muster wird am häufigsten auf die Operationen eines Value-Objects angewendet. Da der Lebenszyklus einer Entity eine Bedeutung in der Domäne hat, kann man nicht einfach ein neue erzeugen, um eine Frage zu beantworten. Es gibt Vorgänge, die unter einem Entitätstyp abgeschlossen sind. Sie können ein Mitarbeiterobjekt nach seinem Vorgesetzten fragen und einen anderen Mitarbeiter zurückholen. Aber im Allgemeinen sind Entities nicht die Art von Konzepten, die wahrscheinlich das Ergebnis einer Berechnung sind. Dies ist also in den meisten Fällen eine Gelegenheit, nach Value Objects Ausschau zu halten.
+Dieses Muster wird meistens auf die Operationen eines [Value Objects](#value-object) angewendet. Da der Lebenszyklus einer [Entität](#entity) eine Bedeutung in der Domäne hat, kann man nicht einfach ein neue [Entität](#entity) erzeugen, um eine Anfrage zu beantworten. Es gibt Vorgänge, die unter einem Entitätstyp abgeschlossen sind. Du kannst ein Mitarbeiterobjekt nach seinem Vorgesetzten fragen und ein anderes Mitarbeiterobjekt zurückerhalten. Aber im Allgemeinen sind [Entitäten](#entity) keine Konzepte, die häufig das Ergebnis einer Berechnung sind. In den meisten Fällen ist dies also eine Eigenschaft, die in [Value Objects](#value-object) zu suchen ist.
 
-Manchmal kommt man auf halbem Weg zu diesem Muster. Das Argument passt zum Implementierer, aber der Rückgabetyp ist unterschiedlich, oder der Rückgabetyp passt zum Empfänger und das Argument ist unterschiedlich. Diese Funktionen sind nicht geschlossen, aber sie bieten einen Teil des Vorteils der Schließung, indem sie den Geist befreien.
+Manchmal erreicht man dieses Muster nur halb: das Argument passt zum Implementierer, aber der Rückgabetyp ist unterschiedlich, oder der Rückgabetyp passt zum Empfänger, aber das Argument ist unterschiedlich. Diese Funktionen sind nicht geschlossen, aber sie bieten einen Teil des Vorteils der Geschlossenheit, indem sie einfacher verständlich sind.
 
 ## Declarative Design {#declarative-design}
 
-*Dt.: Deklaratives Design*
+*dt.: Deklarativer Entwurf*
 
-Es kann keine wirklichen Garantien in prozeduraler Software geben. Um nur eine Möglichkeit zu nennen, Assertions zu umgehen, könnte Code zusätzliche Seiteneffekte haben, die nicht ausdrücklich ausgeschlossen wurden. Egal wie modellgetrieben unser Design ist, wir schreiben immer noch Prozeduren, um die Wirkung der konzeptionellen Interaktionen zu erzeugen. Und wir verbringen einen Großteil unserer Zeit damit, Boilerplate Code zu schreiben, der keine wirkliche Bedeutung oder Verhalten hat. Intention-revaling Interfaces und die anderen Patterns in diesem Kapitel helfen, aber sie können konventionellen objektorientierten Programmen niemals formale Strenge verleihen.
+Es kann keine wirklichen Garantien in prozeduraler Software geben. Um nur eine Möglichkeit für das Umgehen von [Zusicherungen](#assertions) zu nennen: Code könnte zusätzliche Seiteneffekte haben, die nicht ausdrücklich ausgeschlossen wurden. Egal wie modellgetrieben unser Entwurf ist, wir schreiben immer noch Prozeduren, um die Wirkung von konzeptionellen Interaktionen zu erzeugen. Und wir verbringen einen Großteil unserer Zeit damit, Boilerplate Code zu schreiben, der keine wirkliche Bedeutung oder kein Verhalten hat. [Intention-Revaling Interfaces](#intention-revealing-interfaces) und die anderen Muster in diesem Kapitel helfen, aber sie können konventionellen objektorientierten Programmen niemals formale Strenge verleihen.
 
-Dies sind einige der Motivationen für Declarative Design. Dieser Begriff bedeutet verschiedenen Menschen unterschiedliche Dinge, aber normalerweise zeigt er einen Weg an, ein Programm oder einen Teil eines Programms als eine Art ausführbare Spezifikation zu schreiben. Eine sehr genaue Beschreibung der Eigenschaften steuert die Software tatsächlich. In seinen verschiedenen Herangehensweisen könnte dies durch Reflection oder zur Kompilierzeit durch Codegenerierung (automatische Erzeugung von konventionellem Code auf der Grundlage der Deklaration) geschehen. Dieser Ansatz ermöglicht es einem anderen Entwickler, die Deklaration zum Nennwert zu nehmen. Es ist eine absolute Garantie.
+Dies sind einige der Motivationen für deklarativen Entwurf. Dieser Begriff bedeutet verschiedenen Menschen unterschiedliche Dinge, aber normalerweise beschreibt er einen Weg, ein Programm oder einen Teil eines Programms als eine Art ausführbare Spezifikation zu schreiben. Eine genaue Beschreibung der Eigenschaften steuert effektiv die Software. Mit verschiedenen Herangehensweisen könnte dies durch Reflection oder zur Kompilierzeit durch Codegenerierung (automatische Erzeugung von konventionellem Code auf der Grundlage der Deklaration) geschehen. Dieser Ansatz ermöglicht es einem anderen Entwickler, die Deklaration zum Nennwert zu nehmen. Es ist eine absolute Garantie.
 
-Viele deklarative Ansätze können korrumpiert werden, wenn die Entwickler sie absichtlich oder unabsichtlich umgehen. Dies ist wahrscheinlich, wenn das System schwer zu bedienen oder zu restriktiv ist. Jeder muss die Regeln des Rahmens befolgen, um die Vorteile eines deklarativen Programms zu nutzen.
+Viele deklarative Ansätze können korrumpiert werden, wenn die Entwickler sie absichtlich oder unabsichtlich umgehen. Dies ist wahrscheinlich, wenn das System schwer zu bedienen oder zu restriktiv ist. Jeder muss die Regeln des Frameworks befolgen, um die Vorteile eines deklarativen Programms zu nutzen.
 
-### Ein deklarativer Design-Stil
+### Ein deklarativer Entwurfstil
 
-Sobald Ihr Entwurf über intention-revealing Interfaces, side-effect-free Functions und Assertions verfügt, begeben Sie sich in deklaratives Gebiet. Viele der Vorteile des Declarative Designs werden erzielt, sobald Sie kombinierbare Elemente haben, die ihre Bedeutung kommunizieren, und die charakteristische oder offensichtliche Effekte oder gar keine beobachtbaren Effekte haben.
+Sobald dein Entwurf über [Intention-Revealing Interfaces](#intention-revealing-interfaces), [Side-Effect-Free Functions](#side-effect-free-functions) und [Assertions](#assertions) verfügt, begibst Du Dich in deklaratives Gebiet. Viele der Vorteile des deklarativen Entwurfs werden erzielt, sobald du kombinierbare Elemente hast, die ihre Bedeutung kommunizieren, und die charakteristische oder offensichtliche Effekte oder gar keine beobachtbaren Effekte haben.
 
-Ein flexibles Design kann es dem Kundencode ermöglichen, einen deklarativen Designstil zu verwenden. Zur Veranschaulichung werden im nächsten Abschnitt einige der Muster in diesem Kapitel zusammengefasst, um die Spezifikation flexibler und deklarativer zu gestalten.
+Ein flexibles Design kann es dem Client-Code ermöglichen, einen deklarativen Entwurfstil zu verwenden. Zur Veranschaulichung werden im nächsten Abschnitt einige der Muster in diesem Kapitel zusammengefasst, um die Spezifikation flexibler und deklarativer zu gestalten.
 
 ## Arbeiten auf Basis etablierter Formalismen
 
-Ein enges konzeptionelles Framework von Grund auf zu schaffen, ist etwas, was man nicht jeden Tag tun kann. Manchmal entdeckt und verfeinert man eines davon im Laufe des Lebens eines Projekts. Aber Ihr könnt oft konzeptionelle Systeme verwenden und anpassen, die in Eurer oder anderen fachlichen Domänen seit langem etabliert sind. Einige von denen wurden eventuell sogar über Jahrhunderte hinweg verfeinert und destilliert. Viele Geschäftsanwendungen betreffen z.B. das Rechnungswesen. Das Rechnungswesen definiert ein gut entwickeltes Set von Einheiten und Regeln, die eine einfache Anpassung an ein tiefgehendes Modell und ein flexibles Design ermöglichen.
+Ein enges konzeptionelles Framework von Grund auf zu schaffen, ist etwas, was man nicht jeden Tag tun kann. Manchmal entdeckt und verfeinert man eines davon im Laufe des Lebens eines Projekts. Aber oft kannst du konzeptionelle Systeme verwenden und anpassen, die in deiner oder einer anderen fachlichen Domänen seit langem etabliert sind. Einige davon wurden möglicherweise sogar über Jahrhunderte hinweg verfeinert und kondensiert. Viele Geschäftsanwendungen betreffen z.B. das Rechnungswesen. Das Rechnungswesen definiert ein gut entwickeltes Set von [Entitäten](#entity) und Regeln, die eine einfache Anpassung an ein tiefgehendes Modell und ein flexibles Design ermöglichen.
 
-Es gibt viele solcher formalisierten konzeptionellen Rahmen, aber mein persönlicher Favorit ist die Mathematik. Es ist überraschend, wie nützlich es sein kann, eine gewisse Wendung in der Grundrechenart herauszuziehen. Viele Domänen beinhalten Mathematik irgendwo. Such danach, Grab es aus. Spezialisierte Mathematik ist sauber, kombinierbar mit klaren Regeln, und die Menschen finden sie leicht zu verstehen.
+Es gibt viele solcher formalisierten konzeptionellen Rahmen, aber mein persönlicher Favorit ist die Mathematik. Es ist überraschend, wie nützlich es sein kann, einen bestimmten Trick aus der Arithmetik zu verwenden. Viele Domänen beinhalten Mathematik irgendwo. Such danach, grab sie aus. Spezialisierte Mathematik ist sauber, kombinierbar mit klaren Regeln, und Leute finden sie leicht zu verstehen.
 
-Ein praktisches Beispiel, "Shares Math", wurde in Kapitel 8 des Buches, Domain-Driven Design, diskutiert.
+Ein praktisches Beispiel, "Shares Math", wurde in Kapitel 8 des Buches "Domain-Driven Design" diskutiert.
 
 ## Conceptual Contours
 
-*Dt.: Konzeptionelle Konturen*
+*dt.: Konzeptionelle Konturen*
 
-Manchmal favorisieren Leute einen feingranularen Schnitt der Funktionalität, um eine flexible Kombination zu ermöglichen. Manchmal favorisieren sie einen eher grobgranularen Schnitt, um die Komplexität zu kapseln. Manchmal streben sie nach einer konsistenten Granularität, wodurch alle Klassen und Operationen in ähnlicher Größenordnung durchgeführt werden. Das sind übertriebene Vereinfachungen, die als allgemeine Regeln nicht gut funktionieren. Aber sie sind durch grundlegende Probleme motiviert.
+Manchmal schneiden Leute die Funktionalität in kleine Teile, um eine flexible Kombination zu ermöglichen. Manchmal favorisieren sie einen eher grobgranularen Schnitt, um die Komplexität zu kapseln. Manchmal streben sie nach einer konsistenten Granularität, wodurch alle Klassen und Operationen in ähnlicher Größenordnung umgesetzt werden. Das sind übertriebene Vereinfachungen, die als allgemeine Regeln nicht gut funktionieren. Aber sie sind durch grundlegende Probleme motiviert.
 
-Wenn Elemente eines Modells oder Designs in ein monolithisches Konstrukt eingebettet sind, wird deren Funktionalität dupliziert. Die externe Schnittstelle sagt nicht alles, was einem Kunden wichtig sein könnte. Ihre Bedeutung ist schwer zu verstehen, da verschiedene Konzepte miteinander vermischt werden.
+Wenn Elemente eines Modells oder Entwurfs in ein monolithisches Konstrukt eingebettet sind, wird deren Funktionalität dupliziert. Die externe Schnittstelle sagt nicht alles, was einem Verwender wichtig sein könnte. Ihre Bedeutung ist schwer zu verstehen, da verschiedene Konzepte miteinander vermischt werden.
 
-Umgekehrt kann die Zerlegung von Klassen und Methoden den Client sinnlos verkomplizieren, indem sie Clients dazu zwingt, zu verstehen, wie kleine Teile zusammenpassen. Schlimmer noch, ein Konzept kann völlig verloren gehen. Die Hälfte eines Uranatoms ist nicht Uran. Und natürlich zählt nicht nur die Korngröße, sondern auch die Art und Weise, wie das Korn läuft.
+Umgekehrt kann die Zerlegung von Klassen und Methoden den Client sinnlos verkomplizieren, indem sie Clients dazu zwingt, zu verstehen, wie kleine Teile zusammenpassen. Schlimmer noch, ein Konzept kann völlig verloren gehen. Die Hälfte eines Uranatoms ist nicht Uran. Natürlich kommt es nicht nur auf die Grösse der Elemente an, sondern auch, wie gut diese zusammen funktionieren.
 
 Daher:
 
-**Zerlege die Designelemente (Funktionen, Interfaces, Klassen und Aggregates) in zusammenhängende Einheiten, wobei Du Deine Intuition der wichtigen Teilbereiche in der Domäne berücksichtigst. Beobachte die Achsen von Veränderung und Stabilität durch sukzessives Refactoring und suche nach den zugrunde liegenden konzeptionellen Konturen, die diese Schermuster erklären. Richte das Modell auf die konsistenten Aspekte der Domäne aus, die es überhaupt zu einem lebensfähigen Wissensgebiet machen.**
+**Zerlege die Entwurfselement (Funktionen, Schnittellen, Klassen und Aggregate) in zusammenhängende Einheiten, wobei Du Deine Intuition der wichtigen Teilbereiche in der Domäne berücksichtigst. Beobachte die Achsen von Veränderung und Stabilität durch sukzessives Refactoring und suche nach den zugrunde liegenden konzeptionellen Konturen, die dieses Schnittmuster erklären. Richte das Modell auf die konsistenten Aspekte der Domäne aus, die es überhaupt zu einem lebensfähigen Wissensgebiet machen.**
 
 Ein flexibles Design, das auf einem tiefgehenden Modell basiert, ergibt eine einfache Reihe von Schnittstellen, die sich logisch kombinieren, um sinnvolle Aussagen in der Ubiquitous Language zu treffen, ohne die Ablenkung und den Wartungsaufwand irrelevanter Optionen.

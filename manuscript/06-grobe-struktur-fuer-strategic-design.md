@@ -92,8 +92,8 @@ der Teammitglieder einfängt und das Denken in eine nützliche Richtung
 zu lenken scheint, adaptiere es als [Large-scale
 Structure](#large-scale-structure).  Organisiere
 das Design um diese Metapher herum und nimm es in die [Ubiquitous
-Language](#ubiquitous-language) auf.  Die [System
-Metaphor](#system-metaphor) sollte sowohl
+Language](#ubiquitous-language) auf.  Die System
+Metaphor sollte sowohl
 die Kommunikation über das System erleichtern als auch die Entwicklung
 des Systems leiten.  Dies erhöht die Konsistenz in verschiedenen
 Teilen des Systems, möglicherweise sogar über verschiedene [Bounded
@@ -127,7 +127,7 @@ Verantwortlichkeiten.  Diese Verantwortlichkeiten sollten eine
 Geschichte über den Zweck und das Design deines Systems auf grober
 Ebene erzählen.  Refaktoriere das Modell so, dass die
 Verantwortlichkeiten der einzelnen Domänenobjekte,
-[Aggregates](#aggregate) und [Modules](#module) genau in die
+[Aggregates](#aggregate) und Module genau in die
 Verantwortung einer
 Schicht passen.**
 
@@ -139,7 +139,7 @@ Schicht passen.**
 Gruppe von Objekten verhalten soll.*
 
 In einer Anwendung, in der die Rollen und Beziehungen zwischen den
-Entitäten in verschiedenen Situationen unterschiedlich sind, kann die
+[Entities](#entity) in verschiedenen Situationen unterschiedlich sind, kann die
 Komplexität explodieren. Weder ganz allgemeine noch sehr individuelle
 Modelle erfüllen die Bedürfnisse der Anwender.  Am Ende haben Objekte
 Referenzen auf andere Typen, um eine Vielzahl von Fällen abzudecken,
