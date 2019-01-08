@@ -165,7 +165,7 @@ Daher:
   Konzepte in den Köpfen der verschiedenen beteiligten Personen 
   weiterentwickeln.**
 
-## Model-Driven Design {#model-driven-design}
+## Model-driven Design {#model-driven-design}
 
 *dt.: modellgetriebener Entwurf*
 
@@ -219,7 +219,7 @@ schwächen als stärken. Wenn ein Modellierer vom
 Implementierungsprozess getrennt ist, gewinnt er oder sie nie ein
 Gefühl für
 die Restriktionen bei der Implementierung oder verliert dieses schnell.
-Die grundlegende Bedingung des [Model-Driven
+Die grundlegende Bedingung des [Model-driven
 Designs](#model-driven-design) - dass
 das Modell eine effektive Implementierung unterstützt und wichtige
 Erkenntnisse über die Domain abstrahiert - geht dadurch nahezu verloren 
