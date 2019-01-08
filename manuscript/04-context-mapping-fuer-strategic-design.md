@@ -357,7 +357,7 @@ Published Language wird oft mit [Open Host Service](#open-host-service) kombinie
 *Dt.: Getrennte Wege*
 
 Wir müssen rücksichtslos sein, wenn es um die Definition von
-Anforderungen geht.  Wenn zwei Mengen von Funktionalitäten keine
+Anforderungen geht. Wenn zwei Mengen von Funktionalitäten keine
 signifikante Beziehung zueinander haben, können sie vollständig
 voneinander getrennt werden.
 
