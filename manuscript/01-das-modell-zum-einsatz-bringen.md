@@ -28,7 +28,7 @@ Design.
 
 ## Bounded Context {#bounded-context}
 
-*dt.: Begrenzter Kontext*
+*Dt.: Begrenzter Kontext*
 
 *Bei jedem großen Projekt sind mehrere Modelle im Spiel.* Sie
 entstehen aus vielen Gründen. Zwei Subsysteme bedienen in der Regel
@@ -63,7 +63,7 @@ anderswo nicht verwendet werden muss.**
 
 ## Ubiquitous Language {#ubiquitous-language}
 
-*dt.: allgegenwärtige Sprache*
+*Dt.: allgegenwärtige Sprache*
 
 Zuerst schreibst du einen Satz,  
 Und dann hackst du ihn klein;  
@@ -167,7 +167,7 @@ Daher:
 
 ## Model-driven Design {#model-driven-design}
 
-*dt.: modellgetriebener Entwurf*
+*Dt.: modellgetriebener Entwurf*
 
 *Die enge Verknüpfung des Codes mit einem zugrunde liegenden Modell
 gibt dem Code einen Sinn und macht das Modell relevant.*
@@ -208,7 +208,7 @@ unterstützt.**
 
 ## Hands-on Modelers {#hands-on-modelers}
 
-*dt.: Praktizierende Modellierer*
+*Dt.: Praktizierende Modellierer*
 
 Wenn sich die Personen, die den Code schreiben, nicht für das Modell
 verantwortlich fühlen oder nicht verstehen, wie das Modell für eine
@@ -245,7 +245,7 @@ Language](#ubiquitous-language) einbeziehen.**
 
 ## Refactoring Toward Deeper Insight {#refactoring-toward-deeper-insight}
 
-*dt.: Refactoring zum tieferen Verständnis*
+*Dt.: Refactoring zum tieferen Verständnis*
 
 Die Verwendung eines bewährten Satzes von Grundbausteinen zusammen mit
 einer konsistenten Sprache bringt ein wenig Vernunft in die
