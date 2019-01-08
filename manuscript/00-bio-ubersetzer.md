@@ -2,7 +2,7 @@
 
 {width=25%,float=left}
 ![](images/michael.jpg)
-*Michael Plöd* ist Principal Consultant bei innoQ. Seine aktuellen Interessengebiete sind Microservices, Domain-driven Design, polyglotter Persistenz, Alternativen zu alt eingewachsenen Softwarearchitekturen, Event Sourcing und Präsentationstechniken für Entwickler und Architekten.
+*Michael Plöd* ist Principal Consultant bei INNOQ. Seine aktuellen Interessengebiete sind Microservices, Domain-driven Design, polyglotter Persistenz, Alternativen zu alt eingewachsenen Softwarearchitekturen, Event Sourcing und Präsentationstechniken für Entwickler und Architekten.
 
 {width=25%,float=left}
 ![](images/sonja.jpg)
