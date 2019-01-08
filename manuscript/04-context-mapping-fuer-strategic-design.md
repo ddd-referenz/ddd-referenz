@@ -308,7 +308,7 @@ immer mehr zu beachten, wenn Änderungen vorgenommen werden.
 Daher:
 
 **Definiere ein Protokoll, das den Zugriff auf dein Subsystem als eine
-Menge von Diensten ermöglicht. Öffne das Protokoll, so dass
+Menge von [Services](#service) ermöglicht. Öffne das Protokoll, so dass
 alle, die sich mit dir integrieren müssen, das Protokoll nutzen
 können.  Verbessere
 und erweitere das Protokoll, um neue Integrationsanforderungen zu
