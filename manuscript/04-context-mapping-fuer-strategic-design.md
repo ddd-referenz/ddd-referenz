@@ -1,4 +1,4 @@
-# IV. Context Mapping für strategisches Design
+# IV. Context Mapping für Strategic Design
 
 ### Bounded Context
 
