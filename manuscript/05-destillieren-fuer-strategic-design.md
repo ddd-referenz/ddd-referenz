@@ -104,43 +104,43 @@ wenn du neue Erkenntnisse gewinnst.**
 *Ein [Domain Vision Statement](#domain-vision-statement) beschreibt
 die [Core Domain](#core-domain) grob, aber überlässt die Definition
 der spezifischen Elemente des Kernmodells den Ungenauigkeiten einer
-individuellen Interpretation.  Ohne ein außergewöhnlich hohes Maß an
-Kommunikation im Team hat das [Domain Vision
-Statement](#domain-vision-statement) alleine wenig Einfluss.*
+individuellen Interpretation. Ohne ein außergewöhnlich hohes Maß an
+Kommunikation im Team wird das [Domain Vision
+Statement](#domain-vision-statement) alleine wenig Einfluss haben.*
 
 Auch wenn die Teammitglieder im Großen und Ganzen wissen, was zur
 [Core Domain](#core-domain) gehört, werden verschiedene Personen nicht
-immer die gleichen Elemente herausgreifen, und selbst die gleiche
+genau die gleichen Elemente herausgreifen, und selbst die gleiche
 Person wird nicht von einem Tag auf den anderen konsistente Aussagen
 dazu machen. Der mentale Aufwand, das Modell ständig zu filtern, um
 die wesentlichen Teile zu identifizieren, benötigt die volle
-Konzentration, die besser für das Nachdenken über das Design
+Konzentration, die besser für das Nachdenken über den Entwurf
 aufgewendet werden sollte, und erfordert detaillierte Kenntnisse über
-das Model.  Die [Core Domain](#core-domain) muss leichter erkennbar
+das Model. Die [Core Domain](#core-domain) muss leichter erkennbar
 werden.
 
 Signifikante strukturelle Änderungen am Code sind der ideale Weg, um
 die [Core Domain](#core-domain) zu identifizieren, aber sie sind nicht
-immer kurzfristig praktikabel.  Tatsächlich sind solche großen
-Code-Änderungen nur schwer durchführbar, ohne die Sichtweise, die dem
-Team fehlt.
+immer kurzfristig praktikabel. Tatsächlich sind solche großen
+Code-Änderungen nur schwer durchführbar, ohne die Sichtweise, 
+welche dem Team genau fehlt.
 
-Daher (eine Form des Highlighted Core):
+Daher (als eine Form des Highlighted Core):
 
-**Schreibe ein sehr kurzes Dokument (drei bis sieben kurze Seiten), das
+**Verfasse ein sehr kurzes Dokument (drei bis sieben kurze Seiten), das
 die [Core Domain](#core-domain) und die primären Interaktionen
 zwischen den Kernelementen beschreibt.**
 
 und/oder (als eine weitere Form des Highlighted Core):
 
-**Markiere die Elemente der [Core Domain](#core-domain) im primären
-Repository des Modells, ohne besonders seine Rolle besonders zu
-erklären.  Mache es Entwicklern leicht herauszufinden, was im Kern ist
-oder nicht.**
+**Markiere die Elemente der [Core Domain](#core-domain) in der primären
+Ablage des Modells, ohne deren Rolle besonders zu
+erklären. Mache es Entwicklern leicht herauszufinden, was im Kern ist, 
+und was nicht.**
 
 Wenn das Destillationsdokument die Grundzüge der Kerndomäne
 beschreibt, dann dient es als pragmatischer Indikator für die
-Bedeutung einer Modelländerung.  Wenn eine Modell- oder Code-Änderung
+Bedeutung einer Modelländerung. Wenn eine Modell- oder Code-Änderung
 Auswirkungen auf das Destillationsdokument hat, muss mit anderen
 Teammitgliedern Rücksprache gehalten werden.  Wenn die Änderung
 vorgenommen wird, erfordert das eine sofortige Benachrichtigung aller
@@ -148,17 +148,17 @@ Teammitglieder und die Veröffentlichung einer neuen Version des
 Dokuments. Änderungen außerhalb des Kerns oder an Details, die nicht
 im Destillationsdokument enthalten sind, können ohne Rücksprache oder
 Benachrichtigung vorgenommen werden und werden von anderen Mitgliedern
-im Laufe ihrer Arbeit wahrgenommen.  So haben Entwickler die volle
-Unabhängigkeit, die die meisten agilen Prozesse vorschlagen.
+im Laufe ihrer Arbeit wahrgenommen. So haben Entwickler die volle
+Unabhängigkeit, welche die meisten agilen Prozesse vorschlagen.
 
 *Obwohl das [Domain Vision Statement](#domain-vision-statement) und der
-Highlighted Core informiert und leitet, ändern
-sie nicht wirklich das Modell oder den Code selbst.  [Generic
-Subdomains](#generic-subdomain) aufzuteilen entfernt tatsächlich
-einige störende Elemente.  Als nächstes werden wir uns andere
-Möglichkeiten ansehen, das Modell und das Design selbst strukturell zu
+Highlighted Core informieren und leiten, ändern
+sie nicht wirklich das Modell oder den Code selbst. [Generic
+Subdomains](#generic-subdomain) physisch aufzuteilen entfernt
+einige störende Elemente. Als nächstes werden wir uns andere
+Möglichkeiten ansehen, das Modell und den Entwurf selbst strukturell zu
 ändern, um die [Core Domain](#core-domain) sichtbarer und
-überschaubarer zu machen...*
+überschaubarer zu machen.*
 
 ## Cohesive Mechanisms {#cohesive-mechanism}
 
