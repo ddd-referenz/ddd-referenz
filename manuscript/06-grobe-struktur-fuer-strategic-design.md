@@ -98,17 +98,17 @@ sind, überprüfe die Metapher ständig auf Übertreibungen oder
 Ungeeignetheit und sei dazu bereit, sie fallen zu lassen, wenn sie dir
 im Weg steht.**
 
-## Responsibility Layer {#responsibility-layer}
+## Responsibility Layers {#responsibility-layers}
 
 *Dt.: Schichten nach Zuständigkeiten*
 
-Bei objekt-orientierten Design werden den einzelnen Objekten kleine
-Mengen zusammenhängender Zuständigkeiten zugewiesen.  Das Design nach
-Zuständigkeiten betrifft aber auch größere Einheiten.
+Bei objekt-orientierten Entwürfen werden den einzelnen Objekten kleine
+Mengen zusammenhängender Zuständigkeiten zugewiesen. Der Entwurf anhand 
+von Zuständigkeiten betrifft aber auch größere Einheiten.
 
-Wenn jedes einzelne Objekt manuell zugewiesene Verantwortlichkeiten
+Wenn jedes einzelne Objekt einzeln zugewiesene Verantwortlichkeiten
 hat, dann gibt es keine Richtlinien, keine Einheitlichkeit und keine
-Möglichkeiten, größere Teile der Domäne zusammen zu bearbeiten.  Um
+Möglichkeiten, größere Teile der Domäne zusammen zu bearbeiten. Um
 einem großen Modell Zusammenhalt zu verleihen, ist es sinnvoll, der
 Zuweisung von Verantwortlichkeiten eine gewisse Struktur aufzuerlegen.
 
@@ -116,15 +116,14 @@ Daher:
 
 **Betrachte die konzeptionellen Abhängigkeiten im Modell und die
 unterschiedlichen Änderungsgeschwindigkeiten und -quellen der
-verschiedenen Teile der Domäne.  Wenn du natürliche Schichten in der
+verschiedenen Teile der Domäne. Wenn du natürliche Schichten in der
 Domäne identifizierst, dann entwerfe sie als grobe und abstrakte
-Verantwortlichkeiten.  Diese Verantwortlichkeiten sollten eine
-Geschichte über den Zweck und das Design deines Systems auf grober
-Ebene erzählen.  Refaktoriere das Modell so, dass die
+Verantwortlichkeiten. Diese Verantwortlichkeiten sollten eine
+Geschichte über den Zweck und den Entwurf deines Systems auf grober
+Ebene erzählen. Überarbeite das Modell so, dass die
 Verantwortlichkeiten der einzelnen Domänenobjekte,
 [Aggregates](#aggregate) und Module genau in die
-Verantwortung einer
-Schicht passen.**
+Verantwortung einer Schicht passen.**
 
 ## Knowledge Level {#knowledge-level}
 
