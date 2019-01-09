@@ -73,33 +73,30 @@ Muster repräsentativ sind.
 *Dt.: System-Metapher*
 
 Metaphorisches Denken ist in der Softwareentwicklung weit verbreitet,
-insbesondere bei Modellen.  Aber die Extreme-Programming-Praktik der
-"Metapher" ist mittlerweile zu einer besonderen Art geworden, eine
+insbesondere bei Modellen. Aber die Praktik der "Metapher" aus Extreme Programming ist mittlerweile zu einer besonderen Bedeutung gekommen, eine
 Metapher zu nutzen, um Ordnung in die Entwicklung eines ganzen Systems
 zu bringen.
 
-Software-Designs sind in der Regel sehr abstrakt und schwer zu
+Softwareentwürfe sind in der Regel sehr abstrakt und schwer zu
 verstehen. Sowohl Entwickler als auch Benutzer benötigen konkrete
 Möglichkeiten, das System zu verstehen und eine gemeinsame Sichtweise
 auf das Gesamtsystem miteinander zu teilen.
 
-Deshalb:
+Daher:
 
-**Wenn eine konkrete Analogie zum System entsteht, die die Phantasie
+**Wenn eine konkrete Analogie zum System entsteht, welche die Phantasie
 der Teammitglieder einfängt und das Denken in eine nützliche Richtung
-zu lenken scheint, adaptiere es als [Large-scale
-Structure](#large-scale-structure).  Organisiere
-das Design um diese Metapher herum und nimm es in die [Ubiquitous
-Language](#ubiquitous-language) auf.  Die System
-Metaphor sollte sowohl
+zu lenken scheint, adaptiere sie als [Large-scale
+Structure](#large-scale-structure). Organisiere
+den Entwurf um diese Metapher herum und nimm sie in die [Ubiquitous
+Language](#ubiquitous-language) auf. Die System Metaphor sollte sowohl
 die Kommunikation über das System erleichtern als auch die Entwicklung
-des Systems leiten.  Dies erhöht die Konsistenz in verschiedenen
+des Systems leiten. Dies erhöht die Konsistenz in verschiedenen
 Teilen des Systems, möglicherweise sogar über verschiedene [Bounded
-Contexts](#bounded-context) hinweg.  Aber da alle Metaphern nicht exakt
+Contexts](#bounded-context) hinweg. Da aber alle Metaphern nicht exakt
 sind, überprüfe die Metapher ständig auf Übertreibungen oder
 Ungeeignetheit und sei dazu bereit, sie fallen zu lassen, wenn sie dir
-im
-Weg steht.**
+im Weg steht.**
 
 ## Responsibility Layer {#responsibility-layer}
 
