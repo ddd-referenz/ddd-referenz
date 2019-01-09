@@ -19,7 +19,7 @@ an der Fernuni Hagen.
 Er entwickelt fachlich relevante Systeme mit verteilten, 
 skalierbaren Architekturen. Sein Interesse gilt dabei den Ansätzen von 
 Domain-driven Design, um ein umfassendes fachliches Verständnis zu 
-erlangen und verständlich in Code zu giessen.
+erlangen und dieses durchgängig in Code zu giessen.
 
 {width=20%,float=left}
 ![](images/eberhard.jpg)
