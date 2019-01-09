@@ -76,25 +76,25 @@ Domänenwissen gewinnen). Erwäge auch Standardlösungen oder
 
 ## Domain Vision Statement {#domain-vision-statement}
 
-*Dt.: Darstellung der Domänenvision*
+*Dt.: Aussage zur Domänenvision*
 
 Zu Beginn eines Projekts existiert das Modell in der Regel noch gar
-nicht, aber seine Entwicklung muss schon fokussiert werden.  In
+nicht, aber seine Entwicklung muss schon fokussiert werden. In
 späteren Entwicklungsstadien muss der Wert des Systems erklärt werden,
-ohne dass man dazu das Modells eingehend untersuchen muss. Auch können
+ohne dass man dazu das Modells eingehend studieren muss. Auch können
 sich kritische Aspekte des Domänenmodells über mehrere [Bounded
-Context](#bounded-context) erstrecken, aber per Definition können
-diese unterschiedlichen Modelle nicht so strukturiert werden, dass sie ihren
-gemeinsamen Fokus zeigen.
+Contexts](#bounded-context) erstrecken, aber per Definition können
+diese unterschiedlichen Modelle nicht so strukturiert werden, dass sie 
+ihren gemeinsamen Fokus zeigen.
 
 Daker:
 
-**Schreiben Sie eine kurze Beschreibung (etwa eine Seite) der [Core
-Domain](#core-domain) und den Wert, den sie bringen wird, das
-"Leistungsversprechen".  Ignoriere Aspekte, die dieses Domänenmodell
-nicht von anderen unterscheiden.  Zeige, wie das Domänenmodell
-verschiedenen Interessen dient und sie ausgleicht.  Halten das
-Statement kurz. Schreibe dieses Statement frühzeitig und überarbeite,
+**Verfasse eine kurze Beschreibung (etwa eine Seite) der [Core
+Domain](#core-domain) und des Wertes, den sie bringen wird, das
+"Leistungsversprechen". Ignoriere Aspekte, die dieses Domänenmodell
+nicht von anderen unterscheiden. Zeige, wie das Domänenmodell
+verschiedenen Interessen dient und sie ausgleicht. Halten diese Aussage 
+kurz. Schreibe sie frühzeitig und überarbeite sie,
 wenn du neue Erkenntnisse gewinnst.**
 
 ## Highlighted Core {#highlighted-core}
