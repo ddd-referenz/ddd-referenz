@@ -157,27 +157,27 @@ Addison-Wesley*)
 
 ## Pluggable Component Framework {#pluggable-component-framework}
 
-*Dt.: Steckbares Komponentent-Framework*
+*Dt.: Zusammensteckbares Komponentent-Framework*
 
-Ein sehr ausgereiftes Modell,das tief und destilliert ist, bietet viele gute Chancen. Ein [Pluggable Component
+Ein sehr ausgereiftes Modell, das tief und destilliert ist, bietet viele Möglichkeiten. Ein [Pluggable Component
 Framework](#pluggable-knowledge-framework) kommt in der Regel erst ins
 Spiel, wenn bereits einige Anwendungen in der gleichen Domäne
 implementiert wurden.
 
 Wenn eine Vielzahl von Anwendungen zusammenarbeiten müssen, die alle
 auf den gleichen Abstraktionen basieren, aber unabhängig voneinander
-designt worden sind, schränken Übersetzungen zwischen mehreren [Bounded
-Contexts](#bounded-context) die Integration ein.  Ein [Shared
-Kernel](#shared-kernel) kann nur mit Teams realisiert werden, die
-eng zusammenarbeiten.  Doppelte Arbeit und Fragmentierung erhöhen die
-Kosten für Entwicklung und Installation, und die Interoperabilität
+entworfen worden sind, schränken Übersetzungen zwischen mehreren 
+[Bounded Contexts](#bounded-context) die Integration ein.  Ein 
+[Shared Kernel](#shared-kernel) kann nur mit Teams realisiert werden, 
+die eng zusammenarbeiten. Doppelte Arbeit und Fragmentierung erhöhen 
+die Kosten für Entwicklung und Installation, und die Interoperabilität
 wird sehr schwierig.
 
 Daher:
 
 **Destilliere einen abstrakten Kern von Schnittstellen und
-Interaktionen. Entwickel ein Framework, das es ermöglicht,
-verschiedene Implementierungen dieser Schnittstellen zu ersetzen.
+Interaktionen heraus und entwickel ein Framework, das es ermöglicht,
+verschiedene Implementierungen dieser Schnittstellen auszutauschen.
 Ebenso solltest du jeder Anwendung erlauben, diese Komponenten zu
 verwenden, solange sie ausschließlich über die Schnittstellen des
 abstrakten Kerns arbeitet.**
