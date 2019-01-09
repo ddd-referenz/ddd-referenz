@@ -135,11 +135,11 @@ Gruppe von Objekten verhalten soll.*
 In einer Anwendung, in der die Rollen und Beziehungen zwischen den
 [Entities](#entity) in verschiedenen Situationen unterschiedlich sind, kann die
 Komplexität explodieren. Weder ganz allgemeine noch sehr individuelle
-Modelle erfüllen die Bedürfnisse der Anwender.  Am Ende haben Objekte
+Modelle erfüllen die Bedürfnisse der Anwender. Am Ende haben Objekte
 Referenzen auf andere Typen, um eine Vielzahl von Fällen abzudecken,
 oder sie haben Attribute, die in verschiedenen Situationen
 unterschiedlich
-verwendet werden.  Klassen, die die gleichen Daten und das gleiche
+verwendet werden.  Klassen, welche gleiche Daten und das gleiche
 Verhalten haben, können mehrfach vorkommen, nur um unterschiedliche
 Regeln
 bei der Zusammensetzung der Objekte zu berücksichtigen.
@@ -149,8 +149,8 @@ Daher:
 **Erstellen eine eigene Gruppe von Objekten, welche die Struktur und
 das Verhalten des Basismodells beschreiben und einschränken können.
 Halte diese Belange als zwei "Ebenen" getrennt: die eine ist sehr
-konkree, die andere spiegelt Regeln und Wissen wider, die ein
-Benutzer oder Superuser anpassen kann.**
+konkret, die andere spiegelt Regeln und Wissen wider, die ein
+Benutzer oder Administrator anpassen kann.**
 
 (siehe *Fowler, M. 1997.  Analysis Patterns: Reusable Object Models,
 Addison-Wesley*)
