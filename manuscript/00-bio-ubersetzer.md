@@ -16,9 +16,23 @@ an der Fernuni Hagen.
 {width=20%,float=left}
 ![](images/christian.jpg)
 
-*Christian Stettler* ist Senior Consultant und Architekt bei INNOQ in der Schweiz. Seit über 15 Jahren entwickelt er mit Leidenschaft fachlich relevante Systeme mit verteilten, skalierbaren Architekturen. Als DDD-Enthusiast gilt sein Interesse dabei vor allem den Ansätzen von Domain-driven Design, um ein umfassendes fachliches Verständnis zu erlangen und dieses möglichst verständlich in Code zu giessen. Bei Gelegenheit gibt er seine Erfahrungen in Workshops und Trainings weiter.
+*Christian Stettler* ist Senior Consultant und Architekt bei INNOQ in
+der Schweiz. Seit über 15 Jahren entwickelt er 
+fachlich relevante Systeme mit verteilten, skalierbaren
+Architekturen. Sein Interesse  gilt vor allem
+den Ansätzen von Domain-driven Design, um ein umfassendes fachliches
+Verständnis zu erlangen und möglichst verständlich in Code zu
+giessen. Er gibt seine Erfahrungen gerne in Workshops und
+Trainings weiter.
 
 {width=20%,float=left}
 ![](images/eberhard.jpg)
 
-*Eberhard Wolff* arbeitet als Fellow bei INNOQ und berät in dieser Funktion Kunden in Bezug auf Architekturen und Technologien. Sein technologischer Schwerpunkt liegt auf modernen Architektur-Ansätzen - Cloud, Continuous Delivery, DevOps oder Microservices  spielen oft eine Rolle. Er ist Autor von über hundert Artikeln und Büchern u.a. zu [Microservices](http://microservices-buch.de/), [Microservice Technologien](http://microservices-praxisbuch.de/) und [Continuous Delivery](http://continuous-delivery-buch.de/).
+*Eberhard Wolff* arbeitet als Fellow bei INNOQ und berät in dieser
+Funktion Kunden in Bezug auf Architekturen und Technologien. Sein
+technologischer Schwerpunkt liegt auf modernen Architektur-Ansätzen -
+Cloud, Continuous Delivery, DevOps oder Microservices spielen oft eine
+Rolle. Er ist Autor von über hundert Artikeln und Büchern u.a. zu
+[Microservices](http://microservices-buch.de/), [Microservice
+Technologien](http://microservices-praxisbuch.de/) und [Continuous
+Delivery](http://continuous-delivery-buch.de/).
