@@ -19,20 +19,18 @@ an der Fernuni Hagen.
 *Christian Stettler* ist Senior Consultant und Architekt bei INNOQ in
 der Schweiz. Seit über 15 Jahren entwickelt er 
 fachlich relevante Systeme mit verteilten, skalierbaren
-Architekturen. Sein Interesse  gilt vor allem
+Architekturen. Sein Interesse  gilt 
 den Ansätzen von Domain-driven Design, um ein umfassendes fachliches
-Verständnis zu erlangen und möglichst verständlich in Code zu
+Verständnis zu erlangen und verständlich in Code zu
 giessen. Er gibt seine Erfahrungen gerne in Workshops und
 Trainings weiter.
 
 {width=20%,float=left}
 ![](images/eberhard.jpg)
 
-*Eberhard Wolff* arbeitet als Fellow bei INNOQ und berät in dieser
-Funktion Kunden in Bezug auf Architekturen und Technologien. Sein
-technologischer Schwerpunkt liegt auf modernen Architektur-Ansätzen -
-Cloud, Continuous Delivery, DevOps oder Microservices spielen oft eine
-Rolle. Er ist Autor von über hundert Artikeln und Büchern u.a. zu
+*Eberhard Wolff* arbeitet als Fellow bei INNOQ und berät 
+Kunden in Bezug auf Architekturen und Technologien. Sein
+Schwerpunkt liegt auf modernen Architektur-Ansätzen. Er ist Autor von über hundert Artikeln und Büchern u.a. zu
 [Microservices](http://microservices-buch.de/), [Microservice
 Technologien](http://microservices-praxisbuch.de/) und [Continuous
 Delivery](http://continuous-delivery-buch.de/).
