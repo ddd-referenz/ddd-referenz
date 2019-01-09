@@ -12,8 +12,9 @@
 INNOQ als Allrounderin für Kreatives. Nebenbei studiert sie Informatik
 an der Fernuni Hagen.
 
-    
-	
+~~~~~~~~
+
+~~~~~~~~
 
 {width=20%,float=left}
 ![](images/christian.jpg)
