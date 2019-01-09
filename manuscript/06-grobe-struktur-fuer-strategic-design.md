@@ -33,12 +33,12 @@ Verantwortung dieses Teils zu besitzen.**
 
 *Dt.: Sich entwickelnde Ordnung*
 
-Design ohne Regeln bringt Systeme hervor, die niemand als Ganzes
-verstehen kann und die sehr schwer zu warten sind.  Aber Architekturen
-können ein Projekt durch die ursprünglichen Annahmen für das Design zu
+Entwurf ohne Regeln bringt Systeme hervor, die niemand als Ganzes
+verstehen kann und die sehr schwer zu warten sind. Aber Architekturen
+können ein Projekt durch frühzeitige Annahmen über den Entwurf zu
 sehr einschränken und den Entwicklern/Designern der einzelnen Teile
-der Anwendung zu viel Macht entziehen.  Entwickler werden die
-Entwicklung die Anwendung zu stark vereinfachen, um sie an die
+der Anwendung zu viel Macht entziehen. Entwickler werden die Anwendung 
+rasch stark vereinfachen, um sie an die
 geforderte Struktur anzupassen, oder sie werden die Architektur
 untergraben und haben dann überhaupt keine Struktur, was die Probleme
 einer
@@ -48,26 +48,25 @@ Daher:
 
 **Sorge dafür, dass sich die konzeptionelle [Large-scale
 Structure](#large-scale-structure) zusammen mit der
-Anwendung weiterentwickelt und sich dabei möglicherweise in eine ganz
-andere Struktur verwandelt.  Schränke die detaillierten Design- und
-Modellentscheidungen nicht zu sehr, die mit Wissen über die Details
+Anwendung weiterentwickelt und sich dabei unterwegs möglicherweise in eine ganz
+andere Struktur verwandelt. Behindere nicht die detaillierten Entwurfs- 
+und Modellentscheidungen, die mit detailliertem Wissen
 getroffen werden müssen.**
 
 **Eine [Large-scale Structure](#large-scale-structure) sollte
 angewendet werden, wenn eine Struktur
-gefunden werden kann, die das System wesentlich klarer macht, ohne
-dabei widernatürliche Einschränkungen bei der Entwicklung des Modells
-zu
-erzwingen.  Da eine schlecht passende Struktur schlechter ist als
+gefunden werden kann, welche das System wesentlich klarer macht, ohne
+dabei unnatürliche Einschränkungen bei der Entwicklung des Modells
+zu erzwingen. Da eine schlecht passende Struktur schlechter ist als
 überhaupt keine, ist es am besten, nicht auf Vollständigkeit zu
 achten, sondern
-eine minimale Menge zu finden, die die aufgetretenen Probleme löst.
+eine minimale Menge zu finden, welche die aufgetretenen Probleme löst.
 Weniger ist mehr.**
 
-**Was folgt, ist eine Reihe von vier speziellen Pattern für die
+Was folgt, ist eine Reihe von vier speziellen Mustern für die
 [Large-scale Structure](#large-scale-structure),
 die bei einigen Projekten entstehen und für diese Art von
-Pattern repräsentativ sind.**
+Muster repräsentativ sind.
 
 ## System Metaphor {#system-metaphor}
 
