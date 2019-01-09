@@ -193,22 +193,22 @@ Domain](#core-domain).**
 
 ## Segregated Core {#segregated-core}
 
-*Dt.: Abgeteilter Kern*
+*Dt.: Abgetrennter Kern*
 
 Elemente im Modell können teilweise der [Core Domain](#core-domain)
-dienen und teilweise eine unterstützende Rolle spielen.  Kernelemente
-können eng mit generischen gekoppelt sein.  Die konzeptionelle
+dienen und teilweise eine unterstützende Rolle spielen. Kernelemente
+können eng mit generischen gekoppelt sein. Der konzeptionelle
 Zusammenhang des Kerns ist möglicherweise nicht stark genug oder nicht
-sichtbar.  Diese gesamte Unübersichtlichkeit und verworrenen
+sichtbar. All diese Unübersichtlichkeit und verworrenen
 Abhängigkeiten ersticken den Kern. Designer können die wichtigsten
-Beziehungen nicht klar erkennen, was zu einem schlechten Design führt.
+Beziehungen nicht klar erkennen, was zu einem schlechten Entwurf führt.
 
 Daher:
 
-**Refaktorisiere das Modells, um die Kernkonzepte von unterstützenden
-Teilen (einschließlich schlecht definierter) zu trennen und den
+**Überarbeite das Modell, um die Kernkonzepte von unterstützenden
+Teilen (einschließlich schlecht definierten) zu trennen und den
 Zusammenhang des Kerns zu stärken und gleichzeitig seine Kopplung an
-restlichen Code zu reduzieren. Verschiebe alle generischen oder
+den restlichen Code zu reduzieren. Verschiebe alle generischen oder
 unterstützenden Elemente in andere Objekte und platziere sie in
 anderen Paketen, auch wenn dies bedeutet, das Modell so zu
 überarbeiten, dass stark gekoppelte Elemente getrennt werden.**
