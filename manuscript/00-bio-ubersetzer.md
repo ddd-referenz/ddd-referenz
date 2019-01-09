@@ -8,10 +8,12 @@
 {width=20%,float=left}
 ![](images/sonja.jpg)
 
+~~~~~~~~
+
+~~~~~~~~
 *Sonja Scheungrab* arbeitet, nach Stationen bei mehreren Verlagen, bei
 INNOQ als Allrounderin für Kreatives. Nebenbei studiert sie Informatik
 an der Fernuni Hagen.
-
 ~~~~~~~~
 
 ~~~~~~~~
