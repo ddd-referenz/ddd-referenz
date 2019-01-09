@@ -231,10 +231,10 @@ Modell unklarer macht.
 Daher:
 
 **Identifiziere die grundlegendsten differenzierenden Konzepte im
-Modell und überführe sie in unterschiedliche Klassen, abstrakte
-Klassen oder Schnittstellen.  Entwerfe dieses abstrakte Modell so,
+Modell und überführe sie in eigenständige Klassen, abstrakte
+Klassen oder Schnittstellen. Entwerfe dieses abstrakte Modell so,
 dass es den größten Teil der Interaktion zwischen wichtigen
-Komponenten ausdrückt.  Platzieren Sie dieses abstrakte Gesamtmodell
-in einem eigenen Modul, während die spezialisierten, detaillierten
+Komponenten ausdrückt. Lege dieses abstrakte Gesamtmodell
+in ein eigenes Modul, während die spezialisierten, detaillierten
 Implementierungsklassen in ihren eigenen Modulen verbleiben, die durch
 die jeweilige Subdomain definiert sind.**
