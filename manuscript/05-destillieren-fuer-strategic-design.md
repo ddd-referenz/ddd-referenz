@@ -164,30 +164,30 @@ Möglichkeiten ansehen, das Modell und den Entwurf selbst strukturell zu
 
 *Dt.: Zusammenhängender Mechanismus*
 
-Logik erreicht manchmal eine Komplexität, die das Design
-aufzublähen beginnt.  Das konzeptuelle "Was" wird vom mechanischem
-"Wie" überlagert.  Eine große Anzahl von Methoden, die Algorithmen zur
+Logik erreicht manchmal eine Komplexität, die den Entwurf
+aufzublähen beginnt. Das konzeptuelle "Was" wird vom mechanischen
+"Wie" überlagert. Eine große Anzahl von Methoden, die Algorithmen zur
 Lösung des Problems bereitstellen, verdecken die Methoden, die das
 Problem ausdrücken.
 
 Daher:
 
 **Unterteile einen konzeptionell zusammenhängenden Mechanismus in ein
-separates, leichtgewichtiges Framework.  Achte insbesondere auf
+separates, leichtgewichtiges Framework. Achte insbesondere auf
 Formalismen oder gut dokumentierte Kategorien von Algorithmen.
-Stellen Sie die Fähigkeiten des Frameworks mit einem
+Stelle die Funktionalitäten des Frameworks durch ein
 [Intention-Revealing Interface](#intention-revealing-interface) zur
-Verfügung.  Nun können sich die anderen Elemente der Domäne darauf
+Verfügung. Nun können sich die anderen Elemente der Domäne darauf
 konzentrieren, das Problem auszudrücken ("was") und die Feinheiten der
 Lösung ("wie") an das Framework delegieren.**
 
-**[Generic Subdomains](#generic-subdomain) auszuklammern reduziert die
-Unübersichtlichkeit, und kohärente Mechanismen dienen dazu, komplexe
-Vorgänge zu kapseln.  Dies hinterlässt ein fokussierteres Modell mit
-weniger störenden Ablenkungen, die den Benutzer bei ihren Aktivitäten
-keinen besonderen Wert bieten.  Aber es ist unwahrscheinlich, dass du
-jemals einen guten Platz für alles im Domänenmodell findest, was nicht
-zum Kern gehört.  Der [Segregated Core](#segregated-core) verfolgt
+**[Generic Subdomains](#generic-subdomain) herauszufaktorisiern reduziert die
+Unübersichtlichkeit, und [Cohesive Mechanisms](#cohesive-mechanism) dienen dazu, komplexe
+Vorgänge zu kapseln. Dies hinterlässt ein fokussierteres Modell mit
+weniger störenden Ablenkungen, welche die Benutzer bei ihren Aktivitäten
+keinen besonderen Wert bieten. Aber du wirst kaum einen guten Platz für 
+alles im Domänenmodell finden, was nicht
+zum Kern gehört. Der [Segregated Core](#segregated-core) verfolgt
 einen direkten Ansatz zur strukturellen Abgrenzung der [Core
 Domain](#core-domain).**
 
