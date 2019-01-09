@@ -1,14 +1,14 @@
-# V Destillieren für Strategic Design
+# V. Destillation für Strategic Design
 
 Wie kann man sich auf das zentrale Problem konzentrieren und
 verhindern, dass man in einem Meer von Nebensächlichkeiten ertrinkt?
 
 Destillation bezeichnet einen Prozess, um die Bestandteile einer
-Mischung trennen und so die Essenz in einer Form zu extrahieren, die
-sie wertvoller und nützlicher macht.  Ein Modell ist eine Destillation
-von Wissen.  Mit jedem [Refactoring Toward Deeper Knowledge](#refactoring-toward-deeper-insight) abstrahieren wir
+Mischung zu trennen und so die Essenz in einer Form zu extrahieren, die
+sie wertvoller und nützlicher macht. Ein Modell ist eine Destillation
+von Wissen. Mit jedem [Refactoring Toward Deeper Knowledge](#refactoring-toward-deeper-insight) abstrahieren wir
 entscheidende Aspekte des Domänenwissens und der Prioritäten in der
-Domäne.  Um auf eine strategische Perspektive zurückzukommen,
+Domäne. Um auf die strategische Perspektive zurückzukommen,
 beschäftigt sich dieses Kapitel mit Möglichkeiten, die größten
 Bestandteile des Modells zu unterscheiden und das Domänenmodell als
 Ganzes zu destillieren.
