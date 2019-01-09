@@ -12,10 +12,8 @@
 INNOQ als Allrounderin für Kreatives. Nebenbei studiert sie Informatik
 an der Fernuni Hagen.
 
-~~~~~~~~~~
-
-~~~~~~~~~~
-
+    
+	
 
 {width=20%,float=left}
 ![](images/christian.jpg)
@@ -33,5 +31,5 @@ erlangen und dieses durchgängig in Code zu giessen.
 Kunden in Bezug auf Architekturen und Technologien. Sein
 Schwerpunkt liegt auf modernen Architektur-Ansätzen. Er ist Autor von 
 über hundert Artikeln und Büchern u.a. zu
-[Microservices](http://microservices-buch.de/), [Microservice
-Technologien](http://microservices-praxisbuch.de/) und [Continuous Delivery](http://continuous-delivery-buch.de/).
+Microservices, Microservice
+Technologien und Continuous Delivery.
