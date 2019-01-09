@@ -1,34 +1,33 @@
-# VI Large-scale Structure für Strategic Design {#large-scale-structure}
+# VI. Large-scale Structure für Strategic Design {#large-scale-structure}
 
-*Dt.: Grobe Struktur für Strategic Design*
+*Dt.: Struktur im Großen für Strategic Design*
 
 Fehlt in einem großen System ein übergreifendes Prinzip, mit dem
-Elemente bezüglich ihrer Rollen mit für das gesamte Design gültigen
-Pattern interpretiert werden können, dann werden Entwickler den Wald
+Elemente bezüglich ihrer Rollen anhand von für den gesamten Entwurf gültigen
+Mustern interpretiert werden können, dann werden Entwickler den Wald
 vor lauter Bäumen nicht sehen. Wir müssen in der Lage sein, die Rolle
 eines einzelnen Teils im Ganzen zu verstehen, ohne uns mit den Details
 des Ganzen zu befassen.
 
-Eine "Large-scale Structure" ist eine Sprache, mit der man das System im
-Großen diskutieren und verstehen kann.  Einige übergeordnete
-Konzepte oder Regeln oder beides zusammen legen ein Pattern für das
-Design des
-ganzen Systems fest.  Dieses Gestaltungssprinzip kann sowohl das
-Design als auch das Verständnis unterstützen.  Es hilft dabei,
-selbständige
+Eine "Large-scale Structure" ist eine Sprache, mit der man das System 
+in groben Strichen diskutieren und verstehen kann. Einige übergeordnete
+Konzepte oder Regeln oder beides zusammen legen ein Muster für den
+Entwurf des
+gesamten Systems fest. Dieses Gestaltungssprinzip kann sowohl die
+Entwurfsarbeit als auch das Verständnis unterstützen. Es hilft dabei,
+unabhängige
 Arbeiten zu koordinieren, denn es gibt nun ein gemeinsames Konzept für
 das
-Gesamtbildes, nämlich wie die Rollen der verschiedenen Teile das Ganze
-prägen.
+Gesamtbild, nämlich wie die Rollen der verschiedenen Teile das Ganze
+gestalten.
 
 Daher:
 
-**Entwickel ein Pattern, welches aus Regeln oder Rollen und Beziehungen
-besteht. Es umfasst 
-das gesamte System und ermöglicht ein grundlegendes Verständnis der
-Lage
-jedes Teils im Ganzen, auch ohne detaillierte Kenntnis der
-Verantwortung dieses Teils.**
+**Entwickel ein Muster, welches aus Regeln oder Rollen und Beziehungen
+besteht, welches das gesamte System erfasst und welches es ermöglicht, 
+ein grundlegendes Verständnis der Lage
+jedes Teils im Ganzen zu erhalten, auch ohne detaillierte Kenntnis der
+Verantwortung dieses Teils zu besitzen.**
 
 ## Evolving Order {#evolving-order}
 
