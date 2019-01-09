@@ -22,30 +22,30 @@ kompliziert und absolut notwendig für den Erfolg sind, dass die Essenz
 des Domänenmodells, der eigentliche Unternehmenswert, unklar sein kann
 und dann vernachlässigt werden kann.
 
-Die harte Realität ist, dass nicht alle Teile des Designs gleich
-ausgefeilt sein werden.  Es müssen Prioritäten gesetzt werden.  Um das
-Domänenmodell zu einem Asset zu machen, muss der kritische Kern dieses
+Die harte Realität ist, dass nicht alle Teile des Entwurfs gleich
+ausgefeilt sein werden. Es müssen Prioritäten gesetzt werden. Um das
+Domänenmodell zu einem Wert zu machen, muss der kritische Kern dieses
 Modells schlank sein und vollständig genutzt werden, um
-Anwendungsfunktionalitäten zu erstellen.  Aber die wenigen
+Anwendungsfunktionalitäten zu erstellen. Aber die wenigen
 hochqualifizierte Entwickler neigen dazu, sich auf die technische
-Infrastruktur oder gut definierbare Domänenprobleme zu konzentrieren,
+Infrastruktur oder sauber definierbare Domänenprobleme zu konzentrieren,
 die ohne spezielle Domänenkenntnisse verstanden werden können.
 
 Daher:
 
-**Dampfe das Modell auf das Wesentliche ein.  Definiere eine
+**Dampfe das Modell auf das Wesentliche ein. Definiere eine
 Kerndomäne und biete eine Möglichkeit, sie leicht von der großen
-Anzahl unterstützender Modelle und Codes zu unterscheiden. Bringe die
+Anzahl unterstützender Modelle und unterstützendem Code zu unterscheiden. Bringe die
 wertvollsten und spezialisiertesten Konzepte auf den Punkt. Mache den
 Kern klein.**
 
 **Nutze die besten Talente für die Core Domain und
-rekrutiere entsprechend.  Investiere genügend Aufwände, um ein
+rekrutiere entsprechend. Investiere den Aufwand, um ein
 tiefgreifendes Modell zu finden und ein flexibles Design zu
 entwickeln, das ausreicht, um die Vision des Systems zu erfüllen.**
 
 **Rechtfertige die Investition in andere Teile, indem du betrachtest,
-wie er den destillierten Kern unterstützt.**
+wie sie den destillierten Kern unterstützen.**
 
 ## Generic Subdomains {#generic-subdomain}
 
