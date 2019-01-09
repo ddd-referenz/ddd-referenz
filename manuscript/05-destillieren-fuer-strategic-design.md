@@ -49,13 +49,13 @@ wie sie den destillierten Kern unterstützen.**
 
 ## Generic Subdomains {#generic-subdomain}
 
-*Dt.: Generische Subdomänen*
+*Dt.: Allgemeine Teildomänen*
 
 Einige Teile des Modells erhöhen die Komplexität, ohne Spezialwissen
-zu erfassen oder zu vermitteln.  Alles, was nicht relevant ist, macht
+zu erfassen oder zu vermitteln. Alles, was nicht relevant ist, macht
 die [Core Domain](#core-domain) schwieriger zu erkennen und zu
-verstehen.  Das Modell wird blockiert mit allgemeinen Prinzipien, die
-jeder kennt oder Details, die zu Spezialitäten gehören, die nicht das
+verstehen. Das Modell wird zugestellt mit allgemeinen Prinzipien, die
+jeder kennt oder mit Details, die zu Spezialitäten gehören, die nicht das
 Hauptaugenmerk sind, sondern eine unterstützende Rolle spielen. Doch
 wie allgemein auch immer sie sind, diese anderen Elemente sind für das
 Funktionieren des Systems und die vollständige Ausprägung des Modells
@@ -64,16 +64,15 @@ von wesentlicher Bedeutung.
 Daher:
 
 **Identifiziere zusammenhängende Subdomains, die nicht die Motivation
-für Ihr Projekt sind.  Berücksichtigen Sie generische Modelle dieser
-Subdomains und stellen Sie sie in separate Module.  Hinterlasse keine
-Spuren deiner Spezialitäten in ihnen.**
+für dein Projekt sind. Extrahiere generische Modelle dieser
+Subdomains und lege sie in separate Module. Hinterlasse in diesen 
+Modellen keine Spuren von Spezialitäten deiner Domäne.**
 
-**Sobald sie getrennt wurden, geben Sie ihrer weiteren Entwicklung eine
+**Sobald sie getrennt wurden, gib ihrer weiteren Entwicklung eine
 niedrigere Priorität als der [Core Domain](#core-domain) und vermeiden
-es, Kernentwickler den Aufgaben zuzuordnen (da sie von ihnen wenig
-Domänenwissen erhalten).  Erwägen Sie auch Standardlösungen oder
-öffentlich verfügbare Modelle für diese Generic
-Subdomains.**
+es, Kernentwickler den Aufgaben zuzuordnen (da sie aus ihnen wenig
+Domänenwissen gewinnen). Erwäge auch Standardlösungen oder
+öffentlich verfügbare Modelle für diese Generic Subdomains.**
 
 ## Domain Vision Statement {#domain-vision-statement}
 
