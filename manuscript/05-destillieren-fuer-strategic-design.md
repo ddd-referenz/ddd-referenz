@@ -55,7 +55,7 @@ Einige Teile des Modells erhöhen die Komplexität, ohne Spezialwissen
 zu erfassen oder zu vermitteln. Alles, was nicht relevant ist, macht
 die [Core Domain](#core-domain) schwieriger zu erkennen und zu
 verstehen. Das Modell wird zugestellt mit allgemeinen Prinzipien, die
-jeder kennt oder mit Details, die zu Spezialitäten gehören, die nicht das
+jeder kennt, oder mit Details, die zu Spezialitäten gehören, die nicht das
 Hauptaugenmerk sind, sondern eine unterstützende Rolle spielen. Doch
 wie allgemein auch immer sie sind, diese anderen Elemente sind für das
 Funktionieren des Systems und die vollständige Ausprägung des Modells
