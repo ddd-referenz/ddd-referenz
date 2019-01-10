@@ -1,21 +1,12 @@
 ## Die Übersetzer
 
-<!-- {width=20%,float=right}
-![](images/michael.jpg) -->
-
 *Michael Plöd* ist Principal Consultant bei INNOQ. Seine aktuellen Interessengebiete sind Microservices, Domain-driven Design, polyglotter Persistenz, Alternativen zu alt eingewachsenen Softwarearchitekturen, Event Sourcing und Präsentationstechniken für Entwickler und Architekten.
-
-<!-- {width=20%,float=right}
-![](images/christian.jpg) -->
 
 *Christian Stettler* ist Senior Consultant und Architekt bei INNOQ.
 Er entwickelt fachlich relevante Systeme mit verteilten,
 skalierbaren Architekturen. Sein Interesse gilt dabei den Ansätzen von
 Domain-driven Design, um ein umfassendes fachliches Verständnis zu
 erlangen und dieses durchgängig in Code zu giessen.
-
-<!-- {width=20%,float=right}
-![](images/eberhard.jpg) -->
 
 *Eberhard Wolff* arbeitet als Fellow bei INNOQ und berät
 Kunden in Bezug auf Architekturen und Technologien. Sein
@@ -26,9 +17,6 @@ Technologien](http://microservices-praxisbuch.de/) und [Continuous
 Delivery](http://continuous-delivery-buch.de/).
 
 ## Cover und Review
-
-<!-- {width=20%,float=right}
-![](images/sonja.jpg) -->
 
 *Sonja Scheungrab* arbeitet, nach Stationen bei mehreren Verlagen, bei
 INNOQ als Allrounderin für Kreatives. Nebenbei studiert sie Informatik
