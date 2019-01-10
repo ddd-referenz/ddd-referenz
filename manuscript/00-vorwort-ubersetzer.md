@@ -23,8 +23,4 @@ Github Projekt:
 [https://github.com/ddd-referenz/ddd-referenz](https://github.com/ddd-referenz/ddd-referenz).
 
 
-Michael Plöd
-
-Christian Stettler
-
-Eberhard Wolff
+Michael Plöd, Christian Stettler, Eberhard Wolff
