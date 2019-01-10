@@ -1,6 +1,6 @@
 # III. Flexibles Design
 
-Ein Projekt, welches im Laufe der Entwicklung Fahrt aufnehmen kann - anstatt durch sein eigenes Erbe belastet zu werden - erfordert ein Design, mit dem man gerne arbeitet und das zum Wandel einlädt. Ein flexibles Design.
+Ein Projekt, welches im Laufe der Entwicklung Fahrt aufnehmen kann - anstatt durch sein eigenes Erbe belastet zu werden - erfordert ein Design, mit dem man gerne arbeitet und das zum Wandel einläDt. Ein flexibles Design.
 
 Flexibles Design ist die Ergänzung zur tiefgehenden Modellierung.
 
@@ -14,7 +14,7 @@ Ebenso wichtig ist, dass das Design den Entwickler, der daran arbeitet, dabei un
 
 ## Intention-Revealing Interfaces {#intention-revealing-interface}
 
-*dt.: Ausdrucksstarke Schnittstellen*
+*Dt.: Ausdrucksstarke Schnittstellen*
 
 Wenn ein Entwickler die Implementierung einer Komponente berücksichten muss, um sie zu nutzen, geht der Wert der Kapselung verloren. Wenn jemand anderes als der ursprüngliche Entwickler den Zweck eines Objekts oder einer Operation aufgrund seiner Implementierung ableiten muss, kann dieser neue Entwickler einen Zweck ableiten, den die Operation oder Klasse nur durch Zufall erfüllt. Wenn das nicht die Absicht war, kann der Code im Moment funktionieren, aber die konzeptionelle Grundlage des Designs wird beschädigt sein, und die beiden Entwickler werden gegeneinander arbeiten.
 
@@ -24,7 +24,7 @@ Daher:
 
 ## Side-Effect-Free Functions {#side-effect-free-functions}
 
-*dt.: Seiteneffektfreie Funktionen*
+*Dt.: Seiteneffektfreie Funktionen*
 
 Interaktionen mehrerer Regeln oder Kompositionen von Berechnungen werden extrem schwer vorherzusagen. Der Entwickler, der eine Operation aufruft, muss ihre Implementierung und die Implementierung aller Delegationen verstehen, um das Ergebnis voraussehen zu können. Der Nutzen jeder Abstraktion von Schnittstellen ist begrenzt, wenn Entwickler gezwungen sind, diesen Schleier zu lüften. Ohne sicher vorhersehbare Abstraktionen müssen Entwickler die kombinatorische Explosion begrenzt halten, was eine obere Grenzen für die Menge an Verhalten darstellt, die umgesetzt werden kann.
 
@@ -36,7 +36,7 @@ Daher:
 
 ## Assertions {#assertion}
 
-*dt.: Zusicherungen*
+*Dt.: Zusicherungen*
 
 Wenn die Nebenwirkungen von Operationen nur implizit durch ihre Umsetzung definiert sind, werden Entwürfe mit viel Delegation zu einem Gewirr aus Ursache und Wirkung. Der einzige Weg, ein Programm zu verstehen, besteht darin, die Ausführung durch verzweigte Pfade hindurch nachzuverfolgen. Der Wert der Kapselung geht verloren. Die Notwendigkeit, die konkrete Ausführung nachverfolgen zu müssen, zerstört die Abstraktion.
 
@@ -46,13 +46,13 @@ Daher:
 
 Suche nach Modellen mit kohärenten Konzepten, die einen Entwickler unterstützen, die beabsichtigten Zusicherungen zu erkennen, dadurch die Lernkurve zu beschleunigen und das Risiko von widersprüchlichem Code zu reduzieren.
 
-Zusicherungen definieren Schnittstellenverträge und Modifikatoren von [Entitäten](#entity). 
+Zusicherungen definieren Schnittstellenverträge und Modifikatoren von [Entities](#entity). 
 
-Zusicherungen definieren Invarianten auf [Aggregaten](#aggregate).
+Zusicherungen definieren Invarianten auf [Aggregates](#aggregate).
 
 ## Standalone Classes {#standalone-classses}
 
-*dt.: Eigenständige Klassen*
+*Dt.: Eigenständige Klassen*
 
 Selbst innerhalb eines Moduls nimmt die Schwierigkeit der Interpretation eines Entwurfs mit zunehmenden Abhängigkeiten stark zu. Dies führt zu geistiger Überlastung und begrenzt die Komplexität des Entwurfs, mit der ein Entwickler umgehen kann. Implizite Konzepte tragen zu dieser Belastung noch mehr bei als explizite Referenzen.
 
@@ -60,7 +60,7 @@ Selbst innerhalb eines Moduls nimmt die Schwierigkeit der Interpretation eines E
 
 ## Closure of Operations {#closure-of-operations}
 
-*dt.: Geschlossene Funktionen*
+*Dt.: Geschlossene Funktionen*
 
 Die meisten interessanten Objekte tun am Ende Dinge, die nicht nur von primitiven Datentypen charakterisiert werden können.
 
@@ -68,15 +68,22 @@ Daher:
 
 **Wenn es passt, definiere eine Funktion, deren Rückgabetyp derselbe ist wie der Typ ihres/ihrer Argumente(s). Wenn der Implementierer einen Zustand hat, der bei der Berechnung verwendet wird, dann ist der Implementierer faktisch ein Argument der Funktion, so dass das/die Argument(e) und der Rückgabewert vom gleichen Typ wie der Implementierer sein sollten. Eine solche Funktion ist unter der Menge der Instanzen dieses Typs geschlossen. Eine geschlossene Funktion bietet eine höherwertige Schnittstelle, ohne Abhängigkeit auf andere Konzepte.**
 
-Dieses Muster wird meistens auf die Operationen eines [Value Objects](#value-object) angewendet. Da der Lebenszyklus einer [Entität](#entity) eine Bedeutung in der Domäne hat, kann man nicht einfach ein neue [Entität](#entity) erzeugen, um eine Anfrage zu beantworten. Es gibt Vorgänge, die unter einem Entitätstyp abgeschlossen sind. Du kannst ein Mitarbeiterobjekt nach seinem Vorgesetzten fragen und ein anderes Mitarbeiterobjekt zurückerhalten. Aber im Allgemeinen sind [Entitäten](#entity) keine Konzepte, die häufig das Ergebnis einer Berechnung sind. In den meisten Fällen ist dies also eine Eigenschaft, die in [Value Objects](#value-object) zu suchen ist.
+Dieses Muster wird meistens auf die Operationen eines [Value Objects](#value-object) angewendet. Da der Lebenszyklus einer [Entity](#entity) eine Bedeutung in der Domäne hat, kann man nicht einfach ein neue [Entity](#entity) erzeugen, um eine Anfrage zu beantworten. Es gibt Vorgänge, die unter einem Entitätstyp abgeschlossen sind. Du kannst ein Mitarbeiterobjekt nach seinem Vorgesetzten fragen und ein anderes Mitarbeiterobjekt zurückerhalten. Aber im Allgemeinen sind [Entities](#entity) keine Konzepte, die häufig das Ergebnis einer Berechnung sind. In den meisten Fällen ist dies also eine Eigenschaft, die in [Value Objects](#value-object) zu suchen ist.
 
 Manchmal erreicht man dieses Muster nur halb: das Argument passt zum Implementierer, aber der Rückgabetyp ist unterschiedlich, oder der Rückgabetyp passt zum Empfänger, aber das Argument ist unterschiedlich. Diese Funktionen sind nicht geschlossen, aber sie bieten einen Teil des Vorteils der Geschlossenheit, indem sie einfacher verständlich sind.
 
 ## Declarative Design {#declarative-design}
 
-*dt.: Deklarativer Entwurf*
+*Dt.: Deklarativer Entwurf*
 
-Es kann keine wirklichen Garantien in prozeduraler Software geben. Um nur eine Möglichkeit für das Umgehen von [Zusicherungen](#assertion) zu nennen: Code könnte zusätzliche Seiteneffekte haben, die nicht ausdrücklich ausgeschlossen wurden. Egal wie modellgetrieben unser Entwurf ist, wir schreiben immer noch Prozeduren, um die Wirkung von konzeptionellen Interaktionen zu erzeugen. Und wir verbringen einen Großteil unserer Zeit damit, Boilerplate Code zu schreiben, der keine wirkliche Bedeutung oder kein Verhalten hat. [Intention-Revaling Interfaces](#intention-revealing-interface) und die anderen Muster in diesem Kapitel helfen, aber sie können konventionellen objektorientierten Programmen niemals formale Strenge verleihen.
+Es kann keine wirklichen Garantien in prozeduraler Software geben. Um
+nur eine Möglichkeit für das Umgehen von [Assertions](#assertion) zu
+nennen: Code könnte zusätzliche Seiteneffekte haben, die nicht
+ausdrücklich ausgeschlossen wurden. Egal wie modellgetrieben unser
+Entwurf ist, wir schreiben immer noch Prozeduren, um die Wirkung von
+konzeptionellen Interaktionen zu erzeugen. Und wir verbringen einen
+Großteil unserer Zeit damit, Boilerplate Code zu schreiben, der keine
+wirkliche Bedeutung oder kein Verhalten hat. [Intention Revealing Interfaces](#intention-revealing-interface) und die anderen Muster in diesem Kapitel helfen, aber sie können konventionellen objektorientierten Programmen niemals formale Strenge verleihen.
 
 Dies sind einige der Motivationen für deklarativen Entwurf. Dieser Begriff bedeutet verschiedenen Menschen unterschiedliche Dinge, aber normalerweise beschreibt er einen Weg, ein Programm oder einen Teil eines Programms als eine Art ausführbare Spezifikation zu schreiben. Eine genaue Beschreibung der Eigenschaften steuert effektiv die Software. Mit verschiedenen Herangehensweisen könnte dies durch Reflection oder zur Kompilierzeit durch Codegenerierung (automatische Erzeugung von konventionellem Code auf der Grundlage der Deklaration) geschehen. Dieser Ansatz ermöglicht es einem anderen Entwickler, die Deklaration zum Nennwert zu nehmen. Es ist eine absolute Garantie.
 
@@ -84,13 +91,14 @@ Viele deklarative Ansätze können korrumpiert werden, wenn die Entwickler sie a
 
 ### Ein deklarativer Entwurfstil
 
-Sobald dein Entwurf über [Intention-Revealing Interfaces](#intention-revealing-interface), [Side-Effect-Free Functions](#side-effect-free-functions) und [Assertions](#assertion) verfügt, begibst du Dich in deklaratives Gebiet. Viele der Vorteile des deklarativen Entwurfs werden erzielt, sobald du kombinierbare Elemente hast, die ihre Bedeutung kommunizieren, und die charakteristische oder offensichtliche Effekte oder gar keine beobachtbaren Effekte haben.
+Sobald dein Entwurf über [Intention Revealing
+Interfaces](#intention-revealing-interface), [Side Effect Free Functions](#side-effect-free-functions) und [Assertions](#assertion) verfügt, begibst du Dich in deklaratives Gebiet. Viele der Vorteile des deklarativen Entwurfs werden erzielt, sobald du kombinierbare Elemente hast, die ihre Bedeutung kommunizieren, und die charakteristische oder offensichtliche Effekte oder gar keine beobachtbaren Effekte haben.
 
 Ein flexibles Design kann es dem Client-Code ermöglichen, einen deklarativen Entwurfstil zu verwenden. Zur Veranschaulichung werden im nächsten Abschnitt einige der Muster in diesem Kapitel zusammengefasst, um die Spezifikation flexibler und deklarativer zu gestalten.
 
 ## Arbeiten auf Basis etablierter Formalismen
 
-Ein enges konzeptionelles Framework von Grund auf zu schaffen, ist etwas, was man nicht jeden Tag tun kann. Manchmal entdeckt und verfeinert man eines davon im Laufe des Lebens eines Projekts. Aber oft kannst du konzeptionelle Systeme verwenden und anpassen, die in deiner oder einer anderen fachlichen Domänen seit langem etabliert sind. Einige davon wurden möglicherweise sogar über Jahrhunderte hinweg verfeinert und kondensiert. Viele Geschäftsanwendungen betreffen z.B. das Rechnungswesen. Das Rechnungswesen definiert ein gut entwickeltes Set von [Entitäten](#entity) und Regeln, die eine einfache Anpassung an ein tiefgehendes Modell und ein flexibles Design ermöglichen.
+Ein enges konzeptionelles Framework von Grund auf zu schaffen, ist etwas, was man nicht jeden Tag tun kann. Manchmal entdeckt und verfeinert man eines davon im Laufe des Lebens eines Projekts. Aber oft kannst du konzeptionelle Systeme verwenden und anpassen, die in deiner oder einer anderen fachlichen Domänen seit langem etabliert sind. Einige davon wurden möglicherweise sogar über Jahrhunderte hinweg verfeinert und kondensiert. Viele Geschäftsanwendungen betreffen z.B. das Rechnungswesen. Das Rechnungswesen definiert ein gut entwickeltes Set von [Entities](#entity) und Regeln, die eine einfache Anpassung an ein tiefgehendes Modell und ein flexibles Design ermöglichen.
 
 Es gibt viele solcher formalisierten konzeptionellen Rahmen, aber mein persönlicher Favorit ist die Mathematik. Es ist überraschend, wie nützlich es sein kann, einen bestimmten Trick aus der Arithmetik zu verwenden. Viele Domänen beinhalten Mathematik irgendwo. Such danach, grab sie aus. Spezialisierte Mathematik ist sauber, kombinierbar mit klaren Regeln, und Leute finden sie leicht zu verstehen.
 
@@ -98,7 +106,7 @@ Ein praktisches Beispiel, "Shares Math", wurde in Kapitel 8 des Buches "Domain-D
 
 ## Conceptual Contours
 
-*dt.: Konzeptionelle Konturen*
+*Dt.: Konzeptionelle Konturen*
 
 Manchmal schneiden Leute die Funktionalität in kleine Teile, um eine flexible Kombination zu ermöglichen. Manchmal favorisieren sie einen eher grobgranularen Schnitt, um die Komplexität zu kapseln. Manchmal streben sie nach einer konsistenten Granularität, wodurch alle Klassen und Operationen in ähnlicher Größenordnung umgesetzt werden. Das sind übertriebene Vereinfachungen, die als allgemeine Regeln nicht gut funktionieren. Aber sie sind durch grundlegende Probleme motiviert.
 
