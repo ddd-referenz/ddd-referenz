@@ -108,6 +108,8 @@ Umgekehrt kann die Zerlegung von Klassen und Methoden den Client sinnlos verkomp
 
 Daher:
 
-**Zerlege die Entwurfselement (Funktionen, Schnittellen, Klassen und Aggregate) in zusammenhängende Einheiten, wobei du deine Intuition der wichtigen Teilbereiche in der Domäne berücksichtigst. Beobachte die Achsen von Veränderung und Stabilität durch sukzessives Refactoring und suche nach den zugrunde liegenden konzeptionellen Konturen, die dieses Schnittmuster erklären. Richte das Modell auf die konsistenten Aspekte der Domäne aus, die es überhaupt zu einem lebensfähigen Wissensgebiet machen.**
+**Zerlege die Entwurfselement (Funktionen, Schnittellen, Klassen,
+Aggregate) in zusammenhängende Einheiten. Berücksichtige deine
+Intuition zu den wichtigen Teilbereiche in der Domäne. Beobachte die Achsen von Veränderung und Stabilität durch sukzessives Refactoring und suche nach den zugrunde liegenden konzeptionellen Konturen, die dieses Schnittmuster erklären. Richte das Modell auf die konsistenten Aspekte der Domäne aus, die es überhaupt zu einem lebensfähigen Wissensgebiet machen.**
 
 Ein flexibles Design, das auf einem tiefgehenden Modell basiert, ergibt eine einfache Reihe von Schnittstellen, die sich logisch kombinieren, um sinnvolle Aussagen in der Ubiquitous Language zu treffen, ohne die Ablenkung und den Wartungsaufwand irrelevanter Optionen.
