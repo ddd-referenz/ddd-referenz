@@ -73,7 +73,7 @@ Muster repräsentativ sind.
 *Dt.: System-Metapher*
 
 Metaphorisches Denken ist in der Softwareentwicklung weit verbreitet,
-insbesondere bei Modellen. Aber die Praktik der "Metapher" aus Extreme Programming ist mittlerweile zu einer besonderen Bedeutung gekommen, eine
+insbesondere bei Modellen. Aber die Praktik der "Metapher" aus Extreme Programming hat mittlerweile die besondere Bedeutung bekommen, nämlich eine
 Metapher zu nutzen, um Ordnung in die Entwicklung eines ganzen Systems
 zu bringen.
 
