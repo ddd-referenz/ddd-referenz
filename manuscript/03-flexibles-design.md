@@ -20,7 +20,7 @@ Wenn ein Entwickler die Implementierung einer Komponente berücksichten muss, um
 
 Daher:
 
-**Benenne Klassen und Operationen, um ihre Wirkung und ihren Zweck zu beschreiben, ohne die Mittel zu nennen, mit denen sie das tun, was sie versprechen. Dies befreit den Client-Entwickler von der Notwendigkeit, das Innenleben zu verstehen. Diese Namen sollten der [Ubiquitous Language](#ubiquitous-language) entsprechen, damit Teammitglieder schnell ihre Bedeutung ableiten können. Schreibe einen Test für ein Verhalten, bevor Du es implementierst, um Dein Denken in den Client-Entwicklermodus zu zwingen.**
+**Benenne Klassen und Operationen, um ihre Wirkung und ihren Zweck zu beschreiben, ohne die Mittel zu nennen, mit denen sie das tun, was sie versprechen. Dies befreit den Client-Entwickler von der Notwendigkeit, das Innenleben zu verstehen. Diese Namen sollten der [Ubiquitous Language](#ubiquitous-language) entsprechen, damit Teammitglieder schnell ihre Bedeutung ableiten können. Schreibe einen Test für ein Verhalten, bevor du es implementierst, um dein Denken in den Client-Entwicklermodus zu zwingen.**
 
 ## Side-Effect-Free Functions {#side-effect-free-functions}
 
@@ -84,7 +84,7 @@ Viele deklarative Ansätze können korrumpiert werden, wenn die Entwickler sie a
 
 ### Ein deklarativer Entwurfstil
 
-Sobald dein Entwurf über [Intention-Revealing Interfaces](#intention-revealing-interface), [Side-Effect-Free Functions](#side-effect-free-functions) und [Assertions](#assertion) verfügt, begibst Du Dich in deklaratives Gebiet. Viele der Vorteile des deklarativen Entwurfs werden erzielt, sobald du kombinierbare Elemente hast, die ihre Bedeutung kommunizieren, und die charakteristische oder offensichtliche Effekte oder gar keine beobachtbaren Effekte haben.
+Sobald dein Entwurf über [Intention-Revealing Interfaces](#intention-revealing-interface), [Side-Effect-Free Functions](#side-effect-free-functions) und [Assertions](#assertion) verfügt, begibst du Dich in deklaratives Gebiet. Viele der Vorteile des deklarativen Entwurfs werden erzielt, sobald du kombinierbare Elemente hast, die ihre Bedeutung kommunizieren, und die charakteristische oder offensichtliche Effekte oder gar keine beobachtbaren Effekte haben.
 
 Ein flexibles Design kann es dem Client-Code ermöglichen, einen deklarativen Entwurfstil zu verwenden. Zur Veranschaulichung werden im nächsten Abschnitt einige der Muster in diesem Kapitel zusammengefasst, um die Spezifikation flexibler und deklarativer zu gestalten.
 
@@ -108,6 +108,6 @@ Umgekehrt kann die Zerlegung von Klassen und Methoden den Client sinnlos verkomp
 
 Daher:
 
-**Zerlege die Entwurfselement (Funktionen, Schnittellen, Klassen und Aggregate) in zusammenhängende Einheiten, wobei Du Deine Intuition der wichtigen Teilbereiche in der Domäne berücksichtigst. Beobachte die Achsen von Veränderung und Stabilität durch sukzessives Refactoring und suche nach den zugrunde liegenden konzeptionellen Konturen, die dieses Schnittmuster erklären. Richte das Modell auf die konsistenten Aspekte der Domäne aus, die es überhaupt zu einem lebensfähigen Wissensgebiet machen.**
+**Zerlege die Entwurfselement (Funktionen, Schnittellen, Klassen und Aggregate) in zusammenhängende Einheiten, wobei du deine Intuition der wichtigen Teilbereiche in der Domäne berücksichtigst. Beobachte die Achsen von Veränderung und Stabilität durch sukzessives Refactoring und suche nach den zugrunde liegenden konzeptionellen Konturen, die dieses Schnittmuster erklären. Richte das Modell auf die konsistenten Aspekte der Domäne aus, die es überhaupt zu einem lebensfähigen Wissensgebiet machen.**
 
 Ein flexibles Design, das auf einem tiefgehenden Modell basiert, ergibt eine einfache Reihe von Schnittstellen, die sich logisch kombinieren, um sinnvolle Aussagen in der Ubiquitous Language zu treffen, ohne die Ablenkung und den Wartungsaufwand irrelevanter Optionen.
