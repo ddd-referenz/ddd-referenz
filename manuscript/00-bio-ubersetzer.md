@@ -1,4 +1,4 @@
-## Die Übersetzer
+### Die Übersetzer
 
 *Michael Plöd* ist Principal Consultant bei INNOQ. Seine aktuellen Interessengebiete sind Microservices, Domain-driven Design, polyglotter Persistenz, Alternativen zu alt eingewachsenen Softwarearchitekturen, Event Sourcing und Präsentationstechniken für Entwickler und Architekten.
 
@@ -16,8 +16,9 @@ Schwerpunkt liegt auf modernen Architektur-Ansätzen. Er ist Autor von
 Technologien](http://microservices-praxisbuch.de/) und [Continuous
 Delivery](http://continuous-delivery-buch.de/).
 
-## Cover und Review
+### Cover und Review
 
 *Sonja Scheungrab* arbeitet, nach Stationen bei mehreren Verlagen, bei
 INNOQ als Allrounderin für Kreatives. Nebenbei studiert sie Informatik
 an der Fernuni Hagen.
+
