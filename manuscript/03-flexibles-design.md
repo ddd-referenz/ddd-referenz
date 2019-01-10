@@ -96,7 +96,9 @@ Interfaces](#intention-revealing-interface), [Side Effect Free Functions](#side-
 
 Ein flexibles Design kann es dem Client-Code ermöglichen, einen deklarativen Entwurfstil zu verwenden. Zur Veranschaulichung werden im nächsten Abschnitt einige der Muster in diesem Kapitel zusammengefasst, um die Spezifikation flexibler und deklarativer zu gestalten.
 
-## Arbeiten auf Basis etablierter Formalismen
+## Drawing on Established Formalisms
+
+Dt.: Arbeiten auf Basis etablierter Formalismen
 
 Ein enges konzeptionelles Framework von Grund auf zu schaffen, ist etwas, was man nicht jeden Tag tun kann. Manchmal entdeckt und verfeinert man eines davon im Laufe des Lebens eines Projekts. Aber oft kannst du konzeptionelle Systeme verwenden und anpassen, die in deiner oder einer anderen fachlichen Domänen seit langem etabliert sind. Einige davon wurden möglicherweise sogar über Jahrhunderte hinweg verfeinert und kondensiert. Viele Geschäftsanwendungen betreffen z.B. das Rechnungswesen. Das Rechnungswesen definiert ein gut entwickeltes Set von [Entities](#entity) und Regeln, die eine einfache Anpassung an ein tiefgehendes Modell und ein flexibles Design ermöglichen.
 
