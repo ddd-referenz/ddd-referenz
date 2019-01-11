@@ -102,7 +102,7 @@ im Weg steht.**
 
 *Dt.: Schichten nach Zuständigkeiten*
 
-Bei objektorientierten Entwürfen werden den einzelnen Objekten kleine
+Bei objekt-orientierten Entwürfen werden den einzelnen Objekten kleine
 Mengen zusammenhängender Zuständigkeiten zugewiesen. Der Entwurf anhand 
 von Zuständigkeiten betrifft aber auch größere Einheiten.
 
