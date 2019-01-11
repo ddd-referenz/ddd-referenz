@@ -300,6 +300,8 @@ asynchron.
 Halte ein einzelnes Aggregate als Ganzes auf einem Server. Erlaube die
 Verteilung verschiedener Aggregates auf unterschiedliche Knoten.
 
+{pagebreak}
+
 Wenn diese Entwurfsentscheidungen nicht gut von den Grenzen der
 Aggregates geleitet werden, überdenke das Modell.
 Deutet das Szenario in der Domäne auf eine wichtige neue Erkenntnis
