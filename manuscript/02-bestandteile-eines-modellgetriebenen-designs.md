@@ -312,7 +312,7 @@ Verteilungsproblematik.
 *Zugriff auf [Aggregates](#aggregate) durch Anfragen, die in der [Ubiquitous
 Language](#ubiquitous-language) ausgedrückt sind.*
 
-Die Verbreitung von traversierbaren Beziehungen, die nur dazu dienen,
+Die Verbreitung von navigierbaren Beziehungen, die nur dazu dienen,
 Dinge zu finden, bringen das Modell durcheinander. In ausgereiften
 Modellen drücken Abfragen oft Domänenkonzepte aus. Dennoch können
 Abfragen zu Problemen führen.
