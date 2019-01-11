@@ -177,6 +177,8 @@ Teil des Modells verbunden ist. Diese explizit geteilten Artefakte
 haben einen besonderen Status und sollten nicht ohne Rücksprache mit
 dem anderen Team geändert werden.**
 
+{pagebreak}
+
 Definiere einen Prozess für 
 [Continuous Integration](#continuous-integration), der das
 Kernmodell
@@ -398,6 +400,8 @@ Ein solcher Big Ball of Mud ist für einige Situationen tatsächlich recht
 praktisch (wie im Originalartikel von Foote und Yoder beschrieben),
 aber er verhindert fast vollständig die Subtilität und Präzision, die
 für nützliche Modelle erforderlich ist.
+
+{pagebreak}
 
 Deshalb:
 
