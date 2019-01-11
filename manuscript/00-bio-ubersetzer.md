@@ -1,6 +1,6 @@
 ### Die Übersetzer
 
-*Michael Plöd* ist Principal Consultant bei INNOQ. Seine aktuellen Interessengebiete sind Microservices, Domain-driven Design, polyglotter Persistenz, Alternativen zu alt eingewachsenen Softwarearchitekturen, Event Sourcing und Präsentationstechniken für Entwickler und Architekten.
+*Michael Plöd* ist Fellow bei INNOQ. Seine aktuellen Interessengebiete sind Microservices, Domain-driven Design, Alternativen zu alt eingewachsenen Softwarearchitekturen, Event Sourcing und Präsentationstechniken für Entwickler und Architekten.
 
 *Christian Stettler* ist Senior Consultant und Architekt bei INNOQ.
 Er entwickelt fachlich relevante Systeme mit verteilten,
