@@ -6,7 +6,7 @@ verhindern, dass man in einem Meer von Nebensächlichkeiten ertrinkt?
 Destillation bezeichnet einen Prozess, um die Bestandteile einer
 Mischung zu trennen und so die Essenz in einer Form zu extrahieren, die
 sie wertvoller und nützlicher macht. Ein Modell ist eine Destillation
-von Wissen. Mit jedem [Refactoring Toward Deeper Knowledge](#refactoring-toward-deeper-insight) abstrahieren wir
+von Wissen. Mit jedem [Refactoring Toward Deeper Insight](#refactoring-toward-deeper-insight) abstrahieren wir
 entscheidende Aspekte des Domänenwissens und der Prioritäten in der
 Domäne. Um auf die strategische Perspektive zurückzukommen,
 beschäftigt sich dieses Kapitel mit Möglichkeiten, die größten
