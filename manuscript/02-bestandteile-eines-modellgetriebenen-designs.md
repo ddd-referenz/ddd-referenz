@@ -231,7 +231,7 @@ wird.**
 Jeder verwendet Module, aber nur wenige behandeln sie als
 vollwertigen Teil des Modells. Code wird in alle möglichen Kategorien
 unterteilt, von Aspekten der technischen Architektur bis hin zu den
-Aufgaben der Entwickler. Selbst Entwickler, die viel refactorn,
+Aufgaben der Entwickler. Selbst Entwickler, die viel refaktorisieren,
 begnügen sich oft mit den Modulen, die frühzeitig im Projekt
 entstanden sind.
 
