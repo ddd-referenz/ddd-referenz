@@ -114,7 +114,7 @@ Manchmal schneiden Leute die Funktionalität in kleine Teile, um eine flexible K
 
 Wenn Elemente eines Modells oder Entwurfs in ein monolithisches Konstrukt eingebettet sind, wird deren Funktionalität dupliziert. Die externe Schnittstelle sagt nicht alles, was einem Verwender wichtig sein könnte. Ihre Bedeutung ist schwer zu verstehen, da verschiedene Konzepte miteinander vermischt werden.
 
-Umgekehrt kann die Zerlegung von Klassen und Methoden den Client sinnlos verkomplizieren, indem sie Clients dazu zwingt, zu verstehen, wie kleine Teile zusammenpassen. Schlimmer noch, ein Konzept kann völlig verloren gehen. Die Hälfte eines Uranatoms ist nicht Uran. Natürlich kommt es nicht nur auf die Grösse der Elemente an, sondern auch, wie gut diese zusammen funktionieren.
+Umgekehrt kann die Zerlegung von Klassen und Methoden den Client sinnlos verkomplizieren, indem sie Clients dazu zwingt, zu verstehen, wie kleine Teile zusammenpassen. Schlimmer noch, ein Konzept kann völlig verloren gehen. Die Hälfte eines Uranatoms ist nicht Uran. Natürlich kommt es nicht nur auf die Größe der Maserung an, sondern auch, wie die Maserung verläuft.
 
 Daher:
 
