@@ -10,7 +10,7 @@ eines einzelnen Teils im Ganzen zu verstehen, ohne uns mit den Details
 des Ganzen zu befassen.
 
 Eine "Large-scale Structure" ist eine Sprache, mit der man das System 
-in groben Strichen diskutieren und verstehen kann. Einige übergeordnete
+in groben Zügen diskutieren und verstehen kann. Einige übergeordnete
 Konzepte oder Regeln oder beides zusammen legen ein Muster für den
 Entwurf des
 gesamten Systems fest. Dieses Gestaltungssprinzip kann sowohl die
@@ -33,7 +33,7 @@ Verantwortung dieses Teils zu besitzen.**
 
 *Dt.: Sich entwickelnde Ordnung*
 
-Entwurf ohne Regeln bringt Systeme hervor, die niemand als Ganzes
+Ein Entwurf ohne Regeln bringt Systeme hervor, die niemand als Ganzes
 verstehen kann und die sehr schwer zu warten sind. Aber Architekturen
 können ein Projekt durch frühzeitige Annahmen über den Entwurf zu
 sehr einschränken und den Entwicklern/Designern der einzelnen Teile

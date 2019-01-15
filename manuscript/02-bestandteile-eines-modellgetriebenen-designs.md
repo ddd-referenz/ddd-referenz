@@ -80,7 +80,7 @@ seiner Definition im Modell. Halte die Klassendefinition einfach und
 konzentriere dich auf die Kontinuität des Lebenszyklus und
 die Identität.**
 
-**Definiere ein Möglichkeit zur Unterscheidung jedes Objekts
+**Definiere eine Möglichkeit zur Unterscheidung jedes Objekts
 unabhängig von seiner Form oder Geschichte. Achte auf Anforderungen,
 die einen Abgleich von Objekten über Attribute erfordern. Definiere
 eine Operation, die garantiert ein eindeutiges Ergebnis für jedes
@@ -299,6 +299,8 @@ asynchron.
 
 Halte ein einzelnes Aggregate als Ganzes auf einem Server. Erlaube die
 Verteilung verschiedener Aggregates auf unterschiedliche Knoten.
+
+{pagebreak}
 
 Wenn diese Entwurfsentscheidungen nicht gut von den Grenzen der
 Aggregates geleitet werden, überdenke das Modell.

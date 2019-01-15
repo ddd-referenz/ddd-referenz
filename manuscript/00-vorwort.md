@@ -67,6 +67,8 @@ Workshops verwendet, wobei jedes Muster von den Teilnehmern laut
 vorgelesen und anschließend diskutiert wurde. Ich habe diese
 Dokumente mehrere Jahre lang in Trainingskursen verwendet.
 
+{pagebreak}
+
 Dann, ein paar Jahre nachdem mein Buch veröffentlicht wurde, schlug
 Ward Cunningham als Teil seiner Arbeit an einem Verzeichnis von Mustern
 einigen Autoren vor, dass wir kurze Zusammenfassungen unserer Muster
