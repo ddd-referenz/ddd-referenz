@@ -144,7 +144,7 @@ werden kann.
 
 *Die gemeinsame Nutzung eines Teils des Modells und des zugehörigen
 Codes erzeugt eine sehr enge wechselseitige Abhängigkeit, welche die
-Entuwrfsarbeit in Schwung bringen oder sie untegraben kann.*
+Entwurfsarbeit in Schwung bringen oder sie untergraben kann.*
 
 Wenn die funktionale Integration begrenzt ist, kann der Aufwand für
 die [Continuous Integration](#continuous-integration) eines großen
@@ -213,7 +213,7 @@ Daher:
 **Etabliere eine klare
 Customer-Supplier-Beziehung zwischen den 
 beiden Teams, d.h. Downstream-Prioritäten fließen in die
-Upstream-Planung ein. Verhandel und budgetiere Aufgaben für die
+Upstream-Planung ein. Verhandle und budgetiere Aufgaben für die
 Downstream-Anforderungen, so dass jeder die Verpflichtungen und den
 Zeitplan versteht.**
 
@@ -246,7 +246,7 @@ Daher:
 
 **Eliminiere die Komplexität der Übersetzung zwischen [Bounded Contexts](#bounded-context), indem du dich sklavisch an das Modell des
 Upstream-Teams
-hälst. Obwohl dies den Stil der Downstream-Designer einengt und
+hältst. Obwohl dies den Stil der Downstream-Designer einengt und
 wahrscheinlich nicht das ideale Modell für die Anwendung ergibt,
 vereinfacht Konformität die Integration enorm. Außerdem
 wirst du dir
@@ -394,7 +394,7 @@ mehrere konzeptionelle Systeme und machen Definitionen und Regeln
 mehrdeutig oder widersprüchlich. Die Systeme beginnen nach einer unvorhergesehenen Logik zu funktionieren, wenn Funktionalitäten hinzugefügt
 werden. Abhängigkeiten durchziehen die Software kreuz und quer. Ursache und Wirkung
 werden immer schwieriger nachvollziehbar. Schließlich erstarrt die
-Software zu einer grossen Matschkugel.
+Software zu einer großen Matschkugel.
 
 Ein solcher Big Ball of Mud ist für einige Situationen tatsächlich recht
 praktisch (wie im Originalartikel von Foote und Yoder beschrieben),
