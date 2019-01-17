@@ -6,7 +6,7 @@
 Er entwickelt fachlich relevante Systeme mit verteilten,
 skalierbaren Architekturen. Sein Interesse gilt dabei den Ansätzen von
 Domain-driven Design, um ein umfassendes fachliches Verständnis zu
-erlangen und dieses durchgängig in Code zu giessen.
+erlangen und dieses durchgängig in Code zu gießen.
 
 *Eberhard Wolff* arbeitet als Fellow bei INNOQ und berät
 Kunden in Bezug auf Architekturen und Technologien. Sein

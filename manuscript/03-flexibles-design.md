@@ -16,7 +16,7 @@ Ebenso wichtig ist, dass das Design den Entwickler, der daran arbeitet, dabei un
 
 *Dt.: Ausdrucksstarke Schnittstellen*
 
-Wenn ein Entwickler die Implementierung einer Komponente berücksichten muss, um sie zu nutzen, geht der Wert der Kapselung verloren. Wenn jemand anderes als der ursprüngliche Entwickler den Zweck eines Objekts oder einer Operation aufgrund seiner Implementierung ableiten muss, kann dieser neue Entwickler einen Zweck ableiten, den die Operation oder Klasse nur durch Zufall erfüllt. Wenn das nicht die Absicht war, kann der Code im Moment funktionieren, aber die konzeptionelle Grundlage des Designs wird beschädigt sein, und die beiden Entwickler werden gegeneinander arbeiten.
+Wenn ein Entwickler die Implementierung einer Komponente berücksichtigen muss, um sie zu nutzen, geht der Wert der Kapselung verloren. Wenn jemand anderes als der ursprüngliche Entwickler den Zweck eines Objekts oder einer Operation aufgrund seiner Implementierung ableiten muss, kann dieser neue Entwickler einen Zweck ableiten, den die Operation oder Klasse nur durch Zufall erfüllt. Wenn das nicht die Absicht war, kann der Code im Moment funktionieren, aber die konzeptionelle Grundlage des Designs wird beschädigt sein, und die beiden Entwickler werden gegeneinander arbeiten.
 
 Daher:
 
@@ -118,7 +118,7 @@ Umgekehrt kann die Zerlegung von Klassen und Methoden den Client sinnlos verkomp
 
 Daher:
 
-**Zerlege die Entwurfselement (Funktionen, Schnittellen, Klassen,
+**Zerlege die Entwurfselement (Funktionen, Schnittstellen, Klassen,
 Aggregate) in zusammenhängende Einheiten. Berücksichtige deine
 Intuition zu den wichtigen Teilbereiche in der Domäne. Beobachte die Achsen von Veränderung und Stabilität durch sukzessives Refactoring und suche nach den zugrunde liegenden konzeptionellen Konturen, die dieses Schnittmuster erklären. Richte das Modell auf die konsistenten Aspekte der Domäne aus, die es überhaupt zu einem lebensfähigen Wissensgebiet machen.**
 
