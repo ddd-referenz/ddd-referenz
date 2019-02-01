@@ -13,7 +13,7 @@ Eine "Large-scale Structure" ist eine Sprache, mit der man das System
 in groben Zügen diskutieren und verstehen kann. Einige übergeordnete
 Konzepte oder Regeln oder beides zusammen legen ein Muster für den
 Entwurf des
-gesamten Systems fest. Dieses Gestaltungssprinzip kann sowohl die
+gesamten Systems fest. Dieses Gestaltungsprinzip kann sowohl die
 Entwurfsarbeit als auch das Verständnis unterstützen. Es hilft dabei,
 unabhängige
 Arbeiten zu koordinieren, denn es gibt nun ein gemeinsames Konzept für
@@ -23,7 +23,7 @@ gestalten.
 
 Daher:
 
-**Entwickel ein Muster, welches aus Regeln oder Rollen und Beziehungen
+**Entwickle ein Muster, welches aus Regeln oder Rollen und Beziehungen
 besteht, welches das gesamte System erfasst und welches es ermöglicht, 
 ein grundlegendes Verständnis der Lage
 jedes Teils im Ganzen zu erhalten, auch ohne detaillierte Kenntnis der
@@ -157,7 +157,7 @@ Addison-Wesley*)
 
 ## Pluggable Component Framework {#pluggable-component-framework}
 
-*Dt.: Zusammensteckbares Komponentent-Framework*
+*Dt.: Zusammensteckbares Komponenten-Framework*
 
 Ein sehr ausgereiftes Modell, das tief und destilliert ist, bietet viele Möglichkeiten. Ein [Pluggable Component
 Framework](#pluggable-knowledge-framework) kommt in der Regel erst ins
@@ -176,7 +176,7 @@ wird sehr schwierig.
 Daher:
 
 **Destilliere einen abstrakten Kern von Schnittstellen und
-Interaktionen heraus und entwickel ein Framework, das es ermöglicht,
+Interaktionen heraus und entwickle ein Framework, das es ermöglicht,
 verschiedene Implementierungen dieser Schnittstellen auszutauschen.
 Ebenso solltest du jeder Anwendung erlauben, diese Komponenten zu
 verwenden, solange sie ausschließlich über die Schnittstellen des
