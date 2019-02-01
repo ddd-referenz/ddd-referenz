@@ -17,6 +17,8 @@ Ganzes zu destillieren.
 
 *Dt.: Kerndomäne*
 
+![](images/CoreDomain.jpg)
+
 In einem großen System gibt es so viele Komponenten, die alle
 kompliziert und absolut notwendig für den Erfolg sind, dass die Essenz
 des Domänenmodells, der eigentliche Unternehmenswert, unklar sein kann

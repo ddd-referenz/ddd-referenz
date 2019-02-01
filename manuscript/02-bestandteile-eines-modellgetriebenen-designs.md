@@ -59,6 +59,8 @@ auf und Referenzen zu anderen Systembelangen vermeiden.
 
 *Dt.: Entitäten*
 
+![Fahndungsposter für Clyde Barrow (von Bonnie & Clyde)](images/Entity.jpg)
+
 Viele Objekte stellen eine Kontinuität und Identität dar und
 durchlaufen einen Lebenszyklus, obwohl sich ihre Attribute ändern
 können.
@@ -98,6 +100,8 @@ sein.**
 ## Value Objects {#value-object}
 
 *Dt.: Wertobjekte*
+
+![](images/ValueObject.png)
 
 Einige Objekte beschreiben oder berechnen eine Eigenschaft eines Dings.
 

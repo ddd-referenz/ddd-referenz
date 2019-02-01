@@ -1,6 +1,8 @@
 # III. Flexibles Design
 
-Ein Projekt, welches im Laufe der Entwicklung Fahrt aufnehmen kann - anstatt durch sein eigenes Erbe belastet zu werden - erfordert ein Design, mit dem man gerne arbeitet und das zum Wandel einläDt. Ein flexibles Design.
+![](images/SuppleDesign.jpg)
+
+Ein Projekt, welches im Laufe der Entwicklung Fahrt aufnehmen kann - anstatt durch sein eigenes Erbe belastet zu werden - erfordert ein Design, mit dem man gerne arbeitet und das zum Wandel einlädt. Ein *flexibles Design*.
 
 Flexibles Design ist die Ergänzung zur tiefgehenden Modellierung.
 
