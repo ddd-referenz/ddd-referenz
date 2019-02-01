@@ -137,6 +137,8 @@ Entities notwendig sind.**
 
 *Dt.: Domänenereignis*
 
+![Drinnen oder im Aus?](images/DomainEvent.jpg)
+
 Etwas ist passiert, was für Domänenexperten wichtig ist.
 
 Eine [Entity](#entity) ist dafür verantwortlich, ihren Zustand und die
