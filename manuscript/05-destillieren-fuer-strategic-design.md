@@ -22,8 +22,6 @@
 > Terme und der notwendigen Mathematik das gesamte Wissen über
 > Elektromagnetismus im 19. Jahrhundert aus.
 
-These four equations, along with the definitions of their terms and the body of mathematics they rest on, express the entirety of classical nineteenth-century electromagnetism.
-
 Wie kann man sich auf das zentrale Problem konzentrieren und
 verhindern, dass man in einem Meer von Nebensächlichkeiten ertrinkt?
 
