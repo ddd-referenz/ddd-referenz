@@ -1,10 +1,7 @@
 # V. Destillation für Strategic Design
 
 {$$}
-\mathbin{div} D = \rho
-{/$$}
-
-{$$}
+\mathbin{div} D = \rho \\
 \mathbin{div} B = 0
 {/$$}
 
