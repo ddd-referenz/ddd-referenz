@@ -8,14 +8,6 @@
 \mathbin{div} B = 0
 {/$$}
 
-{$$}
-\mathbin{curl} E = - \diffp{B}{t}
-{/$$}
-
-{$$}
-\mathbin{curl} H = J + \diffp{D}{t}
-{/$$}
-
 
 > James Clerk Maxwell, A Treatise on Electricity & Magnetism, 1873
 
