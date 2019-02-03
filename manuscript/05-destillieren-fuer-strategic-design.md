@@ -1,12 +1,5 @@
 # V. Destillation für Strategic Design
 
-{$$}
-div D = \rho \\
-dev B = 0 \\
-curl E = - \diffp{B}{t} \\
-curl H = J + \diffp{D}{t} \\
-{/$$}
-
 > James Clerk Maxwell, A Treatise on Electricity & Magnetism, 1873
 
 > Diese vier Gleichungen drücken zusammen mit der Definition ihrer
