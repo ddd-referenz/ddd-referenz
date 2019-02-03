@@ -104,7 +104,7 @@ Contexts](#bounded-context) erstrecken, aber per Definition können
 diese unterschiedlichen Modelle nicht so strukturiert werden, dass sie 
 ihren gemeinsamen Fokus zeigen.
 
-Daker:
+Daher:
 
 **Verfasse eine kurze Beschreibung (etwa eine Seite) der [Core
 Domain](#core-domain) und des Wertes, den sie bringen wird, das
