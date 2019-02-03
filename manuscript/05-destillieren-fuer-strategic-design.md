@@ -1,19 +1,12 @@
 # V. Destillation für Strategic Design
 
 {$$}
-\mathbin{div} D = \rho
-{/$$}
-
-{$$}
-\mathbin{div} B = 0
-{/$$}
-
-{$$}
-\mathbin{curl} E = - \frac{\partial B}{\partial t}
-{/$$}
-
-{$$}
-\mathbin{curl} H = J + \frac{\partial D}{\partial t}
+\begin{array}{rcl}
+\mathbin{div} D & = & \rho
+\mathbin{div} B & = & 0
+\mathbin{curl} E & = & - \frac{\partial B}{\partial t}
+\mathbin{curl} H & = & J + \frac{\partial D}{\partial t}
+\end{array}
 {/$$}
 
 > James Clerk Maxwell, A Treatise on Electricity & Magnetism, 1873
