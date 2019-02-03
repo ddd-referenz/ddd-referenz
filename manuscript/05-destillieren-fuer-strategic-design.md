@@ -1,5 +1,9 @@
 # V. Destillation für Strategic Design
 
+{$$}
+div D = \rho \\
+{/$$}
+
 > James Clerk Maxwell, A Treatise on Electricity & Magnetism, 1873
 
 > Diese vier Gleichungen drücken zusammen mit der Definition ihrer
