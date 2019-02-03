@@ -3,12 +3,15 @@
 {$$}
 \mathbin{div} D = \rho
 {/$$}
+
 {$$}
 \mathbin{div} B = 0
 {/$$}
+
 {$$}
 \mathbin{curl} E = - \diffp{B}{t}
 {/$$}
+
 {$$}
 \mathbin{curl} H = J + \diffp{D}{t}
 {/$$}
