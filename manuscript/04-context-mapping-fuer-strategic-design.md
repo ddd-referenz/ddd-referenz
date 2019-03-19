@@ -119,7 +119,7 @@ Entwicklung und zum gemeinsamen Managements der Integration ein.**
 
 **Die Teams müssen bei der Entwicklung ihrer Schnittstellen
 zusammenarbeiten, um die Bedürfnisse bei der Entwicklung beider
-Systeme zu befriedigen. Voneinander abhängige Funktionalitäten sollten so
+Systeme zu berücksichtigen. Voneinander abhängige Funktionalitäten sollten so
 eingeplant werden, dass sie auf das gleiche Release hin abgeschlossen
 werden.**
 
@@ -294,8 +294,8 @@ den beiden Modellen.**
 
 *Dt.: Offen angebotener Dienst*
 
-*Typischerweise definierst du für jeden [Bounded Context](#bounded-context) eine
-Übersetzungsschicht für jede Komponente, mit der du integrieren musst
+*Typischerweise definierst du für jeden [Bounded Context](#bounded-context)
+und jede Komponente eine Übersetzungsschicht, mit der du integrieren musst
 und die außerhalb des Kontextes liegt. Wenn jede Integration anders
 ist, vermeidet dieser Ansatz mit einer Übersetzungsschicht für jedes
 externe System die Korruption der Modelle mit minimalen
@@ -379,7 +379,7 @@ diesem kleinen Bereich finden können.**
 Wenn wir bestehende Softwaresysteme untersuchen und versuchen zu
 verstehen, wie unterschiedliche Modelle innerhalb definierter Grenzen
 angewendet werden, finden wir Teile von Systemen, oft große, in denen
-Modelle gemischt sind und Grenzen inkonsistent sind.
+Modelle gemischt und Grenzen inkonsistent sind.
 
 Es ist leicht, beim Versuch festzufahren, die Kontextgrenzen
 von Modellen in Systemen zu beschreiben, in denen es einfach keine
