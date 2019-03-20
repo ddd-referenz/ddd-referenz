@@ -43,7 +43,7 @@ Ganzes zu destillieren.
 
 In einem großen System gibt es so viele Komponenten, die alle
 kompliziert und absolut notwendig für den Erfolg sind, dass die Essenz
-des Domänenmodells, der eigentliche Unternehmenswert, unklar sein kann
+des Domänenmodells, der eigentliche Unternehmenswert, unklar sein
 und dann vernachlässigt werden kann.
 
 Die harte Realität ist, dass nicht alle Teile des Entwurfs gleich
@@ -68,8 +68,8 @@ rekrutiere entsprechend. Investiere den Aufwand, um ein
 tiefgreifendes Modell zu finden und ein flexibles Design zu
 entwickeln, das ausreicht, um die Vision des Systems zu erfüllen.**
 
-**Rechtfertige die Investition in andere Teile, indem du betrachtest,
-wie sie den destillierten Kern unterstützen.**
+Rechtfertige die Investition in andere Teile, indem du betrachtest,
+wie sie den destillierten Kern unterstützen.
 
 ## Generic Subdomains {#generic-subdomain}
 
@@ -105,7 +105,7 @@ Domänenwissen gewinnen). Erwäge auch Standardlösungen oder
 Zu Beginn eines Projekts existiert das Modell in der Regel noch gar
 nicht, aber seine Entwicklung muss schon fokussiert werden. In
 späteren Entwicklungsstadien muss der Wert des Systems erklärt werden,
-ohne dass man dazu das Modells eingehend studieren muss. Auch können
+ohne dass man dazu das Modell eingehend studieren muss. Auch können
 sich kritische Aspekte des Domänenmodells über mehrere [Bounded
 Contexts](#bounded-context) erstrecken, aber per Definition können
 diese unterschiedlichen Modelle nicht so strukturiert werden, dass sie 

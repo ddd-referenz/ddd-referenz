@@ -63,10 +63,10 @@ achten, sondern
 eine minimale Menge zu finden, welche die aufgetretenen Probleme löst.
 Weniger ist mehr.**
 
-Was folgt, ist eine Reihe von vier speziellen Mustern für die
+**Was folgt, ist eine Reihe von vier speziellen Mustern für die
 [Large-scale Structure](#large-scale-structure),
 die bei einigen Projekten entstehen und für diese Art von
-Muster repräsentativ sind.
+Muster repräsentativ sind.**
 
 ## System Metaphor {#system-metaphor}
 
