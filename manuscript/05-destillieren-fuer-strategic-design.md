@@ -117,7 +117,7 @@ Daher:
 Domain](#core-domain) und des Wertes, den sie bringen wird, das
 "Leistungsversprechen". Ignoriere Aspekte, die dieses Domänenmodell
 nicht von anderen unterscheiden. Zeige, wie das Domänenmodell
-verschiedenen Interessen dient und sie ausgleicht. Halten diese Aussage 
+verschiedenen Interessen dient und sie ausgleicht. Halte diese Aussage 
 kurz. Schreibe sie frühzeitig und überarbeite sie,
 wenn du neue Erkenntnisse gewinnst.**
 
