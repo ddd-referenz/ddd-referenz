@@ -93,7 +93,7 @@ Subdomains und lege sie in separate Module. Hinterlasse in diesen
 Modellen keine Spuren von Spezialitäten deiner Domäne.**
 
 **Sobald sie getrennt wurden, gib ihrer weiteren Entwicklung eine
-niedrigere Priorität als der [Core Domain](#core-domain) und vermeiden
+niedrigere Priorität als der [Core Domain](#core-domain) und vermeide
 es, Kernentwickler den Aufgaben zuzuordnen (da sie aus ihnen wenig
 Domänenwissen gewinnen). Erwäge auch Standardlösungen oder
 öffentlich verfügbare Modelle für diese Generic Subdomains.**
