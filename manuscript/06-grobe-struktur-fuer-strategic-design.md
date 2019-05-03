@@ -146,7 +146,7 @@ bei der Zusammensetzung der Objekte zu berücksichtigen.
 
 Daher:
 
-**Erstellen eine eigene Gruppe von Objekten, welche die Struktur und
+**Erstelle eine eigene Gruppe von Objekten, welche die Struktur und
 das Verhalten des Basismodells beschreiben und einschränken können.
 Halte diese Belange als zwei "Ebenen" getrennt: die eine ist sehr
 konkret, die andere spiegelt Regeln und Wissen wider, die ein
