@@ -197,7 +197,7 @@ gelangt ist und die Identität der Person, die es ausgelöst hat.
 Wenn das nützlich ist, kann eine Identität für das Domain Event auf
 Basis einiger dieser Eigenschaften definiert werden. Wenn dann also
 beispielsweise zwei Instanzen desselben Domain Events
-an einem Knoten ankommen, können sie als das gleich Ereignis erkannt
+an einem Knoten ankommen, können sie als das gleiche Ereignis erkannt
 werden.
 
 *Domain Event ist ein neuer Begriff, der seit dem Buch von 2004 entstanden ist.*
