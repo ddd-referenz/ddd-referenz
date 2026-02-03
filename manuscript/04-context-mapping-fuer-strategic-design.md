@@ -327,7 +327,7 @@ Kontexten haben, die nicht solche Clients sind.
 
 ## Published Language {#published-language}
 
-*Dt.: veröffentlichte Sprache*
+*Dt.: Veröffentlichte Sprache*
 
 *Die Übersetzung zwischen den Modellen zweier [Bounded
 Contexts](#bounded-context)
