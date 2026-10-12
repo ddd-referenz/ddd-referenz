@@ -28,7 +28,7 @@ einem Context (Dt.: Kontext) verstanden werden.*
 
 ### Bounded Context
 
-Der *Bounded Context* (Dt.: begrenzter Kontext)
+Der *Bounded Context* (Dt.: abgegrenzter Kontext)
 ist eine Beschreibung
 einer Grenze (typischerweise ein Subsystem oder die Arbeit eines
 bestimmten Teams), innerhalb derer ein bestimmtes Modell definiert und
