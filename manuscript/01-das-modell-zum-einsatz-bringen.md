@@ -28,7 +28,7 @@ Design.
 
 ## Bounded Context {#bounded-context}
 
-*Dt.: Begrenzter Kontext*
+*Dt.: Abgegrenzter Kontext*
 
 *Bei jedem großen Projekt sind mehrere Modelle im Spiel.* Sie
 entstehen aus vielen Gründen. Zwei Subsysteme bedienen in der Regel
